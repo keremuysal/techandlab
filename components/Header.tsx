@@ -22,7 +22,7 @@ const Header: React.FC = () => {
       <div className="absolute inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-white/10"></div>
       <nav className="relative max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="https://keremuysal.github.io/techandlab/" className="flex items-center gap-2">
+          <Link to="https://keremuysal.github.io/techandlab//" className="flex items-center gap-2">
              <Rocket className="w-6 h-6 text-indigo-500" />
             <span className="font-bold text-lg text-gray-900 dark:text-white">
               Tech&Lab
