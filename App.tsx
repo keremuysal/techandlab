@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Preloader from './components/Preloader';
@@ -73,6 +73,7 @@ function App() {
                 </Routes>
               </motion.div>
             </AnimatePresence>
+            <Outlet />
           </main>
           <Footer />
         </div>
