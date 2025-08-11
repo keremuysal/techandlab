@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 
 export default defineConfig({
+  base: "/techandlab/",
   resolve: {
     alias: {
       '@': path.dirname(fileURLToPath(import.meta.url)),
