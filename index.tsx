@@ -9,7 +9,7 @@ if (container) {
   const root = createRoot(container);
   root.render(
     <React.StrictMode>
-      <BrowserRouter basename="/techandlab">
+      <BrowserRouter>
         <ThemeProvider>
           <App />
         </ThemeProvider>
