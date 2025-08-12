@@ -17,3 +17,9 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Dependencies
+/node_modules
+
+# Cache
+.cache
