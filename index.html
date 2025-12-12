@@ -1,0 +1,189 @@
+<!--
+* Author:   Kerem Uysal
+* Created:   12.08.2025
+* 𝓚𝓮𝓻𝓮𝓶 𝓤𝔂𝓼𝓪𝓵
+-->
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T&L | Tech&Lab | Fikirden Gerçeğe, Dijitalin Ötesinde</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            grotesk: ['Space Grotesk', 'sans-serif'],
+          },
+          animation: {
+            'spin-slow': 'spin 15s linear infinite',
+          },
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    :root {
+      --grid-color: rgba(0,0,0,0.05);
+      /* Glowing Button Colors */
+      --red: #FF6565;
+      --pink: #FF64F9;
+      --purple: #6B5FFF;
+      --blue: #4D8AFF;
+      --green: #5BFF89;
+      --yellow: #FFEE55;
+      --orange: #FF6D1B;
+      /* Glowing Button Scale */
+      --m: 1.25rem;
+    }
+    .dark {
+      --grid-color: rgba(255,255,255,0.05);
+    }
+
+    /* Custom scrollbar for a more modern look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #111;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+      background: #444;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+      background: #666;
+    }
+
+    /* Base styles */
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+    
+    .bg-grid {
+      background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 1px), linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+      background-size: 2rem 2rem;
+    }
+
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Glowing Button -- START */
+    .glowing-btn {
+      border: calc(0.08 * var(--m)) solid transparent;
+      position: relative;
+      color: #F3F3F3;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: var(--m);
+      font-weight: 700;
+      border-radius: calc(0.7 * var(--m));
+      padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      text-decoration: none;
+      
+      background:linear-gradient(#0A0A0A, #0A0A0A), linear-gradient(#0A0A0A 50%, rgba(10, 10, 10, 0.6) 80%, rgba(10, 10, 10, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+      background-origin: border-box;
+      background-clip: padding-box, border-box, border-box;
+      background-size: 200%;
+      animation: glowing-btn-animate 2s infinite linear;
+    }
+
+    .glowing-btn::before {
+      content: '';
+      background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+      height: 30%;
+      width: 60%;
+      position: absolute;
+      bottom: -20%;
+      z-index: -1;
+      background-size: 200%;
+      animation: glowing-btn-animate 2s infinite linear;
+      filter: blur(calc(0.8 * var(--m)));
+    }
+
+    .glowing-btn:hover, .glowing-btn:hover::before {
+      animation: glowing-btn-animate 0.5s infinite linear;
+    }
+
+    @keyframes glowing-btn-animate {
+      0% {background-position: 0}
+      100% {background-position: 200%}
+    }
+
+    @media screen and (max-width: 768px) {
+      :root {
+        --m: 1rem;
+      }
+    }
+    /* Glowing Button -- END */
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8",
+    "lucide-react": "https://esm.sh/lucide-react@0.356.0",
+    "clsx": "https://esm.sh/clsx@2.1.0",
+    "tailwind-merge": "https://esm.sh/tailwind-merge@2.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "vite": "https://esm.sh/vite@^7.1.0",
+    "path": "https://esm.sh/path@^0.12.7"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Bs3nVuaR.js"></script>
+</head>
+<body class="bg-white dark:bg-[#0A0A0A] text-gray-800 dark:text-gray-200 antialiased overflow-x-hidden font-sans">
+  <div id="root"></div>
+</body>
+</html>
