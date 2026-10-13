@@ -15,7 +15,7 @@ Tech&Lab (T&L), yazılım mimarisi, gömülü sistemler, Ar-Ge ve yeni nesil dij
 * **Modern & Minimalist Tasarım:** Tailwind CSS tabanlı, akıcı mikro etkileşimler ve animasyonlar.
 * **İki Dilli Mimari (TR / EN & Otomatik Sistem Dili Algılama):** Ziyaretçinin sistem ve tarayıcı diline (`navigator.language`) göre otomatik Türkçe veya İngilizce sunum; ayrı bağlantılara veya URL karmaşasına gerek kalmadan navbar üzerinden anlık TR / EN dil değişimi ve yerel depolama (`localStorage`) kalıcılığı.
 * **Karanlık / Aydınlık Mod (Dark/Light Mode):** Sistem tercihi ve yerel depolama (`localStorage`) senkronizasyonu ile sıfır parlama (FOUC önleyici betik).
-* **Tek Sayfa Mimarisi (SPA):** React Router ve Vite destekli kesintisiz rota geçişleri (`/`, `/hakkimizda`, `/hizmetler`, `/referanslar`, `/iletisim`).
+* **Tek Sayfa Mimarisi (SPA):** React Router ve Vite destekli kesintisiz rota geçişleri (`/`, `/about`, `/services`, `/references`, `/contact`).
 * **SEO & Sosyal Medya Uyumluluğu:**
   * Her statik rota için özel `canonical`, `og:title`, `og:description`, `og:image` ve `twitter:card` meta etiketleri.
   * Google Arama Motoru ve Bilgi Grafiği uyumlu Schema.org `Organization` JSON-LD yapısal verisi.
@@ -27,10 +27,10 @@ Tech&Lab (T&L), yazılım mimarisi, gömülü sistemler, Ar-Ge ve yeni nesil dij
 | Rota | Açıklama |
 | :--- | :--- |
 | `/` | Anasayfa & Vizyon Tanıtımı |
-| `/about` | Vizyon, Misyon ve Ar-Ge Yaklaşımı (Eski rota: `/hakkimizda`) |
-| `/services` | Yazılım, Gömülü Sistemler ve Mühendislik Hizmetleri (Eski rota: `/hizmetler`) |
-| `/references` | Projeler ve Açık Kaynak Çalışmalar (Eski rota: `/referanslar`) |
-| `/contact` | Proje ve İş Birlikleri İletişim Formu & Bilgileri (Eski rota: `/iletisim`) |
+| `/about` | Vizyon, Misyon ve Ar-Ge Yaklaşımı |
+| `/services` | Yazılım, Gömülü Sistemler ve Mühendislik Hizmetleri |
+| `/references` | Projeler ve Açık Kaynak Çalışmalar |
+| `/contact` | Proje ve İş Birlikleri İletişim Formu & Bilgileri |
 | `/404` | GitHub Pages Uyumlu Özel Hata Sayfası |
 
 ## 🛠️ Teknolojiler

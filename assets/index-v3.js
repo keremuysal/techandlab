@@ -1010,10 +1010,10 @@ function kM() {
       document.documentElement.lang = lang;
       const path = (s.pathname || "").toLowerCase();
       let title = t.titles.home;
-      if (path.includes("about") || path.includes("hakkimizda")) title = t.titles.about;
-      else if (path.includes("services") || path.includes("hizmetler")) title = t.titles.services;
-      else if (path.includes("references") || path.includes("referanslar")) title = t.titles.references;
-      else if (path.includes("contact") || path.includes("iletisim")) title = t.titles.contact;
+      if (path.includes("about")) title = t.titles.about;
+      else if (path.includes("services")) title = t.titles.services;
+      else if (path.includes("references")) title = t.titles.references;
+      else if (path.includes("contact")) title = t.titles.contact;
       document.title = title;
 
       const metaDesc = document.querySelector('meta[name="description"]');
@@ -1056,12 +1056,7 @@ function kM() {
                           E.jsx(si, { path: "/about", element: E.jsx(jM, {}) }),
                           E.jsx(si, { path: "/services", element: E.jsx(VM, {}) }),
                           E.jsx(si, { path: "/references", element: E.jsx(_M, {}) }),
-                          E.jsx(si, { path: "/contact", element: E.jsx(UM, {}) }),
-                          // Backward compatibility aliases
-                          E.jsx(si, { path: "/hakkimizda", element: E.jsx(jM, {}) }),
-                          E.jsx(si, { path: "/hizmetler", element: E.jsx(VM, {}) }),
-                          E.jsx(si, { path: "/referanslar", element: E.jsx(_M, {}) }),
-                          E.jsx(si, { path: "/iletisim", element: E.jsx(UM, {}) })
+                          E.jsx(si, { path: "/contact", element: E.jsx(UM, {}) })
                         ]
                       })
                     },
