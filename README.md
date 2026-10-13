@@ -27,10 +27,10 @@ Tech&Lab (T&L), yazılım mimarisi, gömülü sistemler, Ar-Ge ve yeni nesil dij
 | Rota | Açıklama |
 | :--- | :--- |
 | `/` | Anasayfa & Vizyon Tanıtımı |
-| `/hakkimizda` | Vizyon, Misyon ve Ar-Ge Yaklaşımı |
-| `/hizmetler` | Yazılım, Gömülü Sistemler ve Mühendislik Hizmetleri |
-| `/referanslar` | Projeler ve Açık Kaynak Çalışmalar |
-| `/iletisim` | Proje ve İş Birlikleri İletişim Formu & Bilgileri |
+| `/about` | Vizyon, Misyon ve Ar-Ge Yaklaşımı (Eski rota: `/hakkimizda`) |
+| `/services` | Yazılım, Gömülü Sistemler ve Mühendislik Hizmetleri (Eski rota: `/hizmetler`) |
+| `/references` | Projeler ve Açık Kaynak Çalışmalar (Eski rota: `/referanslar`) |
+| `/contact` | Proje ve İş Birlikleri İletişim Formu & Bilgileri (Eski rota: `/iletisim`) |
 | `/404` | GitHub Pages Uyumlu Özel Hata Sayfası |
 
 ## 🛠️ Teknolojiler
