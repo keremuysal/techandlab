@@ -31,7 +31,7 @@ Tech&Lab (T&L), yazılım mimarisi, gömülü sistemler, Ar-Ge ve yeni nesil dij
 | `/services` | Yazılım, Gömülü Sistemler ve Mühendislik Hizmetleri |
 | `/references` | Projeler ve Açık Kaynak Çalışmalar |
 | `/contact` | Proje ve İş Birlikleri İletişim Formu & Bilgileri |
-| `/404` | GitHub Pages Uyumlu Özel Hata Sayfası |
+| `/404` | İnteraktif Hata Sayfası (imleçle etkileşen parçacık "404", glitch efekti, terminal animasyonu, TR / EN ve tema desteği) |
 
 ## 🛠️ Teknolojiler
 
