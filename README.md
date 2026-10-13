@@ -13,6 +13,7 @@ Tech&Lab (T&L), yazılım mimarisi, gömülü sistemler, Ar-Ge ve yeni nesil dij
 ## ✨ Özellikler
 
 * **Modern & Minimalist Tasarım:** Tailwind CSS tabanlı, akıcı mikro etkileşimler ve animasyonlar.
+* **İki Dilli Mimari (TR / EN & Otomatik Sistem Dili Algılama):** Ziyaretçinin sistem ve tarayıcı diline (`navigator.language`) göre otomatik Türkçe veya İngilizce sunum; ayrı bağlantılara veya URL karmaşasına gerek kalmadan navbar üzerinden anlık TR / EN dil değişimi ve yerel depolama (`localStorage`) kalıcılığı.
 * **Karanlık / Aydınlık Mod (Dark/Light Mode):** Sistem tercihi ve yerel depolama (`localStorage`) senkronizasyonu ile sıfır parlama (FOUC önleyici betik).
 * **Tek Sayfa Mimarisi (SPA):** React Router ve Vite destekli kesintisiz rota geçişleri (`/`, `/hakkimizda`, `/hizmetler`, `/referanslar`, `/iletisim`).
 * **SEO & Sosyal Medya Uyumluluğu:**

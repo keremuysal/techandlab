@@ -170,4 +170,919 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const bM=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"6",key:"1vlfrh"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}]],SM=ee("target",bM),TM=()=>{const{theme:a,toggleTheme:i}=BE();return E.jsx("button",{onClick:i,className:"w-10 h-10 rounded-full flex items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200","aria-label":"Toggle theme",children:E.jsx(zc,{mode:"wait",initial:!1,children:E.jsx(gt.div,{initial:{y:-20,opacity:0},animate:{y:0,opacity:1},exit:{y:20,opacity:0},transition:{duration:.2},children:a==="light"?E.jsx(uM,{size:20}):E.jsx(xM,{size:20})},a)})})},AM=[{name:"Hakkımızda",href:"/hakkimizda"},{name:"Hizmetler",href:"/hizmetler"},{name:"Referanslar",href:"/referanslar"},{name:"İletişim",href:"/iletisim"}],EM=()=>E.jsxs(gt.header,{className:"fixed top-0 left-0 right-0 z-50",initial:{y:-100,opacity:0},animate:{y:0,opacity:1},transition:{duration:.8,ease:"circOut"},children:[E.jsx("div",{className:"absolute inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-white/10"}),E.jsx("nav",{className:"relative max-w-7xl mx-auto px-6 lg:px-8",children:E.jsxs("div",{className:"flex items-center justify-between h-20",children:[E.jsxs(xa,{to:"/",className:"flex items-center gap-2",children:[E.jsx(Fg,{className:"w-6 h-6 text-indigo-500"}),E.jsx("span",{className:"font-bold text-lg text-gray-900 dark:text-white",children:"Tech&Lab"})]}),E.jsx("div",{className:"hidden md:flex items-center gap-8",children:AM.map(a=>E.jsx(d0,{to:a.href,className:({isActive:i})=>`text-sm font-medium transition-colors duration-300 ${i?"text-indigo-500 dark:text-indigo-400":"text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"}`,children:a.name},a.name))}),E.jsx("div",{className:"flex items-center",children:E.jsx(TM,{})})]})})]}),MM=()=>{const a=[{name:"Instagram",icon:E.jsx(nM,{size:18}),href:"https://www.instagram.com/grimacompany/"},{name:"Github",icon:E.jsx(tM,{size:18}),href:"https://github.com/keremuysal"},{name:"Linkedin",icon:E.jsx(iM,{size:18}),href:"https://www.linkedin.com/in/akeremuysal/"}],i=[{name:"Hakkımızda",href:"/hakkimizda"},{name:"Hizmetler",href:"/hizmetler"},{name:"Referanslar",href:"/referanslar"},{name:"İletişim",href:"/iletisim"}];return E.jsx(gt.footer,{className:"bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-white/10",initial:{opacity:0},whileInView:{opacity:1},viewport:{once:!0},transition:{duration:.8},children:E.jsxs("div",{className:"max-w-7xl mx-auto py-12 px-6 lg:px-8",children:[E.jsxs("div",{className:"flex flex-col md:flex-row items-center justify-between gap-8",children:[E.jsx("div",{className:"flex items-center gap-2",children:E.jsxs(xa,{to:"/",className:"flex items-center gap-2",children:[E.jsx(Fg,{className:"w-6 h-6 text-indigo-500"}),E.jsx("span",{className:"font-bold text-lg text-gray-900 dark:text-white",children:"Tech&Lab"})]})}),E.jsx("div",{className:"flex flex-wrap justify-center items-center gap-x-6 gap-y-2",children:i.map(s=>E.jsx(xa,{to:s.href,className:"text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300",children:s.name},s.name))}),E.jsx("div",{className:"flex justify-center md:justify-end items-center gap-4",children:a.map(s=>E.jsx("a",{href:s.href,target:"_blank",rel:"noopener noreferrer",className:"text-gray-500 hover:text-indigo-500 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors","aria-label":s.name,children:s.icon},s.name))})]}),E.jsx("div",{className:"mt-8 pt-8 border-t border-gray-200 dark:border-white/10 text-center",children:E.jsxs("p",{className:"text-sm text-gray-500 dark:text-gray-400",children:["© ",new Date().getFullYear()," Tech&Lab. Tüm hakları saklıdır."]})})]})})},RM={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.2,delayChildren:.3}},exit:{opacity:0,y:-20,transition:{duration:.5}}},Jy={hidden:{opacity:1},visible:{opacity:1,transition:{staggerChildren:.08}}},Fy={hidden:{y:20,opacity:0},visible:{y:0,opacity:1,transition:{ease:"easeOut",duration:.5}}},DM=()=>{const a="Tech&Lab";return E.jsxs(gt.div,{className:"fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white dark:bg-[#0A0A0A]",variants:RM,initial:"hidden",animate:"visible",exit:"exit",children:[E.jsx(gt.h1,{className:"text-2xl md:text-4xl font-bold tracking-wider text-gray-800 dark:text-gray-200 overflow-hidden",variants:Jy,"aria-label":a,children:a.split("").map((s,r)=>E.jsx(gt.span,{variants:Fy,className:"inline-block",children:s===" "?" ":s},`company-${s}-${r}`))}),E.jsx(gt.h2,{className:"text-xl md:text-2xl font-bold tracking-wider text-gray-500 dark:text-gray-400 mt-2 overflow-hidden",variants:Jy,"aria-label":"T&L",children:"T&L".split("").map((s,r)=>E.jsx(gt.span,{variants:Fy,className:"inline-block",children:s===" "?" ":s},`short-${s}-${r}`))})]},"preloader")},wM=()=>{const a={animate:{transition:{staggerChildren:.2,delayChildren:.5}}},i={initial:{y:30,opacity:0},animate:{y:0,opacity:1,transition:{duration:.8,ease:"circOut"}}};return E.jsxs("section",{className:"relative h-screen min-h-[700px] flex items-center justify-center text-center text-white overflow-hidden -mt-20",children:[E.jsx("div",{className:"absolute inset-0 z-0 bg-white dark:bg-[#0A0A0A]",children:E.jsx("div",{className:"absolute inset-0 bg-grid"})}),E.jsx(gt.div,{className:"absolute inset-0 z-10 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]",children:E.jsx("div",{className:"absolute inset-[-200%] w-[400%] h-[400%] bg-[conic-gradient(from_90deg_at_50%_50%,#a655f7_0%,#6366f1_50%,#a655f7_100%)] animate-spin-slow"})}),E.jsxs(gt.div,{className:"relative z-20 p-8 max-w-4xl mx-auto",variants:a,initial:"initial",animate:"animate",children:[E.jsx(gt.h1,{className:"text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter text-gray-900 dark:text-white text-balance",variants:i,children:"Fikirden Gerçeğe, Dijitalin Ötesinde."}),E.jsx(gt.p,{className:"mt-6 text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-balance",variants:i,children:"Tech&Lab olarak, geleceği şekillendiren yenilikçi teknolojilerle markanızın potansiyelini en üst seviyeye taşıyoruz."}),E.jsx(gt.div,{className:"mt-12",variants:i,children:E.jsx(xa,{to:"/hakkimizda",className:"glowing-btn",children:"Hakkımızda"})})]})]})},CM=()=>{const a={hidden:{},visible:{transition:{staggerChildren:.2}}},i={hidden:{opacity:0,y:30},visible:{opacity:1,y:0,transition:{duration:.8,ease:"circOut"}}};return E.jsx(gt.section,{className:"py-24 sm:py-32",variants:a,initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.2},children:E.jsx("div",{className:"max-w-7xl mx-auto px-6 lg:px-8",children:E.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center",children:[E.jsxs(gt.div,{className:"order-2 md:order-1",variants:i,children:[E.jsx("h2",{className:"text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white",children:"Biz Kimiz?"}),E.jsx("p",{className:"mt-6 text-lg text-gray-600 dark:text-gray-300 leading-8 text-balance",children:"Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız."}),E.jsx("div",{className:"mt-8",children:E.jsxs(xa,{to:"/hakkimizda",className:"group inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-400 font-semibold",children:["Hikayemizi Keşfedin",E.jsx("span",{className:"transition-transform duration-300 group-hover:translate-x-1",children:"→"})]})})]}),E.jsx(gt.div,{className:"order-1 md:order-2",variants:i,children:E.jsx("img",{src:"https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",alt:"A team collaborating",className:"rounded-2xl shadow-xl aspect-[4/3] w-full object-cover"})})]})})})},$g=[{icon:bl.createElement(FE,{className:"w-10 h-10 text-indigo-400"}),title:"Web Tasarım & Geliştirme",description:"Modern, hızlı ve mobil uyumlu web siteleri ile dijital dünyada markanızı en iyi şekilde temsil ediyoruz.",details:"Kullanıcı odaklı arayüz (UI) ve deneyim (UX) tasarımı prensipleriyle, markanızın kimliğine uygun, estetik ve işlevsel web siteleri oluşturuyoruz. En son web teknolojilerini kullanarak (React, Next.js, etc.) performanslı ve SEO uyumlu projeler teslim ediyoruz."},{icon:bl.createElement(gM,{className:"w-10 h-10 text-green-400"}),title:"Mobil Uygulama",description:"Kullanıcı dostu ve performans odaklı iOS ve Android mobil uygulamaları tasarlıyor ve geliştiriyoruz.",details:"İhtiyaçlarınıza yönelik, sezgisel ve etkileyici mobil uygulamalar geliştiriyoruz. Native (Swift, Kotlin) veya cross-platform (React Native) çözümlerle, fikrinizi App Store ve Google Play'de hayata geçiriyoruz."},{icon:bl.createElement(PE,{className:"w-10 h-10 text-sky-400"}),title:"Dijital Pazarlama",description:"Veriye dayalı stratejilerle hedef kitlenize ulaşmanızı ve marka bilinirliğinizi artırmanızı sağlıyoruz.",details:"SEO, SEM, sosyal medya yönetimi ve içerik pazarlaması gibi kanalları kullanarak markanızın dijital görünürlüğünü artırıyoruz. Kampanyalarınızı optimize ederek yatırım getirinizi (ROI) maksimize ediyoruz."},{icon:bl.createElement(cM,{className:"w-10 h-10 text-rose-400"}),title:"Marka Kimliği",description:"Markanızın özünü yansıtan, akılda kalıcı logo ve kurumsal kimlik tasarımlarıyla sizi ayrıştırıyoruz.",details:"Markanızın hikayesini ve değerlerini yansıtan, bütünsel bir marka kimliği oluşturuyoruz. Logo tasarımından renk paletine, tipografiden kurumsal materyallere kadar markanızın her görsel unsurunu özenle tasarlıyoruz."}],zM=({service:a})=>{const i=Tr(0),s=Tr(0),r=Qy(i,{stiffness:300,damping:20}),c=Qy(s,{stiffness:300,damping:20}),f=kc(c,[-.5,.5],["10deg","-10deg"]),h=kc(r,[-.5,.5],["-10deg","10deg"]),p=d=>{const g=d.currentTarget.getBoundingClientRect(),x=g.width,b=g.height,D=d.clientX-g.left,N=d.clientY-g.top,j=D/x-.5,B=N/b-.5;i.set(j),s.set(B)},m=()=>{i.set(0),s.set(0)};return E.jsx(gt.div,{onMouseMove:p,onMouseLeave:m,style:{rotateX:f,rotateY:h,transformStyle:"preserve-3d"},className:"relative p-8 rounded-2xl bg-white/5 dark:bg-black/10 border border-white/10 dark:border-white/10 backdrop-blur-sm shadow-xl h-full",children:E.jsxs("div",{style:{transform:"translateZ(50px)"},className:"flex flex-col items-start gap-4",children:[a.icon,E.jsx("h3",{className:"text-xl font-semibold text-gray-900 dark:text-white",children:a.title}),E.jsx("p",{className:"text-gray-600 dark:text-gray-400",children:a.description})]})})},OM=()=>{const a={hidden:{},visible:{transition:{staggerChildren:.2}}},i={hidden:{opacity:0,y:50},visible:{opacity:1,y:0,transition:{duration:.8,ease:"circOut"}}};return E.jsx("section",{className:"py-24 sm:py-32 bg-white dark:bg-[#0A0A0A]",children:E.jsxs("div",{className:"max-w-7xl mx-auto px-6 lg:px-8",children:[E.jsxs("div",{className:"text-center max-w-2xl mx-auto",children:[E.jsx("h2",{className:"text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white",children:"Sunduğumuz Hizmetler"}),E.jsx("p",{className:"mt-4 text-lg text-gray-600 dark:text-gray-300",children:"İşletmenizin her dijital ihtiyacına yönelik, kapsamlı ve yenilikçi çözümler sunuyoruz."})]}),E.jsx(gt.div,{className:"mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",variants:a,initial:"hidden",whileInView:"visible",viewport:{once:!0,amount:.2},children:$g.map((s,r)=>E.jsx(gt.div,{variants:i,children:E.jsx(zM,{service:s})},r))})]})})},NM=()=>E.jsxs(E.Fragment,{children:[E.jsx(wM,{}),E.jsx(CM,{}),E.jsx(OM,{})]}),jM=()=>E.jsx("div",{className:"pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A]",children:E.jsxs("div",{className:"max-w-7xl mx-auto px-6 lg:px-8",children:[E.jsxs(gt.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.8,ease:"circOut"},className:"text-center",children:[E.jsx("h1",{className:"text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",children:"Hakkımızda"}),E.jsx("p",{className:"mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",children:"Fikirden gerçeğe, dijitalin ötesine uzanan yolculuğumuz."})]}),E.jsx(gt.div,{initial:{opacity:0},whileInView:{opacity:1},viewport:{once:!0,amount:.2},transition:{duration:1,delay:.2},className:"mt-16 max-w-4xl mx-auto",children:E.jsx("img",{src:"https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop",alt:"Tech&Lab Team",className:"rounded-2xl shadow-xl aspect-[16/9] w-full object-cover"})}),E.jsxs("div",{className:"mt-20 max-w-4xl mx-auto text-lg text-gray-700 dark:text-gray-300 space-y-6 text-balance leading-relaxed",children:[E.jsx("p",{children:"Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız."}),E.jsx("p",{children:"Müşterilerimizin hedeflerini kendi hedeflerimiz olarak benimsiyor, yenilikçi teknolojileri ve yaratıcı yaklaşımları bir araya getirerek onlara özel, sürdürülebilir ve ölçülebilir değerler yaratıyoruz. Her proje, bizim için yeni bir başlangıç ve markanızın dijital dünyadaki imzasını atma fırsatıdır."})]}),E.jsxs("div",{className:"mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 text-center",children:[E.jsxs(gt.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.5,delay:.1},viewport:{once:!0},children:[E.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-100 dark:bg-indigo-900/50",children:E.jsx(ZE,{className:"w-8 h-8 text-indigo-500"})}),E.jsx("h3",{className:"text-2xl font-bold text-gray-900 dark:text-white",children:"Kuruluş"}),E.jsx("p",{className:"mt-2 text-gray-600 dark:text-gray-400",children:"Yenilikçi çözümler üretme tutkusuyla 2023 yılında yola çıktık."})]}),E.jsxs(gt.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.5,delay:.2},viewport:{once:!0},children:[E.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-100 dark:bg-indigo-900/50",children:E.jsx(SM,{className:"w-8 h-8 text-indigo-500"})}),E.jsx("h3",{className:"text-2xl font-bold text-gray-900 dark:text-white",children:"Misyonumuz"}),E.jsx("p",{className:"mt-2 text-gray-600 dark:text-gray-400",children:"Teknoloji ve yaratıcılığı birleştirerek, markaların dijital potansiyelini en üst seviyeye çıkarmak."})]}),E.jsxs(gt.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},transition:{duration:.5,delay:.3},viewport:{once:!0},children:[E.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-100 dark:bg-indigo-900/50",children:E.jsx(WE,{className:"w-8 h-8 text-indigo-500"})}),E.jsx("h3",{className:"text-2xl font-bold text-gray-900 dark:text-white",children:"Vizyonumuz"}),E.jsx("p",{className:"mt-2 text-gray-600 dark:text-gray-400",children:"Alanında öncü, yenilikçi ve ilham veren bir teknoloji ve tasarım markası olmak."})]})]})]})}),VM=()=>E.jsx("div",{className:"pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A]",children:E.jsxs("div",{className:"max-w-7xl mx-auto px-6 lg:px-8",children:[E.jsxs(gt.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.8,ease:"circOut"},className:"text-center mb-16 sm:mb-20",children:[E.jsx("h1",{className:"text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",children:"Hizmetlerimiz"}),E.jsx("p",{className:"mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",children:"İşletmenizin her dijital ihtiyacına yönelik, kapsamlı ve yenilikçi çözümler sunuyoruz."})]}),E.jsx("div",{className:"space-y-20",children:$g.map((a,i)=>E.jsxs(gt.div,{initial:{opacity:0,x:i%2===0?-50:50},whileInView:{opacity:1,x:0},viewport:{once:!0,amount:.3},transition:{duration:.8,ease:"circOut"},className:`flex flex-col md:flex-row items-center gap-12 ${i%2!==0?"md:flex-row-reverse":""}`,children:[E.jsxs("div",{className:"flex-1",children:[E.jsxs("div",{className:"flex items-center gap-4 mb-4",children:[a.icon,E.jsx("h2",{className:"text-3xl font-bold text-gray-900 dark:text-white",children:a.title})]}),E.jsx("p",{className:"text-lg text-gray-600 dark:text-gray-400 leading-relaxed",children:a.details})]}),E.jsx("div",{className:"flex-1 w-full min-h-[256px] bg-gray-100 dark:bg-gray-800/50 rounded-2xl flex items-center justify-center p-8",children:E.jsx("div",{className:"transform scale-[2]",children:a.icon})})]},a.title))})]})}),_M=()=>E.jsx("div",{className:"pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A] flex items-center justify-center min-h-[calc(100vh-20rem)]",children:E.jsx("div",{className:"max-w-7xl mx-auto px-6 lg:px-8 text-center",children:E.jsxs(gt.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.8,ease:"circOut"},children:[E.jsx("div",{className:"inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-indigo-100 dark:bg-indigo-900/50",children:E.jsx(XE,{className:"w-8 h-8 text-indigo-500"})}),E.jsx("h1",{className:"text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",children:"Referanslarımız"}),E.jsx("p",{className:"mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",children:"Projelerimiz ve müşteri başarı hikayelerimiz yakında burada sergilenecek."}),E.jsx("p",{className:"mt-2 text-sm text-gray-500 dark:text-gray-400",children:"Heyecan verici projelerimizi paylaşmak için sabırsızlanıyoruz!"})]})})}),UM=()=>{const a=async i=>{i.preventDefault();const n=document.getElementById("name"),e=document.getElementById("email"),m=document.getElementById("message"),b=i.target.querySelector("button[type='submit']"),orig=b?b.innerText:"Gönder";if(b){b.disabled=true;b.innerText="Gönderiliyor..."}try{const res=await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({access_key:"da5d986e-3608-424b-91ba-41f985bf100d",subject:"Yeni İletişim Formu Mesajı - Tech&Lab",from_name:"Tech&Lab Web",name:n?n.value:"",email:e?e.value:"",message:m?m.value:""})}),data=await res.json();if(data.success){alert("Mesajınız başarıyla iletildi! En kısa sürede sizinle iletişime geçeceğiz.");if(n)n.value="";if(e)e.value="";if(m)m.value=""}else{alert("Hata: "+(data.message||"Mesaj iletilemedi."))}}catch(err){alert("Bağlantı hatası oluştu. Lütfen tekrar deneyin.")}finally{if(b){b.disabled=false;b.innerText=orig}}};;return E.jsx("div",{className:"pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A]",children:E.jsxs("div",{className:"max-w-7xl mx-auto px-6 lg:px-8",children:[E.jsxs(gt.div,{initial:{opacity:0,y:20},animate:{opacity:1,y:0},transition:{duration:.8,ease:"circOut"},className:"text-center mb-16 sm:mb-20",children:[E.jsx("h1",{className:"text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",children:"Bize Ulaşın"}),E.jsx("p",{className:"mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",children:"Bir fikriniz mi var? Projenizi birlikte hayata geçirelim."})]}),E.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-16 items-start",children:[E.jsxs(gt.div,{initial:{opacity:0,x:-50},whileInView:{opacity:1,x:0},viewport:{once:!0,amount:.3},transition:{duration:.8,ease:"circOut"},className:"space-y-8",children:[E.jsxs("div",{className:"flex items-start gap-4",children:[E.jsx("div",{className:"flex-shrink-0 w-12 h-12 rounded-lg bg-indigo-500/10 dark:bg-indigo-500/20 flex items-center justify-center",children:E.jsx(sM,{className:"w-6 h-6 text-indigo-500"})}),E.jsxs("div",{children:[E.jsx("h3",{className:"text-xl font-semibold text-gray-900 dark:text-white",children:"Email"}),E.jsx("p",{className:"text-gray-600 dark:text-gray-400",children:"Proje ve işbirlikleri için bize yazın."}),E.jsx("a",{href:"mailto:info@techandlab.com",className:"text-indigo-600 dark:text-indigo-400 hover:underline",children:"info@techandlab.com"})]})]}),E.jsxs("div",{className:"flex items-start gap-4",children:[E.jsx("div",{className:"flex-shrink-0 w-12 h-12 rounded-lg bg-indigo-500/10 dark:bg-indigo-500/20 flex items-center justify-center",children:E.jsx(hM,{className:"w-6 h-6 text-indigo-500"})}),E.jsxs("div",{children:[E.jsx("h3",{className:"text-xl font-semibold text-gray-900 dark:text-white",children:"Telefon"}),E.jsx("p",{className:"text-gray-600 dark:text-gray-400",children:"Acil durumlar için bize ulaşabilirsiniz."}),E.jsx("a",{href:"mailto:info@techandlab.com",className:"text-indigo-600 dark:text-indigo-400 hover:underline",children:"info@techandlab.com"})]})]})]}),E.jsx(gt.div,{initial:{opacity:0,x:50},whileInView:{opacity:1,x:0},viewport:{once:!0,amount:.3},transition:{duration:.8,ease:"circOut"},children:E.jsxs("form",{onSubmit:a,className:"space-y-6 bg-white/5 dark:bg-black/10 p-8 rounded-2xl border border-white/10",children:[E.jsxs("div",{children:[E.jsx("label",{htmlFor:"name",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1",children:"Adınız Soyadınız"}),E.jsx("input",{type:"text",id:"name",required:!0,className:"w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"})]}),E.jsxs("div",{children:[E.jsx("label",{htmlFor:"email",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1",children:"Email Adresiniz"}),E.jsx("input",{type:"email",id:"email",required:!0,className:"w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"})]}),E.jsxs("div",{children:[E.jsx("label",{htmlFor:"message",className:"block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1",children:"Mesajınız"}),E.jsx("textarea",{id:"message",rows:4,required:!0,className:"w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"})]}),E.jsxs("button",{type:"submit",className:"w-full inline-flex items-center justify-center gap-2 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition",children:["Gönder",E.jsx(pM,{size:18})]})]})})]})]})})},BM={initial:{opacity:0,y:20},in:{opacity:1,y:0},out:{opacity:0,y:-20}},LM={type:"tween",ease:"anticipate",duration:.5};function kM(){const[a,i]=M.useState(!0),s=Qn();return M.useEffect(()=>{const r=setTimeout(()=>i(!1),2500);return()=>clearTimeout(r)},[]),M.useEffect(()=>{window.scrollTo(0,0)},[s.pathname]),E.jsxs(E.Fragment,{children:[E.jsx(zc,{mode:"wait",children:a&&E.jsx(DM,{},"preloader")}),!a&&E.jsxs("div",{className:"flex flex-col min-h-screen",children:[E.jsx(EM,{}),E.jsxs("main",{className:"flex-grow pt-20",children:[E.jsx(zc,{mode:"wait",children:E.jsx(gt.div,{initial:"initial",animate:"in",exit:"out",variants:BM,transition:LM,children:E.jsxs(Eb,{location:s,children:[E.jsx(si,{path:"/",element:E.jsx(NM,{})}),E.jsx(si,{path:"/hakkimizda",element:E.jsx(jM,{})}),E.jsx(si,{path:"/hizmetler",element:E.jsx(VM,{})}),E.jsx(si,{path:"/referanslar",element:E.jsx(_M,{})}),E.jsx(si,{path:"/iletisim",element:E.jsx(UM,{})})]})},s.pathname)}),E.jsx(Tb,{})]}),E.jsx(MM,{})]})]})}const $y=document.getElementById("root");$y&&zx.createRoot($y).render(E.jsx(bl.StrictMode,{children:E.jsx(Qb,{children:E.jsx(UE,{children:E.jsx(kM,{})})})}));
+ */const bM=[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["circle",{cx:"12",cy:"12",r:"6",key:"1vlfrh"}],["circle",{cx:"12",cy:"12",r:"2",key:"1c9p78"}]],SM=ee("target",bM);
+const globeSvg = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["line", { x1: "2", x2: "22", y1: "12", y2: "12", key: "78800" }],
+  ["path", { d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z", key: "85k33b" }]
+];
+const globeIcon = ee("globe", globeSvg);
+
+const translations = {"tr": {"nav": [{"name": "Hakkımızda", "href": "/hakkimizda"}, {"name": "Hizmetler", "href": "/hizmetler"}, {"name": "Referanslar", "href": "/referanslar"}, {"name": "İletişim", "href": "/iletisim"}], "hero": {"title": "Fikirden Gerçeğe, Dijitalin Ötesinde.", "desc": "Tech&Lab olarak, geleceği şekillendiren yenilikçi teknolojilerle markanızın potansiyelini en üst seviyeye taşıyoruz.", "btn": "Hakkımızda"}, "aboutPreview": {"title": "Biz Kimiz?", "desc": "Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız.", "link": "Hikayemizi Keşfedin"}, "services": {"title": "Sunduğumuz Hizmetler", "pageTitle": "Hizmetlerimiz", "subtitle": "İşletmenizin her dijital ihtiyacına yönelik, kapsamlı ve yenilikçi çözümler sunuyoruz.", "items": [{"title": "Web Tasarım & Geliştirme", "description": "Modern, hızlı ve mobil uyumlu web siteleri ile dijital dünyada markanızı en iyi şekilde temsil ediyoruz.", "details": "Kullanıcı odaklı arayüz (UI) ve deneyim (UX) tasarımı prensipleriyle, markanızın kimliğine uygun, estetik ve işlevsel web siteleri oluşturuyoruz. En son web teknolojilerini kullanarak (React, Next.js, etc.) performanslı ve SEO uyumlu projeler teslim ediyoruz."}, {"title": "Mobil Uygulama", "description": "Kullanıcı dostu ve performans odaklı iOS ve Android mobil uygulamaları tasarlıyor ve geliştiriyoruz.", "details": "İhtiyaçlarınıza yönelik, sezgisel ve etkileyici mobil uygulamalar geliştiriyoruz. Native (Swift, Kotlin) veya cross-platform (React Native) çözümlerle, fikrinizi App Store ve Google Play'de hayata geçiriyoruz."}, {"title": "Dijital Pazarlama", "description": "Veriye dayalı stratejilerle hedef kitlenize ulaşmanızı ve marka bilinirliğinizi artırmanızı sağlıyoruz.", "details": "SEO, SEM, sosyal medya yönetimi ve içerik pazarlaması gibi kanalları kullanarak markanızın dijital görünürlüğünü artırıyoruz. Kampanyalarınızı optimize ederek yatırım getirinizi (ROI) maksimize ediyoruz."}, {"title": "Marka Kimliği", "description": "Markanızın özünü yansıtan, akılda kalıcı logo ve kurumsal kimlik tasarımlarıyla sizi ayrıştırıyoruz.", "details": "Markanızın hikayesini ve değerlerini yansıtan, bütünsel bir marka kimliği oluşturuyoruz. Logo tasarımından renk paletine, tipografiden kurumsal materyallere kadar markanızın her görsel unsurunu özenle tasarlıyoruz."}]}, "about": {"title": "Hakkımızda", "subtitle": "Fikirden gerçeğe, dijitalin ötesine uzanan yolculuğumuz.", "p1": "Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız.", "p2": "Müşterilerimizin hedeflerini kendi hedeflerimiz olarak benimsiyor, yenilikçi teknolojileri ve yaratıcı yaklaşımları bir araya getirerek onlara özel, sürdürülebilir ve ölçülebilir değerler yaratıyoruz. Her proje, bizim için yeni bir başlangıç ve markanızın dijital dünyadaki imzasını atma fırsatıdır.", "cards": [{"title": "Kuruluş", "desc": "Yenilikçi çözümler üretme tutkusuyla 2023 yılında yola çıktık."}, {"title": "Misyonumuz", "desc": "Teknoloji ve yaratıcılığı birleştirerek, markaların dijital potansiyelini en üst seviyeye çıkarmak."}, {"title": "Vizyonumuz", "desc": "Alanında öncü, yenilikçi ve ilham veren bir teknoloji ve tasarım markası olmak."}]}, "references": {"title": "Referanslarımız", "p1": "Projelerimiz ve müşteri başarı hikayelerimiz yakında burada sergilenecek.", "p2": "Heyecan verici projelerimizi paylaşmak için sabırsızlanıyoruz!"}, "contact": {"title": "Bize Ulaşın", "subtitle": "Bir fikriniz mi var? Projenizi birlikte hayata geçirelim.", "emailTitle": "Email", "emailDesc": "Proje ve işbirlikleri için bize yazın.", "phoneTitle": "Telefon", "phoneDesc": "Acil durumlar için bize ulaşabilirsiniz.", "nameLabel": "Adınız Soyadınız", "emailLabel": "Email Adresiniz", "messageLabel": "Mesajınız", "submitBtn": "Gönder", "sending": "Gönderiliyor...", "successMsg": "Mesajınız başarıyla iletildi! En kısa sürede sizinle iletişime geçeceğiz.", "errorPrefix": "Hata: ", "errorDefault": "Mesaj iletilemedi.", "networkError": "Bağlantı hatası oluştu. Lütfen tekrar deneyin."}, "footer": {"rights": "Tüm hakları saklıdır."}, "titles": {"home": "T&L | Tech&Lab | Fikirden Gerçeğe, Dijitalin Ötesinde", "about": "Hakkımızda | Tech&Lab", "services": "Hizmetlerimiz | Tech&Lab", "references": "Referanslarımız | Tech&Lab", "contact": "İletişim | Tech&Lab"}}, "en": {"nav": [{"name": "About Us", "href": "/hakkimizda"}, {"name": "Services", "href": "/hizmetler"}, {"name": "References", "href": "/referanslar"}, {"name": "Contact", "href": "/iletisim"}], "hero": {"title": "From Idea to Reality, Beyond Digital.", "desc": "At Tech&Lab, we elevate your brand's potential to the highest level with innovative technologies shaping the future.", "btn": "About Us"}, "aboutPreview": {"title": "Who We Are", "desc": "At Tech&Lab, we merge our software and digital design expertise with an entrepreneurial spirit and academic research culture. Channeling this strength into our primary focus of bioengineering, we transform biological data into digital solutions and design the technologies of tomorrow. With passion, we deliver impactful solutions that transcend the ordinary.", "link": "Discover Our Story"}, "services": {"title": "Our Services", "pageTitle": "Our Services", "subtitle": "We provide comprehensive and innovative solutions tailored to every digital need of your business.", "items": [{"title": "Web Design & Development", "description": "We represent your brand at its best in the digital world with modern, fast, and mobile-responsive websites.", "details": "Guided by user-centric UI and UX principles, we build aesthetic and functional websites aligned with your brand identity. Leveraging modern web technologies (React, Next.js, etc.), we deliver high-performance and SEO-friendly projects."}, {"title": "Mobile Applications", "description": "We design and develop user-friendly, high-performance iOS and Android mobile applications.", "details": "We build intuitive, compelling mobile applications tailored to your needs. Using native (Swift, Kotlin) or cross-platform (React Native) solutions, we bring your vision to life on the App Store and Google Play."}, {"title": "Digital Marketing", "description": "We help you reach your target audience and enhance brand awareness through data-driven strategies.", "details": "We boost your digital visibility through SEO, SEM, social media management, and content marketing. By optimizing campaigns, we maximize your return on investment (ROI)."}, {"title": "Brand Identity", "description": "We set you apart with memorable logo and corporate identity designs reflecting the essence of your brand.", "details": "We create a holistic brand identity expressing your story and values. From logo design and color palettes to typography and corporate assets, we meticulously craft every visual element."}]}, "about": {"title": "About Us", "subtitle": "Our journey from idea to reality, beyond digital.", "p1": "At Tech&Lab, we merge our software and digital design expertise with an entrepreneurial spirit and academic research culture. Channeling this strength into our primary focus of bioengineering, we transform biological data into digital solutions and design the technologies of tomorrow. With passion, we deliver impactful solutions that transcend the ordinary.", "p2": "We adopt our clients' objectives as our own, blending innovative technologies and creative methodologies to deliver customized, sustainable, and measurable value. Every project is a fresh chapter and an opportunity to leave your distinctive mark in the digital landscape.", "cards": [{"title": "Founded", "desc": "Founded in 2023 with a passion for delivering innovative and cutting-edge solutions."}, {"title": "Our Mission", "desc": "Unlocking the digital potential of brands by merging technology with creative excellence."}, {"title": "Our Vision", "desc": "To be an inspiring, pioneering benchmark in technology and design."}]}, "references": {"title": "Our References", "p1": "Our featured projects and client success stories will be showcased here soon.", "p2": "We cannot wait to share our exciting projects with you!"}, "contact": {"title": "Contact Us", "subtitle": "Have an idea? Let's bring your project to life together.", "emailTitle": "Email", "emailDesc": "Reach out to us for project inquiries and collaborations.", "phoneTitle": "Phone", "phoneDesc": "Feel free to get in touch with us anytime.", "nameLabel": "Full Name", "emailLabel": "Email Address", "messageLabel": "Your Message", "submitBtn": "Send Message", "sending": "Sending...", "successMsg": "Your message has been sent successfully! We will get in touch with you shortly.", "errorPrefix": "Error: ", "errorDefault": "Message could not be sent.", "networkError": "A connection error occurred. Please try again."}, "footer": {"rights": "All rights reserved."}, "titles": {"home": "T&L | Tech&Lab | From Idea to Reality, Beyond Digital", "about": "About Us | Tech&Lab", "services": "Our Services | Tech&Lab", "references": "Our References | Tech&Lab", "contact": "Contact | Tech&Lab"}}};
+
+const getSystemLang = () => {
+  try {
+    const saved = localStorage.getItem("techandlab_lang");
+    if (saved === "tr" || saved === "en") return saved;
+    const nav = (navigator.language || (navigator.languages && navigator.languages[0]) || "en").toLowerCase();
+    return nav.startsWith("tr") ? "tr" : "en";
+  } catch (e) {
+    return "tr";
+  }
+};
+
+const LangContext = M.createContext();
+
+const LangProvider = ({ children }) => {
+  const [lang, setLang] = M.useState(getSystemLang);
+
+  M.useEffect(() => {
+    try {
+      localStorage.setItem("techandlab_lang", lang);
+      document.documentElement.lang = lang;
+    } catch (e) {}
+  }, [lang]);
+
+  const toggleLang = () => {
+    setLang(prev => (prev === "tr" ? "en" : "tr"));
+  };
+
+  const value = M.useMemo(() => ({
+    lang,
+    setLang,
+    toggleLang,
+    t: translations[lang] || translations.tr
+  }), [lang]);
+
+  return E.jsx(LangContext.Provider, { value, children });
+};
+
+const useLang = () => {
+  const ctx = M.useContext(LangContext);
+  if (!ctx) return { lang: "tr", toggleLang: () => {}, t: translations.tr };
+  return ctx;
+};
+
+const LangToggle = () => {
+  const { lang, toggleLang } = useLang();
+  return E.jsxs("button", {
+    onClick: toggleLang,
+    className: "h-9 px-3 mr-2 rounded-full flex items-center gap-1.5 text-xs font-semibold tracking-wider text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200 border border-gray-200/80 dark:border-white/10",
+    "aria-label": lang === "tr" ? "Switch to English" : "Türkçe'ye geç",
+    title: lang === "tr" ? "Switch to English" : "Türkçe'ye geç",
+    children: [
+      E.jsx(globeIcon, { size: 14, className: "text-indigo-500" }),
+      E.jsx("span", {
+        className: lang === "tr" ? "text-indigo-600 dark:text-indigo-400 font-bold" : "text-gray-400 dark:text-gray-500",
+        children: "TR"
+      }),
+      E.jsx("span", { className: "text-gray-300 dark:text-gray-600", children: "/" }),
+      E.jsx("span", {
+        className: lang === "en" ? "text-indigo-600 dark:text-indigo-400 font-bold" : "text-gray-400 dark:text-gray-500",
+        children: "EN"
+      })
+    ]
+  });
+};
+
+const TM = () => {
+  const { theme: a, toggleTheme: i } = BE();
+  return E.jsx("button", {
+    onClick: i,
+    className: "w-10 h-10 rounded-full flex items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200",
+    "aria-label": "Toggle theme",
+    children: E.jsx(zc, {
+      mode: "wait",
+      initial: !1,
+      children: E.jsx(gt.div, {
+        initial: { y: -20, opacity: 0 },
+        animate: { y: 0, opacity: 1 },
+        exit: { y: 20, opacity: 0 },
+        transition: { duration: .2 },
+        children: a === "light" ? E.jsx(uM, { size: 20 }) : E.jsx(xM, { size: 20 })
+      }, a)
+    })
+  });
+};
+
+const EM = () => {
+  const { t } = useLang();
+  return E.jsxs(gt.header, {
+    className: "fixed top-0 left-0 right-0 z-50",
+    initial: { y: -100, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: .8, ease: "circOut" },
+    children: [
+      E.jsx("div", {
+        className: "absolute inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-white/10"
+      }),
+      E.jsx("nav", {
+        className: "relative max-w-7xl mx-auto px-6 lg:px-8",
+        children: E.jsxs("div", {
+          className: "flex items-center justify-between h-20",
+          children: [
+            E.jsxs(xa, {
+              to: "/",
+              className: "flex items-center gap-2",
+              children: [
+                E.jsx(Fg, { className: "w-6 h-6 text-indigo-500" }),
+                E.jsx("span", {
+                  className: "font-bold text-lg text-gray-900 dark:text-white",
+                  children: "Tech&Lab"
+                })
+              ]
+            }),
+            E.jsx("div", {
+              className: "hidden md:flex items-center gap-8",
+              children: t.nav.map(a =>
+                E.jsx(d0, {
+                  to: a.href,
+                  className: ({ isActive: i }) =>
+                    `text-sm font-medium transition-colors duration-300 ${
+                      i ? "text-indigo-500 dark:text-indigo-400" : "text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+                    }`,
+                  children: a.name
+                }, a.href)
+              )
+            }),
+            E.jsxs("div", {
+              className: "flex items-center",
+              children: [
+                E.jsx(LangToggle, {}),
+                E.jsx(TM, {})
+              ]
+            })
+          ]
+        })
+      })
+    ]
+  });
+};
+
+const MM = () => {
+  const { t } = useLang();
+  const a = [
+    { name: "Instagram", icon: E.jsx(nM, { size: 18 }), href: "https://www.instagram.com/grimacompany/" },
+    { name: "Github", icon: E.jsx(tM, { size: 18 }), href: "https://github.com/keremuysal" },
+    { name: "Linkedin", icon: E.jsx(iM, { size: 18 }), href: "https://www.linkedin.com/in/akeremuysal/" }
+  ];
+  return E.jsx(gt.footer, {
+    className: "bg-gray-50 dark:bg-black border-t border-gray-200 dark:border-white/10",
+    initial: { opacity: 0 },
+    whileInView: { opacity: 1 },
+    viewport: { once: !0 },
+    transition: { duration: .8 },
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto py-12 px-6 lg:px-8",
+      children: [
+        E.jsxs("div", {
+          className: "flex flex-col md:flex-row items-center justify-between gap-8",
+          children: [
+            E.jsx("div", {
+              className: "flex items-center gap-2",
+              children: E.jsxs(xa, {
+                to: "/",
+                className: "flex items-center gap-2",
+                children: [
+                  E.jsx(Fg, { className: "w-6 h-6 text-indigo-500" }),
+                  E.jsx("span", {
+                    className: "font-bold text-lg text-gray-900 dark:text-white",
+                    children: "Tech&Lab"
+                  })
+                ]
+              })
+            }),
+            E.jsx("div", {
+              className: "flex flex-wrap justify-center items-center gap-x-6 gap-y-2",
+              children: t.nav.map(s =>
+                E.jsx(xa, {
+                  to: s.href,
+                  className: "text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300",
+                  children: s.name
+                }, s.href)
+              )
+            }),
+            E.jsx("div", {
+              className: "flex justify-center md:justify-end items-center gap-4",
+              children: a.map(s =>
+                E.jsx("a", {
+                  href: s.href,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  className: "text-gray-500 hover:text-indigo-500 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors",
+                  "aria-label": s.name,
+                  children: s.icon
+                }, s.name)
+              )
+            })
+          ]
+        }),
+        E.jsx("div", {
+          className: "mt-8 pt-8 border-t border-gray-200 dark:border-white/10 text-center",
+          children: E.jsxs("p", {
+            className: "text-sm text-gray-500 dark:text-gray-400",
+            children: ["© ", new Date().getFullYear(), " Tech&Lab. ", t.footer.rights]
+          })
+        })
+      ]
+    })
+  });
+};
+
+const RM = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: .2, delayChildren: .3 } }, exit: { opacity: 0, y: -20, transition: { duration: .5 } } };
+const Jy = { hidden: { opacity: 1 }, visible: { opacity: 1, transition: { staggerChildren: .08 } } };
+const Fy = { hidden: { y: 20, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { ease: "easeOut", duration: .5 } } };
+
+const DM = () => {
+  const a = "Tech&Lab";
+  return E.jsxs(gt.div, {
+    className: "fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white dark:bg-[#0A0A0A]",
+    variants: RM,
+    initial: "hidden",
+    animate: "visible",
+    exit: "exit",
+    children: [
+      E.jsx(gt.h1, {
+        className: "text-2xl md:text-4xl font-bold tracking-wider text-gray-800 dark:text-gray-200 overflow-hidden",
+        variants: Jy,
+        "aria-label": a,
+        children: a.split("").map((s, r) =>
+          E.jsx(gt.span, { variants: Fy, className: "inline-block", children: s === " " ? " " : s }, `company-${s}-${r}`)
+        )
+      }),
+      E.jsx(gt.h2, {
+        className: "text-xl md:text-2xl font-bold tracking-wider text-gray-500 dark:text-gray-400 mt-2 overflow-hidden",
+        variants: Jy,
+        "aria-label": "T&L",
+        children: "T&L".split("").map((s, r) =>
+          E.jsx(gt.span, { variants: Fy, className: "inline-block", children: s === " " ? " " : s }, `short-${s}-${r}`)
+        )
+      })
+    ]
+  }, "preloader");
+};
+
+const wM = () => {
+  const { t } = useLang();
+  const a = { animate: { transition: { staggerChildren: .2, delayChildren: .5 } } };
+  const i = { initial: { y: 30, opacity: 0 }, animate: { y: 0, opacity: 1, transition: { duration: .8, ease: "circOut" } } };
+  return E.jsxs("section", {
+    className: "relative h-screen min-h-[700px] flex items-center justify-center text-center text-white overflow-hidden -mt-20",
+    children: [
+      E.jsx("div", {
+        className: "absolute inset-0 z-0 bg-white dark:bg-[#0A0A0A]",
+        children: E.jsx("div", { className: "absolute inset-0 bg-grid" })
+      }),
+      E.jsx(gt.div, {
+        className: "absolute inset-0 z-10 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]",
+        children: E.jsx("div", {
+          className: "absolute inset-[-200%] w-[400%] h-[400%] bg-[conic-gradient(from_90deg_at_50%_50%,#a655f7_0%,#6366f1_50%,#a655f7_100%)] animate-spin-slow"
+        })
+      }),
+      E.jsxs(gt.div, {
+        className: "relative z-20 p-8 max-w-4xl mx-auto",
+        variants: a,
+        initial: "initial",
+        animate: "animate",
+        children: [
+          E.jsx(gt.h1, {
+            className: "text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter text-gray-900 dark:text-white text-balance",
+            variants: i,
+            children: t.hero.title
+          }),
+          E.jsx(gt.p, {
+            className: "mt-6 text-lg sm:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-balance",
+            variants: i,
+            children: t.hero.desc
+          }),
+          E.jsx(gt.div, {
+            className: "mt-12",
+            variants: i,
+            children: E.jsx(xa, {
+              to: "/hakkimizda",
+              className: "glowing-btn",
+              children: t.hero.btn
+            })
+          })
+        ]
+      })
+    ]
+  });
+};
+
+const CM = () => {
+  const { t } = useLang();
+  const a = { hidden: {}, visible: { transition: { staggerChildren: .2 } } };
+  const i = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: .8, ease: "circOut" } } };
+  return E.jsx(gt.section, {
+    className: "py-24 sm:py-32",
+    variants: a,
+    initial: "hidden",
+    whileInView: "visible",
+    viewport: { once: !0, amount: .2 },
+    children: E.jsx("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8",
+      children: E.jsxs("div", {
+        className: "grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center",
+        children: [
+          E.jsxs(gt.div, {
+            className: "order-2 md:order-1",
+            variants: i,
+            children: [
+              E.jsx("h2", {
+                className: "text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white",
+                children: t.aboutPreview.title
+              }),
+              E.jsx("p", {
+                className: "mt-6 text-lg text-gray-600 dark:text-gray-300 leading-8 text-balance",
+                children: t.aboutPreview.desc
+              }),
+              E.jsx("div", {
+                className: "mt-8",
+                children: E.jsxs(xa, {
+                  to: "/hakkimizda",
+                  className: "group inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-400 font-semibold",
+                  children: [
+                    t.aboutPreview.link,
+                    E.jsx("span", {
+                      className: "transition-transform duration-300 group-hover:translate-x-1",
+                      children: "→"
+                    })
+                  ]
+                })
+              })
+            ]
+          }),
+          E.jsx(gt.div, {
+            className: "order-1 md:order-2",
+            variants: i,
+            children: E.jsx("img", {
+              src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",
+              alt: "A team collaborating",
+              className: "rounded-2xl shadow-xl aspect-[4/3] w-full object-cover"
+            })
+          })
+        ]
+      })
+    })
+  });
+};
+
+const getServices = (t) => [
+  { icon: bl.createElement(FE, { className: "w-10 h-10 text-indigo-400" }), ...t.services.items[0] },
+  { icon: bl.createElement(gM, { className: "w-10 h-10 text-green-400" }), ...t.services.items[1] },
+  { icon: bl.createElement(PE, { className: "w-10 h-10 text-sky-400" }), ...t.services.items[2] },
+  { icon: bl.createElement(cM, { className: "w-10 h-10 text-rose-400" }), ...t.services.items[3] }
+];
+
+const zM = ({ service: a }) => {
+  const i = Tr(0), s = Tr(0);
+  const r = Qy(i, { stiffness: 300, damping: 20 }), c = Qy(s, { stiffness: 300, damping: 20 });
+  const f = kc(c, [-.5, .5], ["10deg", "-10deg"]), h = kc(r, [-.5, .5], ["-10deg", "10deg"]);
+  const p = d => {
+    const g = d.currentTarget.getBoundingClientRect(), x = g.width, b = g.height;
+    const D = d.clientX - g.left, N = d.clientY - g.top, j = D / x - .5, B = N / b - .5;
+    i.set(j);
+    s.set(B);
+  };
+  const m = () => {
+    i.set(0);
+    s.set(0);
+  };
+  return E.jsx(gt.div, {
+    onMouseMove: p,
+    onMouseLeave: m,
+    style: { rotateX: f, rotateY: h, transformStyle: "preserve-3d" },
+    className: "relative p-8 rounded-2xl bg-white/5 dark:bg-black/10 border border-white/10 dark:border-white/10 backdrop-blur-sm shadow-xl h-full",
+    children: E.jsxs("div", {
+      style: { transform: "translateZ(50px)" },
+      className: "flex flex-col items-start gap-4",
+      children: [
+        a.icon,
+        E.jsx("h3", {
+          className: "text-xl font-semibold text-gray-900 dark:text-white",
+          children: a.title
+        }),
+        E.jsx("p", {
+          className: "text-gray-600 dark:text-gray-400",
+          children: a.description
+        })
+      ]
+    })
+  });
+};
+
+const OM = () => {
+  const { t } = useLang();
+  const services = getServices(t);
+  const a = { hidden: {}, visible: { transition: { staggerChildren: .2 } } };
+  const i = { hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: .8, ease: "circOut" } } };
+  return E.jsx("section", {
+    className: "py-24 sm:py-32 bg-white dark:bg-[#0A0A0A]",
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8",
+      children: [
+        E.jsxs("div", {
+          className: "text-center max-w-2xl mx-auto",
+          children: [
+            E.jsx("h2", {
+              className: "text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white",
+              children: t.services.title
+            }),
+            E.jsx("p", {
+              className: "mt-4 text-lg text-gray-600 dark:text-gray-300",
+              children: t.services.subtitle
+            })
+          ]
+        }),
+        E.jsx(gt.div, {
+          className: "mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",
+          variants: a,
+          initial: "hidden",
+          whileInView: "visible",
+          viewport: { once: !0, amount: .2 },
+          children: services.map((s, r) =>
+            E.jsx(gt.div, { variants: i, children: E.jsx(zM, { service: s }) }, r)
+          )
+        })
+      ]
+    })
+  });
+};
+
+const NM = () => E.jsxs(E.Fragment, { children: [E.jsx(wM, {}), E.jsx(CM, {}), E.jsx(OM, {})] });
+
+const jM = () => {
+  const { t } = useLang();
+  const cardIcons = [ZE, SM, WE];
+  return E.jsx("div", {
+    className: "pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A]",
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8",
+      children: [
+        E.jsxs(gt.div, {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: .8, ease: "circOut" },
+          className: "text-center",
+          children: [
+            E.jsx("h1", {
+              className: "text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",
+              children: t.about.title
+            }),
+            E.jsx("p", {
+              className: "mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",
+              children: t.about.subtitle
+            })
+          ]
+        }),
+        E.jsx(gt.div, {
+          initial: { opacity: 0 },
+          whileInView: { opacity: 1 },
+          viewport: { once: !0, amount: .2 },
+          transition: { duration: 1, delay: .2 },
+          className: "mt-16 max-w-4xl mx-auto",
+          children: E.jsx("img", {
+            src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop",
+            alt: "Tech&Lab Team",
+            className: "rounded-2xl shadow-xl aspect-[16/9] w-full object-cover"
+          })
+        }),
+        E.jsxs("div", {
+          className: "mt-20 max-w-4xl mx-auto text-lg text-gray-700 dark:text-gray-300 space-y-6 text-balance leading-relaxed",
+          children: [
+            E.jsx("p", { children: t.about.p1 }),
+            E.jsx("p", { children: t.about.p2 })
+          ]
+        }),
+        E.jsx("div", {
+          className: "mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 text-center",
+          children: t.about.cards.map((c, idx) => {
+            const Icon = cardIcons[idx] || ZE;
+            return E.jsxs(gt.div, {
+              initial: { opacity: 0, y: 20 },
+              whileInView: { opacity: 1, y: 0 },
+              transition: { duration: .5, delay: (idx + 1) * .1 },
+              viewport: { once: !0 },
+              children: [
+                E.jsx("div", {
+                  className: "inline-flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-100 dark:bg-indigo-900/50",
+                  children: E.jsx(Icon, { className: "w-8 h-8 text-indigo-500" })
+                }),
+                E.jsx("h3", {
+                  className: "text-2xl font-bold text-gray-900 dark:text-white",
+                  children: c.title
+                }),
+                E.jsx("p", {
+                  className: "mt-2 text-gray-600 dark:text-gray-400",
+                  children: c.desc
+                })
+              ]
+            }, idx);
+          })
+        })
+      ]
+    })
+  });
+};
+
+const VM = () => {
+  const { t } = useLang();
+  const services = getServices(t);
+  return E.jsx("div", {
+    className: "pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A]",
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8",
+      children: [
+        E.jsxs(gt.div, {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: .8, ease: "circOut" },
+          className: "text-center mb-16 sm:mb-20",
+          children: [
+            E.jsx("h1", {
+              className: "text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",
+              children: t.services.pageTitle
+            }),
+            E.jsx("p", {
+              className: "mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",
+              children: t.services.subtitle
+            })
+          ]
+        }),
+        E.jsx("div", {
+          className: "space-y-20",
+          children: services.map((a, i) =>
+            E.jsxs(gt.div, {
+              initial: { opacity: 0, x: i % 2 === 0 ? -50 : 50 },
+              whileInView: { opacity: 1, x: 0 },
+              viewport: { once: !0, amount: .3 },
+              transition: { duration: .8, ease: "circOut" },
+              className: `flex flex-col md:flex-row items-center gap-12 ${
+                i % 2 !== 0 ? "md:flex-row-reverse" : ""
+              }`,
+              children: [
+                E.jsxs("div", {
+                  className: "flex-1",
+                  children: [
+                    E.jsxs("div", {
+                      className: "flex items-center gap-4 mb-4",
+                      children: [
+                        a.icon,
+                        E.jsx("h2", {
+                          className: "text-3xl font-bold text-gray-900 dark:text-white",
+                          children: a.title
+                        })
+                      ]
+                    }),
+                    E.jsx("p", {
+                      className: "text-lg text-gray-600 dark:text-gray-400 leading-relaxed",
+                      children: a.details
+                    })
+                  ]
+                }),
+                E.jsx("div", {
+                  className: "flex-1 w-full min-h-[256px] bg-gray-100 dark:bg-gray-800/50 rounded-2xl flex items-center justify-center p-8",
+                  children: E.jsx("div", {
+                    className: "transform scale-[2]",
+                    children: a.icon
+                  })
+                })
+              ]
+            }, a.title)
+          )
+        })
+      ]
+    })
+  });
+};
+
+const _M = () => {
+  const { t } = useLang();
+  return E.jsx("div", {
+    className: "pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A] flex items-center justify-center min-h-[calc(100vh-20rem)]",
+    children: E.jsx("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8 text-center",
+      children: E.jsxs(gt.div, {
+        initial: { opacity: 0, y: 20 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: .8, ease: "circOut" },
+        children: [
+          E.jsx("div", {
+            className: "inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-indigo-100 dark:bg-indigo-900/50",
+            children: E.jsx(XE, { className: "w-8 h-8 text-indigo-500" })
+          }),
+          E.jsx("h1", {
+            className: "text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",
+            children: t.references.title
+          }),
+          E.jsx("p", {
+            className: "mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",
+            children: t.references.p1
+          }),
+          E.jsx("p", {
+            className: "mt-2 text-sm text-gray-500 dark:text-gray-400",
+            children: t.references.p2
+          })
+        ]
+      })
+    })
+  });
+};
+
+const UM = () => {
+  const { lang, t } = useLang();
+  const a = async i => {
+    i.preventDefault();
+    const n = document.getElementById("name"),
+      e = document.getElementById("email"),
+      m = document.getElementById("message"),
+      b = i.target.querySelector("button[type='submit']"),
+      orig = b ? b.innerText : t.contact.submitBtn;
+    if (b) {
+      b.disabled = !0;
+      b.innerText = t.contact.sending;
+    }
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: "da5d986e-3608-424b-91ba-41f985bf100d",
+          subject: lang === "tr" ? "Yeni İletişim Formu Mesajı - Tech&Lab" : "New Contact Form Message - Tech&Lab",
+          from_name: "Tech&Lab Web",
+          name: n ? n.value : "",
+          email: e ? e.value : "",
+          message: m ? m.value : ""
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        alert(t.contact.successMsg);
+        if (n) n.value = "";
+        if (e) e.value = "";
+        if (m) m.value = "";
+      } else {
+        alert(t.contact.errorPrefix + (data.message || t.contact.errorDefault));
+      }
+    } catch (err) {
+      alert(t.contact.networkError);
+    } finally {
+      if (b) {
+        b.disabled = !1;
+        b.innerText = orig;
+      }
+    }
+  };
+  return E.jsx("div", {
+    className: "pt-16 sm:pt-24 pb-24 sm:pb-32 bg-white dark:bg-[#0A0A0A]",
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8",
+      children: [
+        E.jsxs(gt.div, {
+          initial: { opacity: 0, y: 20 },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: .8, ease: "circOut" },
+          className: "text-center mb-16 sm:mb-20",
+          children: [
+            E.jsx("h1", {
+              className: "text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",
+              children: t.contact.title
+            }),
+            E.jsx("p", {
+              className: "mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300",
+              children: t.contact.subtitle
+            })
+          ]
+        }),
+        E.jsxs("div", {
+          className: "grid grid-cols-1 md:grid-cols-2 gap-16 items-start",
+          children: [
+            E.jsxs(gt.div, {
+              initial: { opacity: 0, x: -50 },
+              whileInView: { opacity: 1, x: 0 },
+              viewport: { once: !0, amount: .3 },
+              transition: { duration: .8, ease: "circOut" },
+              className: "space-y-8",
+              children: [
+                E.jsxs("div", {
+                  className: "flex items-start gap-4",
+                  children: [
+                    E.jsx("div", {
+                      className: "flex-shrink-0 w-12 h-12 rounded-lg bg-indigo-500/10 dark:bg-indigo-500/20 flex items-center justify-center",
+                      children: E.jsx(sM, { className: "w-6 h-6 text-indigo-500" })
+                    }),
+                    E.jsxs("div", {
+                      children: [
+                        E.jsx("h3", {
+                          className: "text-xl font-semibold text-gray-900 dark:text-white",
+                          children: t.contact.emailTitle
+                        }),
+                        E.jsx("p", {
+                          className: "text-gray-600 dark:text-gray-400",
+                          children: t.contact.emailDesc
+                        }),
+                        E.jsx("a", {
+                          href: "mailto:info@techandlab.com",
+                          className: "text-indigo-600 dark:text-indigo-400 hover:underline",
+                          children: "info@techandlab.com"
+                        })
+                      ]
+                    })
+                  ]
+                }),
+                E.jsxs("div", {
+                  className: "flex items-start gap-4",
+                  children: [
+                    E.jsx("div", {
+                      className: "flex-shrink-0 w-12 h-12 rounded-lg bg-indigo-500/10 dark:bg-indigo-500/20 flex items-center justify-center",
+                      children: E.jsx(hM, { className: "w-6 h-6 text-indigo-500" })
+                    }),
+                    E.jsxs("div", {
+                      children: [
+                        E.jsx("h3", {
+                          className: "text-xl font-semibold text-gray-900 dark:text-white",
+                          children: t.contact.phoneTitle
+                        }),
+                        E.jsx("p", {
+                          className: "text-gray-600 dark:text-gray-400",
+                          children: t.contact.phoneDesc
+                        }),
+                        E.jsx("a", {
+                          href: "mailto:info@techandlab.com",
+                          className: "text-indigo-600 dark:text-indigo-400 hover:underline",
+                          children: "info@techandlab.com"
+                        })
+                      ]
+                    })
+                  ]
+                })
+              ]
+            }),
+            E.jsx(gt.div, {
+              initial: { opacity: 0, x: 50 },
+              whileInView: { opacity: 1, x: 0 },
+              viewport: { once: !0, amount: .3 },
+              transition: { duration: .8, ease: "circOut" },
+              children: E.jsxs("form", {
+                onSubmit: a,
+                className: "space-y-6 bg-white/5 dark:bg-black/10 p-8 rounded-2xl border border-white/10",
+                children: [
+                  E.jsxs("div", {
+                    children: [
+                      E.jsx("label", {
+                        htmlFor: "name",
+                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1",
+                        children: t.contact.nameLabel
+                      }),
+                      E.jsx("input", {
+                        type: "text",
+                        id: "name",
+                        required: !0,
+                        className: "w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+                      })
+                    ]
+                  }),
+                  E.jsxs("div", {
+                    children: [
+                      E.jsx("label", {
+                        htmlFor: "email",
+                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1",
+                        children: t.contact.emailLabel
+                      }),
+                      E.jsx("input", {
+                        type: "email",
+                        id: "email",
+                        required: !0,
+                        className: "w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+                      })
+                    ]
+                  }),
+                  E.jsxs("div", {
+                    children: [
+                      E.jsx("label", {
+                        htmlFor: "message",
+                        className: "block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1",
+                        children: t.contact.messageLabel
+                      }),
+                      E.jsx("textarea", {
+                        id: "message",
+                        rows: 4,
+                        required: !0,
+                        className: "w-full px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-800 border-transparent focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition"
+                      })
+                    ]
+                  }),
+                  E.jsxs("button", {
+                    type: "submit",
+                    className: "w-full inline-flex items-center justify-center gap-2 px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition",
+                    children: [
+                      t.contact.submitBtn,
+                      E.jsx(pM, { size: 18 })
+                    ]
+                  })
+                ]
+              })
+            })
+          ]
+        })
+      ]
+    })
+  });
+};
+
+const BM = { initial: { opacity: 0, y: 20 }, in: { opacity: 1, y: 0 }, out: { opacity: 0, y: -20 } };
+const LM = { type: "tween", ease: "anticipate", duration: .5 };
+
+function kM() {
+  const [a, i] = M.useState(!0);
+  const s = Qn();
+  const { lang, t } = useLang();
+
+  M.useEffect(() => {
+    const r = setTimeout(() => i(!1), 2500);
+    return () => clearTimeout(r);
+  }, []);
+
+  M.useEffect(() => {
+    window.scrollTo(0, 0);
+    try {
+      document.documentElement.lang = lang;
+      const path = (s.pathname || "").toLowerCase();
+      let title = t.titles.home;
+      if (path.includes("hakkimizda")) title = t.titles.about;
+      else if (path.includes("hizmetler")) title = t.titles.services;
+      else if (path.includes("referanslar")) title = t.titles.references;
+      else if (path.includes("iletisim")) title = t.titles.contact;
+      document.title = title;
+
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute(
+          "content",
+          lang === "tr"
+            ? "Tech&Lab (T&L) — Fikirden Gerçeğe, Dijitalin Ötesinde. Yazılım geliştirme, gömülü sistemler, Ar-Ge ve dijital teknoloji çözümleri."
+            : "Tech&Lab (T&L) — From Idea to Reality, Beyond Digital. Software development, embedded systems, R&D and digital technology solutions."
+        );
+      }
+    } catch (e) {}
+  }, [s.pathname, lang, t]);
+
+  return E.jsxs(E.Fragment, {
+    children: [
+      E.jsx(zc, { mode: "wait", children: a && E.jsx(DM, {}, "preloader") }),
+      !a &&
+        E.jsxs("div", {
+          className: "flex flex-col min-h-screen",
+          children: [
+            E.jsx(EM, {}),
+            E.jsxs("main", {
+              className: "flex-grow pt-20",
+              children: [
+                E.jsx(zc, {
+                  mode: "wait",
+                  children: E.jsx(
+                    gt.div,
+                    {
+                      initial: "initial",
+                      animate: "in",
+                      exit: "out",
+                      variants: BM,
+                      transition: LM,
+                      children: E.jsxs(Eb, {
+                        location: s,
+                        children: [
+                          E.jsx(si, { path: "/", element: E.jsx(NM, {}) }),
+                          E.jsx(si, { path: "/hakkimizda", element: E.jsx(jM, {}) }),
+                          E.jsx(si, { path: "/hizmetler", element: E.jsx(VM, {}) }),
+                          E.jsx(si, { path: "/referanslar", element: E.jsx(_M, {}) }),
+                          E.jsx(si, { path: "/iletisim", element: E.jsx(UM, {}) })
+                        ]
+                      })
+                    },
+                    s.pathname
+                  )
+                }),
+                E.jsx(Tb, {})
+              ]
+            }),
+            E.jsx(MM, {})
+          ]
+        })
+    ]
+  });
+}
+
+const $y = document.getElementById("root");
+$y &&
+  zx.createRoot($y).render(
+    E.jsx(bl.StrictMode, {
+      children: E.jsx(Qb, {
+        children: E.jsx(UE, {
+          children: E.jsx(LangProvider, {
+            children: E.jsx(kM, {})
+          })
+        })
+      })
+    })
+  );
