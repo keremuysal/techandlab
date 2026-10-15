@@ -177,8 +177,18 @@ const globeSvg = [
   ["path", { d: "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z", key: "85k33b" }]
 ];
 const globeIcon = ee("globe", globeSvg);
+const bookOpenSvg = [
+  ["path", { d: "M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z", key: "bo1" }],
+  ["path", { d: "M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z", key: "bo2" }]
+];
+const bookOpenIcon = ee("book-open", bookOpenSvg);
+const arrowUpRightSvg = [
+  ["line", { x1: "7", y1: "17", x2: "17", y2: "7", key: "ar1" }],
+  ["polyline", { points: "7 7 17 7 17 17", key: "ar2" }]
+];
+const arrowUpRightIcon = ee("arrow-up-right", arrowUpRightSvg);
 
-const translations = {"tr": {"nav": [{"name": "Hakkımızda", "href": "/about"}, {"name": "Hizmetler", "href": "/services"}, {"name": "Referanslar", "href": "/references"}, {"name": "İletişim", "href": "/contact"}], "hero": {"title": "Fikirden Gerçeğe, Dijitalin Ötesinde.", "desc": "Tech&Lab olarak, geleceği şekillendiren yenilikçi teknolojilerle markanızın potansiyelini en üst seviyeye taşıyoruz.", "btn": "Hakkımızda"}, "aboutPreview": {"title": "Biz Kimiz?", "desc": "Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız.", "link": "Hikayemizi Keşfedin"}, "services": {"title": "Sunduğumuz Hizmetler", "pageTitle": "Hizmetlerimiz", "subtitle": "İşletmenizin her dijital ihtiyacına yönelik, kapsamlı ve yenilikçi çözümler sunuyoruz.", "items": [{"title": "Web Tasarım & Geliştirme", "description": "Modern, hızlı ve mobil uyumlu web siteleri ile dijital dünyada markanızı en iyi şekilde temsil ediyoruz.", "details": "Kullanıcı odaklı arayüz (UI) ve deneyim (UX) tasarımı prensipleriyle, markanızın kimliğine uygun, estetik ve işlevsel web siteleri oluşturuyoruz. En son web teknolojilerini kullanarak (React, Next.js, etc.) performanslı ve SEO uyumlu projeler teslim ediyoruz."}, {"title": "Mobil Uygulama", "description": "Kullanıcı dostu ve performans odaklı iOS ve Android mobil uygulamaları tasarlıyor ve geliştiriyoruz.", "details": "İhtiyaçlarınıza yönelik, sezgisel ve etkileyici mobil uygulamalar geliştiriyoruz. Native (Swift, Kotlin) veya cross-platform (React Native) çözümlerle, fikrinizi App Store ve Google Play'de hayata geçiriyoruz."}, {"title": "Dijital Pazarlama", "description": "Veriye dayalı stratejilerle hedef kitlenize ulaşmanızı ve marka bilinirliğinizi artırmanızı sağlıyoruz.", "details": "SEO, SEM, sosyal medya yönetimi ve içerik pazarlaması gibi kanalları kullanarak markanızın dijital görünürlüğünü artırıyoruz. Kampanyalarınızı optimize ederek yatırım getirinizi (ROI) maksimize ediyoruz."}, {"title": "Marka Kimliği", "description": "Markanızın özünü yansıtan, akılda kalıcı logo ve kurumsal kimlik tasarımlarıyla sizi ayrıştırıyoruz.", "details": "Markanızın hikayesini ve değerlerini yansıtan, bütünsel bir marka kimliği oluşturuyoruz. Logo tasarımından renk paletine, tipografiden kurumsal materyallere kadar markanızın her görsel unsurunu özenle tasarlıyoruz."}]}, "about": {"title": "Hakkımızda", "subtitle": "Fikirden gerçeğe, dijitalin ötesine uzanan yolculuğumuz.", "p1": "Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız.", "p2": "Müşterilerimizin hedeflerini kendi hedeflerimiz olarak benimsiyor, yenilikçi teknolojileri ve yaratıcı yaklaşımları bir araya getirerek onlara özel, sürdürülebilir ve ölçülebilir değerler yaratıyoruz. Her proje, bizim için yeni bir başlangıç ve markanızın dijital dünyadaki imzasını atma fırsatıdır.", "cards": [{"title": "Kuruluş", "desc": "Yenilikçi çözümler üretme tutkusuyla 2023 yılında yola çıktık."}, {"title": "Misyonumuz", "desc": "Teknoloji ve yaratıcılığı birleştirerek, markaların dijital potansiyelini en üst seviyeye çıkarmak."}, {"title": "Vizyonumuz", "desc": "Alanında öncü, yenilikçi ve ilham veren bir teknoloji ve tasarım markası olmak."}]}, "references": {"title": "Referanslarımız", "p1": "Projelerimiz ve müşteri başarı hikayelerimiz yakında burada sergilenecek.", "p2": "Heyecan verici projelerimizi paylaşmak için sabırsızlanıyoruz!"}, "contact": {"title": "Bize Ulaşın", "subtitle": "Bir fikriniz mi var? Projenizi birlikte hayata geçirelim.", "emailTitle": "Email", "emailDesc": "Proje ve işbirlikleri için bize yazın.", "phoneTitle": "Telefon", "phoneDesc": "Acil durumlar için bize ulaşabilirsiniz.", "nameLabel": "Adınız Soyadınız", "emailLabel": "Email Adresiniz", "messageLabel": "Mesajınız", "submitBtn": "Gönder", "sending": "Gönderiliyor...", "successMsg": "Mesajınız başarıyla iletildi! En kısa sürede sizinle iletişime geçeceğiz.", "errorPrefix": "Hata: ", "errorDefault": "Mesaj iletilemedi.", "networkError": "Bağlantı hatası oluştu. Lütfen tekrar deneyin."}, "footer": {"rights": "Tüm hakları saklıdır."}, "titles": {"home": "T&L | Tech&Lab | Fikirden Gerçeğe, Dijitalin Ötesinde", "about": "Hakkımızda | Tech&Lab", "services": "Hizmetlerimiz | Tech&Lab", "references": "Referanslarımız | Tech&Lab", "contact": "İletişim | Tech&Lab"}}, "en": {"nav": [{"name": "About Us", "href": "/about"}, {"name": "Services", "href": "/services"}, {"name": "References", "href": "/references"}, {"name": "Contact", "href": "/contact"}], "hero": {"title": "From Idea to Reality, Beyond Digital.", "desc": "At Tech&Lab, we elevate your brand's potential to the highest level with innovative technologies shaping the future.", "btn": "About Us"}, "aboutPreview": {"title": "Who We Are", "desc": "At Tech&Lab, we merge our software and digital design expertise with an entrepreneurial spirit and academic research culture. Channeling this strength into our primary focus of bioengineering, we transform biological data into digital solutions and design the technologies of tomorrow. With passion, we deliver impactful solutions that transcend the ordinary.", "link": "Discover Our Story"}, "services": {"title": "Our Services", "pageTitle": "Our Services", "subtitle": "We provide comprehensive and innovative solutions tailored to every digital need of your business.", "items": [{"title": "Web Design & Development", "description": "We represent your brand at its best in the digital world with modern, fast, and mobile-responsive websites.", "details": "Guided by user-centric UI and UX principles, we build aesthetic and functional websites aligned with your brand identity. Leveraging modern web technologies (React, Next.js, etc.), we deliver high-performance and SEO-friendly projects."}, {"title": "Mobile Applications", "description": "We design and develop user-friendly, high-performance iOS and Android mobile applications.", "details": "We build intuitive, compelling mobile applications tailored to your needs. Using native (Swift, Kotlin) or cross-platform (React Native) solutions, we bring your vision to life on the App Store and Google Play."}, {"title": "Digital Marketing", "description": "We help you reach your target audience and enhance brand awareness through data-driven strategies.", "details": "We boost your digital visibility through SEO, SEM, social media management, and content marketing. By optimizing campaigns, we maximize your return on investment (ROI)."}, {"title": "Brand Identity", "description": "We set you apart with memorable logo and corporate identity designs reflecting the essence of your brand.", "details": "We create a holistic brand identity expressing your story and values. From logo design and color palettes to typography and corporate assets, we meticulously craft every visual element."}]}, "about": {"title": "About Us", "subtitle": "Our journey from idea to reality, beyond digital.", "p1": "At Tech&Lab, we merge our software and digital design expertise with an entrepreneurial spirit and academic research culture. Channeling this strength into our primary focus of bioengineering, we transform biological data into digital solutions and design the technologies of tomorrow. With passion, we deliver impactful solutions that transcend the ordinary.", "p2": "We adopt our clients' objectives as our own, blending innovative technologies and creative methodologies to deliver customized, sustainable, and measurable value. Every project is a fresh chapter and an opportunity to leave your distinctive mark in the digital landscape.", "cards": [{"title": "Founded", "desc": "Founded in 2023 with a passion for delivering innovative and cutting-edge solutions."}, {"title": "Our Mission", "desc": "Unlocking the digital potential of brands by merging technology with creative excellence."}, {"title": "Our Vision", "desc": "To be an inspiring, pioneering benchmark in technology and design."}]}, "references": {"title": "Our References", "p1": "Our featured projects and client success stories will be showcased here soon.", "p2": "We cannot wait to share our exciting projects with you!"}, "contact": {"title": "Contact Us", "subtitle": "Have an idea? Let's bring your project to life together.", "emailTitle": "Email", "emailDesc": "Reach out to us for project inquiries and collaborations.", "phoneTitle": "Phone", "phoneDesc": "Feel free to get in touch with us anytime.", "nameLabel": "Full Name", "emailLabel": "Email Address", "messageLabel": "Your Message", "submitBtn": "Send Message", "sending": "Sending...", "successMsg": "Your message has been sent successfully! We will get in touch with you shortly.", "errorPrefix": "Error: ", "errorDefault": "Message could not be sent.", "networkError": "A connection error occurred. Please try again."}, "footer": {"rights": "All rights reserved."}, "titles": {"home": "T&L | Tech&Lab | From Idea to Reality, Beyond Digital", "about": "About Us | Tech&Lab", "services": "Our Services | Tech&Lab", "references": "Our References | Tech&Lab", "contact": "Contact | Tech&Lab"}}};
+const translations = {"tr": {"nav": [{"name": "Hakkımızda", "href": "/about"}, {"name": "Hizmetler", "href": "/services"}, {"name": "Referanslar", "href": "/references"}, {"name": "İletişim", "href": "/contact"}, {"name": "Blog", "href": "https://blog.techandlab.com", "external": true}], "hero": {"title": "Fikirden Gerçeğe, Dijitalin Ötesinde.", "desc": "Tech&Lab olarak, geleceği şekillendiren yenilikçi teknolojilerle markanızın potansiyelini en üst seviyeye taşıyoruz.", "btn": "Hakkımızda", "blogBadge": "✨ Tech&Lab Blog Yayında: Yazılım, Yapay Zeka ve Strateji Analizleri", "blogBtn": "Blogu Keşfet"}, "aboutPreview": {"title": "Biz Kimiz?", "desc": "Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız.", "link": "Hikayemizi Keşfedin"}, "services": {"title": "Sunduğumuz Hizmetler", "pageTitle": "Hizmetlerimiz", "subtitle": "İşletmenizin her dijital ihtiyacına yönelik, kapsamlı ve yenilikçi çözümler sunuyoruz.", "items": [{"title": "Web Tasarım & Geliştirme", "description": "Modern, hızlı ve mobil uyumlu web siteleri ile dijital dünyada markanızı en iyi şekilde temsil ediyoruz.", "details": "Kullanıcı odaklı arayüz (UI) ve deneyim (UX) tasarımı prensipleriyle, markanızın kimliğine uygun, estetik ve işlevsel web siteleri oluşturuyoruz. En son web teknolojilerini kullanarak (React, Next.js, etc.) performanslı ve SEO uyumlu projeler teslim ediyoruz."}, {"title": "Mobil Uygulama", "description": "Kullanıcı dostu ve performans odaklı iOS ve Android mobil uygulamaları tasarlıyor ve geliştiriyoruz.", "details": "İhtiyaçlarınıza yönelik, sezgisel ve etkileyici mobil uygulamalar geliştiriyoruz. Native (Swift, Kotlin) veya cross-platform (React Native) çözümlerle, fikrinizi App Store ve Google Play'de hayata geçiriyoruz."}, {"title": "Dijital Pazarlama", "description": "Veriye dayalı stratejilerle hedef kitlenize ulaşmanızı ve marka bilinirliğinizi artırmanızı sağlıyoruz.", "details": "SEO, SEM, sosyal medya yönetimi ve içerik pazarlaması gibi kanalları kullanarak markanızın dijital görünürlüğünü artırıyoruz. Kampanyalarınızı optimize ederek yatırım getirinizi (ROI) maksimize ediyoruz."}, {"title": "Marka Kimliği", "description": "Markanızın özünü yansıtan, akılda kalıcı logo ve kurumsal kimlik tasarımlarıyla sizi ayrıştırıyoruz.", "details": "Markanızın hikayesini ve değerlerini yansıtan, bütünsel bir marka kimliği oluşturuyoruz. Logo tasarımından renk paletine, tipografiden kurumsal materyallere kadar markanızın her görsel unsurunu özenle tasarlıyoruz."}]}, "about": {"title": "Hakkımızda", "subtitle": "Fikirden gerçeğe, dijitalin ötesine uzanan yolculuğumuz.", "p1": "Tech&Lab olarak Yazılım ve Dijital Tasarım yetkinliğimizi, Girişimcilik ruhu ve Akademik Araştırma kültürüyle birleştiriyoruz. Bu gücümüzü, önceliğimiz olan Biyomühendislik alanına odaklayarak biyolojik veriyi dijital çözümlere dönüştürüyor ve geleceğin teknolojilerini tasarlıyoruz. Tutkuyla, sıradanlığın ötesine geçen etkili çözümler sunarız.", "p2": "Müşterilerimizin hedeflerini kendi hedeflerimiz olarak benimsiyor, yenilikçi teknolojileri ve yaratıcı yaklaşımları bir araya getirerek onlara özel, sürdürülebilir ve ölçülebilir değerler yaratıyoruz. Her proje, bizim için yeni bir başlangıç ve markanızın dijital dünyadaki imzasını atma fırsatıdır.", "cards": [{"title": "Kuruluş", "desc": "Yenilikçi çözümler üretme tutkusuyla 2023 yılında yola çıktık."}, {"title": "Misyonumuz", "desc": "Teknoloji ve yaratıcılığı birleştirerek, markaların dijital potansiyelini en üst seviyeye çıkarmak."}, {"title": "Vizyonumuz", "desc": "Alanında öncü, yenilikçi ve ilham veren bir teknoloji ve tasarım markası olmak."}], "blogCallout": {"badge": "Araştırma & Düşünce", "title": "Laboratuvarımızdan Makaleler & İncelemeler", "desc": "Tech&Lab bünyesinde gerçekleştirdiğimiz kuramsal çalışmalar, yarıiletken analizleri ve strateji metinleri blog.techandlab.com üzerinde açık erişimli olarak sunulmaktadır.", "btn": "Tech&Lab Blogu İncele"}}, "references": {"title": "Referanslarımız", "p1": "Projelerimiz ve müşteri başarı hikayelerimiz yakında burada sergilenecek.", "p2": "Heyecan verici projelerimizi paylaşmak için sabırsızlanıyoruz!"}, "contact": {"title": "Bize Ulaşın", "subtitle": "Bir fikriniz mi var? Projenizi birlikte hayata geçirelim.", "emailTitle": "Email", "emailDesc": "Proje ve işbirlikleri için bize yazın.", "phoneTitle": "Telefon", "phoneDesc": "Acil durumlar için bize ulaşabilirsiniz.", "nameLabel": "Adınız Soyadınız", "emailLabel": "Email Adresiniz", "messageLabel": "Mesajınız", "submitBtn": "Gönder", "sending": "Gönderiliyor...", "successMsg": "Mesajınız başarıyla iletildi! En kısa sürede sizinle iletişime geçeceğiz.", "errorPrefix": "Hata: ", "errorDefault": "Mesaj iletilemedi.", "networkError": "Bağlantı hatası oluştu. Lütfen tekrar deneyin."}, "footer": {"rights": "Tüm hakları saklıdır."}, "titles": {"home": "T&L | Tech&Lab | Fikirden Gerçeğe, Dijitalin Ötesinde", "about": "Hakkımızda | Tech&Lab", "services": "Hizmetlerimiz | Tech&Lab", "references": "Referanslarımız | Tech&Lab", "contact": "İletişim | Tech&Lab"}, "blogSection": {"badge": "Düşünce & Araştırma Platformu", "title": "Tech&Lab Blog", "subtitle": "Yazılım mimarisi, yarıiletken teknolojileri, yapay zeka felsefesi ve sistem stratejisi üzerine derinlemesine teknik analizler ve araştırma notları.", "desc": "Tech&Lab Blog, laboratuvarımızda yürüttüğümüz Ar-Ge çalışmalarını, tarihsel sistem analizlerini ve yeni nesil teknoloji araştırmalarını 3 dilde (Türkçe, İngilizce, Almanca) yayımladığımız açık bilgi merkezidir.", "features": [{"title": "3 Dilde Yayın", "desc": "Türkçe, İngilizce ve Almanca (TR / EN / DE) tam metin makaleler"}, {"title": "Akademik PDF Arşivi", "desc": "Her makale için özel tasarlanmış indirilebilir arşiv baskıları"}, {"title": "Derinlemesine Analizler", "desc": "Yapay zeka, transistör mimarileri ve stratejik sistem teorileri"}], "articlesTitle": "Öne Çıkan Yayınlarımız", "readArticle": "Makaleyi Oku", "articles": [{"tag": "Strateji & Sistem", "date": "11 Ekim 2026", "title": "Helmuth von Moltke: Strateji Üzerine (1871)", "desc": "Belirsizlik altında karar alma, operasyonel bağımsızlık ve modern sistem kuramına ilham veren 1871 tarihli klasik askeri manifestonun analizi ve Türkçe tam metin çevirisi.", "href": "https://blog.techandlab.com/posts/moltke-strateji-uzerine-1871-tr/"}, {"tag": "Donanım & Yarıiletken", "date": "12 Kasım 2025", "title": "Dijital Evrenin Temel Taşı: Transistör Savaşları", "desc": "Vakum tüplerinden nanometre ölçeğindeki GAAFET mimarilerine; küresel silikon yarışı ve bilgi çağının temeli olan transistörün evrimi.", "href": "https://blog.techandlab.com/posts/dijital-evrenin-temel-tasi/"}, {"tag": "Yapay Zeka & Felsefe", "date": "2 Nisan 2026", "title": "Dijital Deccal: Yapay Zeka ve İnsanlığın Dönüm Noktası", "desc": "Sentetik bilincin eşiğinde güç konsolidasyonu, algoritmik egemenlik ve insan zihninin geleceğine dair felsefi bir sorgulama.", "href": "https://blog.techandlab.com/posts/dijital-deccal-yapay-zeka/"}], "visitBtn": "Blogu Ziyaret Et", "bannerHeading": "Fikirlerin ve Araştırmanın Buluşma Noktası", "allArticlesBtn": "Tüm Makaleleri Oku (blog.techandlab.com)"}}, "en": {"nav": [{"name": "About Us", "href": "/about"}, {"name": "Services", "href": "/services"}, {"name": "References", "href": "/references"}, {"name": "Contact", "href": "/contact"}, {"name": "Blog", "href": "https://blog.techandlab.com", "external": true}], "hero": {"title": "From Idea to Reality, Beyond Digital.", "desc": "At Tech&Lab, we elevate your brand's potential to the highest level with innovative technologies shaping the future.", "btn": "About Us", "blogBadge": "✨ Tech&Lab Blog is Live: Software, AI and Strategy Insights", "blogBtn": "Explore Blog"}, "aboutPreview": {"title": "Who We Are", "desc": "At Tech&Lab, we merge our software and digital design expertise with an entrepreneurial spirit and academic research culture. Channeling this strength into our primary focus of bioengineering, we transform biological data into digital solutions and design the technologies of tomorrow. With passion, we deliver impactful solutions that transcend the ordinary.", "link": "Discover Our Story"}, "services": {"title": "Our Services", "pageTitle": "Our Services", "subtitle": "We provide comprehensive and innovative solutions tailored to every digital need of your business.", "items": [{"title": "Web Design & Development", "description": "We represent your brand at its best in the digital world with modern, fast, and mobile-responsive websites.", "details": "Guided by user-centric UI and UX principles, we build aesthetic and functional websites aligned with your brand identity. Leveraging modern web technologies (React, Next.js, etc.), we deliver high-performance and SEO-friendly projects."}, {"title": "Mobile Applications", "description": "We design and develop user-friendly, high-performance iOS and Android mobile applications.", "details": "We build intuitive, compelling mobile applications tailored to your needs. Using native (Swift, Kotlin) or cross-platform (React Native) solutions, we bring your vision to life on the App Store and Google Play."}, {"title": "Digital Marketing", "description": "We help you reach your target audience and enhance brand awareness through data-driven strategies.", "details": "We boost your digital visibility through SEO, SEM, social media management, and content marketing. By optimizing campaigns, we maximize your return on investment (ROI)."}, {"title": "Brand Identity", "description": "We set you apart with memorable logo and corporate identity designs reflecting the essence of your brand.", "details": "We create a holistic brand identity expressing your story and values. From logo design and color palettes to typography and corporate assets, we meticulously craft every visual element."}]}, "about": {"title": "About Us", "subtitle": "Our journey from idea to reality, beyond digital.", "p1": "At Tech&Lab, we merge our software and digital design expertise with an entrepreneurial spirit and academic research culture. Channeling this strength into our primary focus of bioengineering, we transform biological data into digital solutions and design the technologies of tomorrow. With passion, we deliver impactful solutions that transcend the ordinary.", "p2": "We adopt our clients' objectives as our own, blending innovative technologies and creative methodologies to deliver customized, sustainable, and measurable value. Every project is a fresh chapter and an opportunity to leave your distinctive mark in the digital landscape.", "cards": [{"title": "Founded", "desc": "Founded in 2023 with a passion for delivering innovative and cutting-edge solutions."}, {"title": "Our Mission", "desc": "Unlocking the digital potential of brands by merging technology with creative excellence."}, {"title": "Our Vision", "desc": "To be an inspiring, pioneering benchmark in technology and design."}], "blogCallout": {"badge": "Research & Thought", "title": "Papers & Essays From Our Lab", "desc": "Our laboratory's theoretical work, semiconductor research, and strategy publications are freely accessible on blog.techandlab.com.", "btn": "Explore Tech&Lab Blog"}}, "references": {"title": "Our References", "p1": "Our featured projects and client success stories will be showcased here soon.", "p2": "We cannot wait to share our exciting projects with you!"}, "contact": {"title": "Contact Us", "subtitle": "Have an idea? Let's bring your project to life together.", "emailTitle": "Email", "emailDesc": "Reach out to us for project inquiries and collaborations.", "phoneTitle": "Phone", "phoneDesc": "Feel free to get in touch with us anytime.", "nameLabel": "Full Name", "emailLabel": "Email Address", "messageLabel": "Your Message", "submitBtn": "Send Message", "sending": "Sending...", "successMsg": "Your message has been sent successfully! We will get in touch with you shortly.", "errorPrefix": "Error: ", "errorDefault": "Message could not be sent.", "networkError": "A connection error occurred. Please try again."}, "footer": {"rights": "All rights reserved."}, "titles": {"home": "T&L | Tech&Lab | From Idea to Reality, Beyond Digital", "about": "About Us | Tech&Lab", "services": "Our Services | Tech&Lab", "references": "Our References | Tech&Lab", "contact": "Contact | Tech&Lab"}, "blogSection": {"badge": "Thought & Research Platform", "title": "Tech&Lab Blog", "subtitle": "In-depth technical analyses and research notes on software architecture, semiconductor technologies, AI philosophy, and systems strategy.", "desc": "Tech&Lab Blog is our open knowledge hub publishing R&D insights, historical systems analysis, and emerging technology research in three languages (Turkish, English, German).", "features": [{"title": "Trilingual Publishing", "desc": "Full-text publications in Turkish, English, and German (TR / EN / DE)"}, {"title": "Academic PDF Editions", "desc": "Specially designed downloadable archival PDF prints for every paper"}, {"title": "Rigorous Engineering", "desc": "Deep dives into AI, transistor architectures, and strategic system theory"}], "articlesTitle": "Featured Publications", "readArticle": "Read Article", "articles": [{"tag": "Strategy & Systems", "date": "October 11, 2026", "title": "Helmuth von Moltke: On Strategy (1871)", "desc": "An in-depth analysis and modern translation of the 1871 military treatise exploring decision-making under uncertainty and operational flexibility.", "href": "https://blog.techandlab.com/posts/moltke-on-strategy-1871-en/"}, {"tag": "Hardware & Silicon", "date": "November 12, 2025", "title": "Foundation of the Digital Universe: Transistor Wars", "desc": "From vacuum tubes to sub-nanometer GAAFETs: the evolution of the transistor, global semiconductor supply chains, and computing history.", "href": "https://blog.techandlab.com/posts/foundation-of-the-digital-universe-transistor-wars-en/"}, {"tag": "AI & Philosophy", "date": "April 2, 2026", "title": "And Man Created the Antichrist: Artificial Intelligence", "desc": "A critical philosophical inquiry into algorithmic sovereignty, synthetic cognition, and humanity's pivotal threshold in the AI era.", "href": "https://blog.techandlab.com/posts/and-man-created-the-antichrist-artificial-intelligence-en/"}], "visitBtn": "Visit Blog", "bannerHeading": "Where Ideas and Engineering Converge", "allArticlesBtn": "Read All Articles (blog.techandlab.com)"}}};
 
 const getSystemLang = () => {
   try {
@@ -295,19 +305,41 @@ const EM = () => {
             E.jsx("div", {
               className: "hidden md:flex items-center gap-8",
               children: t.nav.map(a =>
-                E.jsx(d0, {
-                  to: a.href,
-                  className: ({ isActive: i }) =>
-                    `text-sm font-medium transition-colors duration-300 ${
-                      i ? "text-indigo-500 dark:text-indigo-400" : "text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
-                    }`,
-                  children: a.name
-                }, a.href)
+                a.external || (a.href && a.href.startsWith("http"))
+                  ? E.jsxs("a", {
+                      href: a.href,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-sm font-medium transition-colors duration-300 text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 inline-flex items-center gap-1",
+                      children: [
+                        a.name,
+                        E.jsx(arrowUpRightIcon, { size: 13, className: "opacity-70" })
+                      ]
+                    }, a.href)
+                  : E.jsx(d0, {
+                      to: a.href,
+                      className: ({ isActive: i }) =>
+                        `text-sm font-medium transition-colors duration-300 ${
+                          i ? "text-indigo-500 dark:text-indigo-400" : "text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400"
+                        }`,
+                      children: a.name
+                    }, a.href)
               )
             }),
             E.jsxs("div", {
-              className: "flex items-center",
+              className: "flex items-center gap-2",
               children: [
+                E.jsxs("a", {
+                  href: "https://blog.techandlab.com",
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  className: "hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800/60 text-indigo-600 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 hover:border-indigo-400 transition-all duration-200",
+                  children: [
+                    E.jsx(bookOpenIcon, { size: 13, className: "text-indigo-500" }),
+                    E.jsx("span", { children: "Blog" }),
+                    E.jsx(arrowUpRightIcon, { size: 12, className: "opacity-70" })
+                  ]
+                }),
                 E.jsx(LangToggle, {}),
                 E.jsx(TM, {})
               ]
@@ -322,6 +354,7 @@ const EM = () => {
 const MM = () => {
   const { t } = useLang();
   const a = [
+    { name: "Blog", icon: E.jsx(bookOpenIcon, { size: 18 }), href: "https://blog.techandlab.com" },
     { name: "Instagram", icon: E.jsx(nM, { size: 18 }), href: "https://www.instagram.com/grimacompany/" },
     { name: "Github", icon: E.jsx(tM, { size: 18 }), href: "https://github.com/keremuysal" },
     { name: "Linkedin", icon: E.jsx(iM, { size: 18 }), href: "https://www.linkedin.com/in/akeremuysal/" }
@@ -355,11 +388,22 @@ const MM = () => {
             E.jsx("div", {
               className: "flex flex-wrap justify-center items-center gap-x-6 gap-y-2",
               children: t.nav.map(s =>
-                E.jsx(xa, {
-                  to: s.href,
-                  className: "text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300",
-                  children: s.name
-                }, s.href)
+                s.external || (s.href && s.href.startsWith("http"))
+                  ? E.jsxs("a", {
+                      href: s.href,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      className: "text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 inline-flex items-center gap-1",
+                      children: [
+                        s.name,
+                        E.jsx(arrowUpRightIcon, { size: 12, className: "opacity-70" })
+                      ]
+                    }, s.href)
+                  : E.jsx(xa, {
+                      to: s.href,
+                      className: "text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300",
+                      children: s.name
+                    }, s.href)
               )
             }),
             E.jsx("div", {
@@ -371,6 +415,7 @@ const MM = () => {
                   rel: "noopener noreferrer",
                   className: "text-gray-500 hover:text-indigo-500 dark:text-gray-400 dark:hover:text-indigo-400 transition-colors",
                   "aria-label": s.name,
+                  title: s.name,
                   children: s.icon
                 }, s.name)
               )
@@ -381,7 +426,7 @@ const MM = () => {
           className: "mt-8 pt-8 border-t border-gray-200 dark:border-white/10 text-center",
           children: E.jsxs("p", {
             className: "text-sm text-gray-500 dark:text-gray-400",
-            children: ["© ", new Date().getFullYear(), " Tech&Lab. ", t.footer.rights]
+            children: ["\u00A9 ", new Date().getFullYear(), " Tech&Lab. ", t.footer.rights]
           })
         })
       ]
@@ -445,6 +490,21 @@ const wM = () => {
         initial: "initial",
         animate: "animate",
         children: [
+          E.jsx(gt.div, {
+            variants: i,
+            className: "mb-6 flex justify-center",
+            children: E.jsxs("a", {
+              href: "https://blog.techandlab.com",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "group inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 border border-black/10 dark:border-white/15 backdrop-blur-md text-gray-800 dark:text-gray-200 transition-all duration-300 shadow-sm hover:scale-[1.02]",
+              children: [
+                E.jsx(bookOpenIcon, { size: 14, className: "text-indigo-500" }),
+                E.jsx("span", { children: t.hero.blogBadge }),
+                E.jsx(arrowUpRightIcon, { size: 14, className: "text-indigo-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" })
+              ]
+            })
+          }),
           E.jsx(gt.h1, {
             className: "text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter text-gray-900 dark:text-white text-balance",
             variants: i,
@@ -455,14 +515,27 @@ const wM = () => {
             variants: i,
             children: t.hero.desc
           }),
-          E.jsx(gt.div, {
-            className: "mt-12",
+          E.jsxs(gt.div, {
+            className: "mt-12 flex flex-col sm:flex-row items-center justify-center gap-4",
             variants: i,
-            children: E.jsx(xa, {
-              to: "/about",
-              className: "glowing-btn",
-              children: t.hero.btn
-            })
+            children: [
+              E.jsx(xa, {
+                to: "/about",
+                className: "glowing-btn !m-0",
+                children: t.hero.btn
+              }),
+              E.jsxs("a", {
+                href: "https://blog.techandlab.com",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "inline-flex items-center gap-2 px-6 py-3 rounded-xl text-base font-semibold text-gray-900 dark:text-white bg-white/80 dark:bg-white/10 hover:bg-white dark:hover:bg-white/20 border border-gray-300 dark:border-white/20 backdrop-blur-md shadow-md hover:shadow-lg transition-all duration-300",
+                children: [
+                  E.jsx(bookOpenIcon, { size: 18, className: "text-indigo-500" }),
+                  E.jsx("span", { children: t.hero.blogBtn }),
+                  E.jsx(arrowUpRightIcon, { size: 16, className: "opacity-70" })
+                ]
+              })
+            ]
           })
         ]
       })
@@ -610,7 +683,182 @@ const OM = () => {
   });
 };
 
-const NM = () => E.jsxs(E.Fragment, { children: [E.jsx(wM, {}), E.jsx(CM, {}), E.jsx(OM, {})] });
+const BlogSection = () => {
+  const { t } = useLang();
+  const b = t.blogSection;
+  if (!b) return null;
+
+  const containerVariants = {
+    hidden: {},
+    visible: { transition: { staggerChildren: .15 } }
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: .7, ease: "circOut" } }
+  };
+
+  return E.jsx("section", {
+    className: "py-24 sm:py-32 relative overflow-hidden bg-gradient-to-b from-transparent via-indigo-50/30 to-transparent dark:via-indigo-950/20",
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto px-6 lg:px-8 relative z-10",
+      children: [
+        E.jsxs(gt.div, {
+          initial: { opacity: 0, y: 20 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: !0, amount: .2 },
+          transition: { duration: .8, ease: "circOut" },
+          className: "text-center max-w-3xl mx-auto mb-16 sm:mb-20",
+          children: [
+            E.jsxs("div", {
+              className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 bg-indigo-100/80 dark:bg-indigo-900/40 border border-indigo-200 dark:border-indigo-800/50 mb-4",
+              children: [
+                E.jsx(bookOpenIcon, { size: 14 }),
+                E.jsx("span", { children: b.badge })
+              ]
+            }),
+            E.jsx("h2", {
+              className: "text-3xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white",
+              children: b.title
+            }),
+            E.jsx("p", {
+              className: "mt-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed",
+              children: b.subtitle
+            })
+          ]
+        }),
+        E.jsx(gt.div, {
+          variants: containerVariants,
+          initial: "hidden",
+          whileInView: "visible",
+          viewport: { once: !0, amount: .2 },
+          className: "grid grid-cols-1 md:grid-cols-3 gap-6 mb-16",
+          children: b.features.map((feat, idx) =>
+            E.jsxs(gt.div, {
+              variants: itemVariants,
+              className: "p-6 rounded-2xl bg-white/70 dark:bg-white/[0.03] border border-gray-200/80 dark:border-white/10 backdrop-blur-md shadow-sm hover:border-indigo-500/50 transition-colors",
+              children: [
+                E.jsx("div", {
+                  className: "w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-bold mb-4",
+                  children: idx === 0 ? "🌐" : idx === 1 ? "📄" : "⚡"
+                }),
+                E.jsx("h3", {
+                  className: "text-lg font-bold text-gray-900 dark:text-white mb-1",
+                  children: feat.title
+                }),
+                E.jsx("p", {
+                  className: "text-sm text-gray-600 dark:text-gray-400",
+                  children: feat.desc
+                })
+              ]
+            }, idx)
+          )
+        }),
+        E.jsxs("div", {
+          className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-gray-200 dark:border-white/10",
+          children: [
+            E.jsx("h3", {
+              className: "text-2xl font-bold text-gray-900 dark:text-white",
+              children: b.articlesTitle
+            }),
+            E.jsxs("a", {
+              href: "https://blog.techandlab.com",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors group",
+              children: [
+                E.jsx("span", { children: b.visitBtn }),
+                E.jsx(arrowUpRightIcon, { size: 16, className: "transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" })
+              ]
+            })
+          ]
+        }),
+        E.jsx(gt.div, {
+          variants: containerVariants,
+          initial: "hidden",
+          whileInView: "visible",
+          viewport: { once: !0, amount: .15 },
+          className: "grid grid-cols-1 md:grid-cols-3 gap-8 mb-14",
+          children: b.articles.map((art, idx) =>
+            E.jsxs(gt.a, {
+              key: idx,
+              variants: itemVariants,
+              href: art.href,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "group flex flex-col justify-between p-7 rounded-2xl bg-white dark:bg-white/[0.02] border border-gray-200/80 dark:border-white/10 hover:border-indigo-500 dark:hover:border-indigo-400/60 shadow-lg hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 relative",
+              children: [
+                E.jsxs("div", {
+                  children: [
+                    E.jsxs("div", {
+                      className: "flex items-center justify-between text-xs font-medium text-gray-500 dark:text-gray-400 mb-4",
+                      children: [
+                        E.jsx("span", {
+                          className: "px-2.5 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 font-semibold border border-indigo-100 dark:border-indigo-900/50",
+                          children: art.tag
+                        }),
+                        E.jsx("span", { children: art.date })
+                      ]
+                    }),
+                    E.jsx("h4", {
+                      className: "text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 mb-3 leading-snug",
+                      children: art.title
+                    }),
+                    E.jsx("p", {
+                      className: "text-sm text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-3",
+                      children: art.desc
+                    })
+                  ]
+                }),
+                E.jsxs("div", {
+                  className: "mt-6 pt-4 border-t border-gray-100 dark:border-white/5 flex items-center justify-between text-sm font-semibold text-indigo-600 dark:text-indigo-400 group-hover:text-indigo-500",
+                  children: [
+                    E.jsx("span", { children: b.readArticle || "Makaleyi Oku" }),
+                    E.jsx(arrowUpRightIcon, { size: 16, className: "transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" })
+                  ]
+                })
+              ]
+            })
+          )
+        }),
+        E.jsx(gt.div, {
+          initial: { opacity: 0, scale: .96 },
+          whileInView: { opacity: 1, scale: 1 },
+          viewport: { once: !0 },
+          transition: { duration: .6 },
+          className: "p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-indigo-900 via-purple-900 to-slate-900 text-white relative overflow-hidden shadow-2xl text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6",
+          children: [
+            E.jsxs("div", {
+              className: "max-w-2xl relative z-10",
+              children: [
+                E.jsx("h4", {
+                  className: "text-2xl sm:text-3xl font-extrabold tracking-tight text-white",
+                  children: b.bannerHeading || "blog.techandlab.com"
+                }),
+                E.jsx("p", {
+                  className: "mt-2 text-indigo-200 text-sm sm:text-base leading-relaxed",
+                  children: b.desc
+                })
+              ]
+            }),
+            E.jsxs("a", {
+              href: "https://blog.techandlab.com",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "relative z-10 whitespace-nowrap px-8 py-4 rounded-xl bg-white text-gray-900 font-bold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 shadow-xl inline-flex items-center gap-2",
+              children: [
+                E.jsx(bookOpenIcon, { size: 18, className: "text-indigo-600" }),
+                E.jsx("span", { children: b.visitBtn }),
+                E.jsx(arrowUpRightIcon, { size: 16, className: "text-gray-900" })
+              ]
+            })
+          ]
+        })
+      ]
+    })
+  });
+};
+
+const NM = () => E.jsxs(E.Fragment, { children: [E.jsx(wM, {}), E.jsx(CM, {}), E.jsx(OM, {}), E.jsx(BlogSection, {})] });
 
 const jM = () => {
   const { t } = useLang();
@@ -680,6 +928,41 @@ const jM = () => {
               ]
             }, idx);
           })
+        }),
+        t.about.blogCallout && E.jsxs(gt.div, {
+          initial: { opacity: 0, y: 20 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: !0 },
+          transition: { duration: .6 },
+          className: "mt-24 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-indigo-500/10 via-purple-500/5 to-transparent border border-indigo-500/20 text-center max-w-4xl mx-auto",
+          children: [
+            E.jsxs("div", {
+              className: "inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/40 mb-4",
+              children: [
+                E.jsx(bookOpenIcon, { size: 13 }),
+                E.jsx("span", { children: t.about.blogCallout.badge })
+              ]
+            }),
+            E.jsx("h3", {
+              className: "text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2",
+              children: t.about.blogCallout.title
+            }),
+            E.jsx("p", {
+              className: "text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-6 leading-relaxed",
+              children: t.about.blogCallout.desc
+            }),
+            E.jsxs("a", {
+              href: "https://blog.techandlab.com",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold transition-all shadow-md hover:shadow-indigo-500/25",
+              children: [
+                E.jsx(bookOpenIcon, { size: 16 }),
+                E.jsx("span", { children: t.about.blogCallout.btn }),
+                E.jsx(arrowUpRightIcon, { size: 16 })
+              ]
+            })
+          ]
         })
       ]
     })
