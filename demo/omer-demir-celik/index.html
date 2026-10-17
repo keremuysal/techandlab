@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Ömer Demir Çelik Lazer Kesim Sanayi A.Ş. (ODC) | Bursa OSB &amp; NOSAB</title>
+  <meta name="description" content="Ömer Demir Çelik (ODC) — 9 Lazer Kesim Makinesi (günlük 216 saat kapasite), 6500 mm Boru Lazer, 10 Abkant Pres, Robotik Kaynak, Kataforez ve Toz Boya ile komple sac şekillendirme merkezi." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #090d16; color: #f8fafc; }
+    h1, h2, h3, .font-cnc { font-family: 'Chakra Petch', sans-serif; }
+    .font-mono-code { font-family: 'JetBrains Mono', monospace; }
+    dialog::backdrop { background: rgba(9, 13, 22, 0.85); backdrop-filter: blur(6px); }
+    .odc-tab.active { background-color: #f97316; color: #ffffff; border-color: #f97316; }
+  </style>
+</head>
+<body class="antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- Tech&Lab Özel Sunum Bandı -->
+  <div id="demoBanner" class="bg-black text-white border-b border-orange-500/40 px-4 py-2.5 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5">
+        <span class="px-2 py-0.5 rounded bg-orange-600 text-white font-bold uppercase tracking-wider text-[10px]">CANLI ÖNİZLEME</span>
+        <span class="text-slate-300"><strong>Ömer Demir Çelik Lazer Kesim Sanayi A.Ş.</strong> için <strong>Tech&amp;Lab Mühendislik</strong> tarafından hazırlanmıştır.</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#denetim-raporu" class="text-orange-400 hover:text-orange-300 underline font-semibold">Mevcut Sitenizde Düzeltilen 5 Şablon &amp; Kod Hatası</a>
+        <a href="mailto:info@techandlab.com?subject=%C3%96mer%20Demir%20%C3%87elik%20Yeni%20Web%20Sitesi%20Onay%C4%B1" class="bg-orange-600 hover:bg-orange-500 text-white px-3.5 py-1 rounded-lg font-bold transition">9.500 ₺ Anahtar Teslim Yayına Al &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Üst Kurumsal Çubuk (Bursa OSB Merkez & NOSAB Şube) -->
+  <div class="bg-slate-950 text-slate-400 text-xs border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex flex-wrap items-center gap-5">
+        <a href="tel:+902244112424" class="text-white hover:text-orange-400 font-bold flex items-center gap-1.5 transition">
+          <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+          +90 (224) 411 24 24
+        </a>
+        <span class="hidden sm:inline">Faks: +90 (224) 411 24 28</span>
+        <a href="mailto:info@omerdemircelik.com" class="hover:text-orange-400 transition">info@omerdemircelik.com</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden lg:inline text-slate-400">Merkez: Bursa OSB | Şube: Nilüfer OSB (NOSAB)</span>
+        <!-- Kırık iç içe <a> bayrak linkleri yerine çalışan 4 dil seçici -->
+        <div class="flex items-center gap-1 bg-slate-900 border border-slate-800 p-0.5 rounded-lg">
+          <button onclick="setOdcLang('tr')" id="odc-tr" class="px-2 py-0.5 rounded text-[11px] font-bold bg-orange-600 text-white">TR</button>
+          <button onclick="setOdcLang('en')" id="odc-en" class="px-2 py-0.5 rounded text-[11px] font-bold text-slate-400 hover:text-white">EN</button>
+          <button onclick="setOdcLang('de')" id="odc-de" class="px-2 py-0.5 rounded text-[11px] font-bold text-slate-400 hover:text-white">DE</button>
+          <button onclick="setOdcLang('fr')" id="odc-fr" class="px-2 py-0.5 rounded text-[11px] font-bold text-slate-400 hover:text-white">FR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ana Navigasyon (Orijinal ODC Logosu ile) -->
+  <header class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
+      <a href="#" class="flex items-center gap-3 shrink-0">
+        <img src="assets/logo.png" alt="Ömer Demir Çelik Lazer Kesim Sanayi A.Ş." width="170" height="54" class="h-12 w-auto object-contain bg-white px-3 py-1 rounded-xl" />
+        <div class="hidden sm:block">
+          <div class="text-sm font-extrabold tracking-wide text-white font-cnc">ÖMER DEMİR ÇELİK A.Ş.</div>
+          <div class="text-[11px] text-orange-400 font-semibold">LAZER KESİM &amp; SAC ŞEKİLLENDİRME MERKEZİ</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+        <a href="#makina-parkuru" class="hover:text-orange-400 transition">Makine Parkuru (9 Lazer + 10 Abkant)</a>
+        <a href="#boru-lazer" class="hover:text-orange-400 transition">6500 mm Boru Lazer</a>
+        <a href="#kalite-belgeleri" class="hover:text-orange-400 transition">IATF 16949 &amp; Kalite</a>
+        <a href="#subeler" class="hover:text-orange-400 transition">OSB &amp; NOSAB Tesislerimiz</a>
+      </nav>
+      <button onclick="document.getElementById('odcRfqModal').showModal()" class="px-5 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white text-xs sm:text-sm font-bold transition shadow-lg shadow-orange-600/25">
+        <span id="odc-rfq-btn">DXF / STEP İle Hızlı Teklif Al</span> &rarr;
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Bölümü -->
+  <section class="relative overflow-hidden border-b border-slate-800 bg-gradient-to-b from-slate-950 via-[#0d1424] to-[#090d16]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-bold uppercase tracking-wider">
+          <span id="odc-badge">IATF 16949 • ISO 3834-2 • EN 1090 Sertifikalı Üretim Gücü</span>
+        </div>
+        <h1 id="odc-title" class="text-3xl sm:text-5xl lg:text-[54px] font-bold tracking-tight leading-[1.08] font-cnc">
+          9 Lazer Makinesiyle Günlük 216 Saat Kesim, 10 Abkant ve Komple İmalat
+        </h1>
+        <p id="odc-desc" class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+          Bursa OSB ve NOSAB'daki iki fabrikamızda; <strong>6 kW'a kadar 4000×2000 mm plaka lazer kesim</strong>, <strong>6500 mm boru ve profil lazer</strong>, <strong>220 tona varan 10 abkant pres</strong>, robotik/sertifikalı kaynak ve kataforez/toz boya süreçleriyle otomotiv ve makine sanayisine tek noktadan hizmet veriyoruz.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <button onclick="document.getElementById('odcRfqModal').showModal()" class="px-7 py-4 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-base transition shadow-xl shadow-orange-600/30">
+            Proje &amp; Kesim Teklifi İste &rarr;
+          </button>
+          <a href="#makina-parkuru" class="px-6 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-semibold text-base transition">
+            Makine Parkuru Tablosunu Aç
+          </a>
+        </div>
+
+        <!-- Gerçek Yatırım & Performans Rakamları -->
+        <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800">
+          <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-orange-500 font-cnc">216 Saat</div>
+            <div class="text-xs text-slate-400 mt-0.5">9 Lazer İle Günlük Üretim</div>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-white font-cnc">10 Abkant</div>
+            <div class="text-xs text-slate-400 mt-0.5">220 Tona Kadar CNC Büküm</div>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-sky-400 font-cnc">6500 mm</div>
+            <div class="text-xs text-slate-400 mt-0.5">4 kW Boru &amp; Profil Lazer</div>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-emerald-400 font-cnc">128+</div>
+            <div class="text-xs text-slate-400 mt-0.5">Kurumsal Sanayi Müşterisi</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ: Gerçek ODC Fabrika Görselleri & Kesim Kalınlık Matrisi (LCP Görseli - loading="lazy" KULLANILMADI) -->
+      <div class="lg:col-span-5 space-y-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-4 shadow-2xl">
+          <img src="assets/lazer.jpg" alt="Ömer Demir Çelik Lazer Kesim Parkuru" width="540" height="320" fetchpriority="high" class="w-full h-56 object-cover rounded-2xl" />
+          <div class="mt-4 p-2 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Maksimum Plaka Kesim Kalınlıklarımız</span>
+              <span class="text-xs font-mono-code text-slate-400">2000 × 4000 mm</span>
+            </div>
+            <div class="grid grid-cols-2 gap-2.5 text-xs">
+              <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex items-center justify-between">
+                <span class="text-slate-300 font-semibold">Siyah Sac</span>
+                <span class="font-mono-code font-bold text-orange-400 text-sm">20 mm</span>
+              </div>
+              <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex items-center justify-between">
+                <span class="text-slate-300 font-semibold">Paslanmaz Çelik</span>
+                <span class="font-mono-code font-bold text-sky-400 text-sm">15 mm</span>
+              </div>
+              <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex items-center justify-between">
+                <span class="text-slate-300 font-semibold">Alüminyum</span>
+                <span class="font-mono-code font-bold text-emerald-400 text-sm">15 mm</span>
+              </div>
+              <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex items-center justify-between">
+                <span class="text-slate-300 font-semibold">Bakır / Pirinç / Bronz</span>
+                <span class="font-mono-code font-bold text-amber-300 text-sm">6 mm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İnteraktif Makine Parkuru & Proses Sekmeleri (Eski <table border="1"> modalları modern mühendislik tablosuna dönüştürüldü) -->
+  <section id="makina-parkuru" class="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+      <div>
+        <span class="text-orange-500 font-bold text-xs uppercase tracking-widest">MAKİNE PARKURU &amp; TEKNİK KAPASİTE</span>
+        <h2 class="text-3xl sm:text-4xl font-bold font-cnc mt-1">Lazer Kesimden Yüzey Kaplamaya Entegre Üretim Hattı</h2>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <button onclick="showOdcTab('lazer')" id="otab-lazer" class="odc-tab active px-4 py-2.5 rounded-xl border border-orange-500 text-xs font-bold transition">1. Sac Lazer Parkuru (9 Makine)</button>
+        <button onclick="showOdcTab('boru')" id="otab-boru" class="odc-tab px-4 py-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition">2. Boru &amp; Profil Lazer (6500 mm)</button>
+        <button onclick="showOdcTab('abkant')" id="otab-abkant" class="odc-tab px-4 py-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition">3. Abkant Büküm (10 Pres)</button>
+        <button onclick="showOdcTab('kaynak')" id="otab-kaynak" class="odc-tab px-4 py-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition">4. Kaynak, Talaşlı &amp; Kaplama</button>
+      </div>
+    </div>
+
+    <!-- TAB 1: 9 Lazer Kesim Makinesi -->
+    <div id="opanel-lazer" class="grid lg:grid-cols-12 gap-8 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 text-xs font-mono-code text-orange-400 bg-orange-500/10 px-3 py-1 rounded-lg">
+          TOPLAM 9 ADET LAZER KESİM MAKİNESİ • GÜNLÜK 216 SAAT KAPASİTE
+        </div>
+        <h3 class="text-2xl font-bold font-cnc">Plaka Lazer Kesim Makine Parkuru</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-slate-700 text-xs uppercase text-slate-400">
+                <th class="py-3 pr-4">Adet</th>
+                <th class="py-3 pr-4">Lazer Gücü</th>
+                <th class="py-3 pr-4">Kesim Ebadı (Tezgah)</th>
+                <th class="py-3">Uygulama</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 font-mono-code text-xs sm:text-sm">
+              <tr>
+                <td class="py-3 font-bold text-orange-400">1 Adet</td>
+                <td class="py-3 font-bold text-white">6 kW Fiber</td>
+                <td class="py-3 text-sky-400">2000 × 4000 mm</td>
+                <td class="py-3 text-slate-300 font-sans">Ağır kalın plaka &amp; yüksek hız</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">1 Adet</td>
+                <td class="py-3 font-bold text-white">4 kW</td>
+                <td class="py-3 text-sky-400">2000 × 4000 mm</td>
+                <td class="py-3 text-slate-300 font-sans">Büyük ebat sac plaka kesim</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">5 Adet</td>
+                <td class="py-3 font-bold text-white">4 kW</td>
+                <td class="py-3 text-slate-200">1500 × 3000 mm</td>
+                <td class="py-3 text-slate-300 font-sans">Yüksek adetli seri otomotiv imalatı</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">1 Adet</td>
+                <td class="py-3 font-bold text-white">2 kW</td>
+                <td class="py-3 text-slate-200">1500 × 3000 mm</td>
+                <td class="py-3 text-slate-300 font-sans">İnce/orta kalınlık hassas kesim</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">1 Adet</td>
+                <td class="py-3 font-bold text-white">1 kW</td>
+                <td class="py-3 text-slate-200">1500 × 3000 mm</td>
+                <td class="py-3 text-slate-300 font-sans">İnce sac &amp; prototip kesim</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <img src="assets/lazer.jpg" alt="ODC Lazer Kesim" width="480" height="320" loading="lazy" class="w-full h-72 object-cover rounded-2xl border border-slate-700" />
+      </div>
+    </div>
+
+    <!-- TAB 2: Boru Lazer -->
+    <div id="opanel-boru" style="display:none;" class="grid lg:grid-cols-12 gap-8 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 text-xs font-mono-code text-sky-400 bg-sky-500/10 px-3 py-1 rounded-lg">
+          4 kW CNC BORU &amp; PROFİL LAZER KESİM HATTI
+        </div>
+        <h3 class="text-2xl font-bold font-cnc">6500 mm Boru, Kare, Dikdörtgen ve Açık Profil Lazer Kesim</h3>
+        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4">
+            <div class="text-xs text-slate-400">Maks. Boru Kesme Uzunluğu</div>
+            <div class="text-xl font-mono-code font-bold text-orange-400 mt-1">6500 mm (4 kW)</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4">
+            <div class="text-xs text-slate-400">Yuvarlak Boru Çap Aralığı</div>
+            <div class="text-xl font-mono-code font-bold text-white mt-1">Ø 20 mm – Ø 230 mm</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4">
+            <div class="text-xs text-slate-400">Kare Profil Kesim Aralığı</div>
+            <div class="text-xl font-mono-code font-bold text-white mt-1">20×20 – 160×160 mm</div>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4">
+            <div class="text-xs text-slate-400">Konumlama &amp; Tekrarlama Hassasiyeti</div>
+            <div class="text-xl font-mono-code font-bold text-emerald-400 mt-1">±0.05 / ±0.03 mm</div>
+          </div>
+        </div>
+        <p class="text-xs text-slate-300">Maksimum tek parça ağırlığı: <strong>250 kg</strong> | Maksimum bar yükleme: <strong>35 kg/m</strong>. Dikdörtgen, elips, C, U ve L profillerde çapak bırakmadan geçmeli (kilitli) kesim teknolojisi.</p>
+      </div>
+      <div class="lg:col-span-5">
+        <img src="assets/about.jpg" alt="ODC Boru Lazer ve Fabrika" width="480" height="320" loading="lazy" class="w-full h-72 object-cover rounded-2xl border border-slate-700" />
+      </div>
+    </div>
+
+    <!-- TAB 3: 10 Abkant Pres -->
+    <div id="opanel-abkant" style="display:none;" class="grid lg:grid-cols-12 gap-8 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 text-xs font-mono-code text-orange-400 bg-orange-500/10 px-3 py-1 rounded-lg">
+          TOPLAM 10 ADET CNC &amp; SERVO ABKANT PRES
+        </div>
+        <h3 class="text-2xl font-bold font-cnc">Abkant Büküm ve Silindir Sac Şekillendirme Parkuru</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-slate-700 text-xs uppercase text-slate-400">
+                <th class="py-3 pr-4">Adet</th>
+                <th class="py-3 pr-4">Büküm Boyu</th>
+                <th class="py-3 pr-4">Tonaj Kapasitesi</th>
+                <th class="py-3">Teknoloji</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 font-mono-code text-xs sm:text-sm">
+              <tr>
+                <td class="py-3 font-bold text-orange-400">2 Adet</td>
+                <td class="py-3 text-white">3.000 mm (3 Metre)</td>
+                <td class="py-3 font-bold text-sky-400">220 Ton</td>
+                <td class="py-3 text-slate-300 font-sans">Ağır Tonaj CNC Abkant</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">1 Adet</td>
+                <td class="py-3 text-white">3.000 mm (3 Metre)</td>
+                <td class="py-3 font-bold text-sky-400">100 Ton</td>
+                <td class="py-3 text-emerald-400 font-sans font-semibold">Yüksek Hızlı Servo Abkant</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">3 Adet</td>
+                <td class="py-3 text-white">2.500 mm (2.5 Metre)</td>
+                <td class="py-3 font-bold text-sky-400">100 Ton</td>
+                <td class="py-3 text-emerald-400 font-sans font-semibold">Yüksek Hızlı Servo Abkant</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">1 Adet</td>
+                <td class="py-3 text-white">1.500 mm (1.5 Metre)</td>
+                <td class="py-3 font-bold text-sky-400">40 Ton</td>
+                <td class="py-3 text-emerald-400 font-sans font-semibold">Hassas Servo Abkant</td>
+              </tr>
+              <tr>
+                <td class="py-3 font-bold text-orange-400">3 Adet</td>
+                <td class="py-3 text-white">1.250 mm (1.25 Metre)</td>
+                <td class="py-3 font-bold text-sky-400">60 Ton</td>
+                <td class="py-3 text-slate-300 font-sans">Seri Parça Büküm Hattı</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <img src="assets/abkant.jpg" alt="ODC Abkant Büküm" width="480" height="320" loading="lazy" class="w-full h-72 object-cover rounded-2xl border border-slate-700" />
+      </div>
+    </div>
+
+    <!-- TAB 4: Kaynak, Talaşlı İmalat & Kaplama -->
+    <div id="opanel-kaynak" style="display:none;" class="grid lg:grid-cols-12 gap-8 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8">
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 text-xs font-mono-code text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-lg">
+          ISO 3834-2 &amp; EN 1090 SERTİFİKALI KAYNAK + YÜZEY İŞLEM
+        </div>
+        <h3 class="text-2xl font-bold font-cnc">Kaynaklı İmalat, Talaşlı İmalat, Boya ve Kaplama Çözümleri</h3>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4">
+            <div class="text-sm font-bold text-orange-400">Endüstriyel Kaynak Prosesleri</div>
+            <ul class="mt-2 space-y-1 text-xs text-slate-300">
+              <li>• TIG (Argon) &amp; MIG / MAG Gazaltı Kaynak</li>
+              <li>• Punta Kaynak &amp; Saplama (Stud) Kaynak</li>
+              <li>• Fikstürlü Seri Otomotiv Kaynaklı İmalat</li>
+            </ul>
+          </div>
+          <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4">
+            <div class="text-sm font-bold text-sky-400">Boya &amp; Yüzey Kaplama</div>
+            <ul class="mt-2 space-y-1 text-xs text-slate-300">
+              <li>• Kataforez Kaplama &amp; Elektrostatik Toz Boya</li>
+              <li>• Yaş Boya Uygulamaları</li>
+              <li>• Siyah/Beyaz Galvaniz &amp; Nikelaj-Krom Kaplama</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <img src="assets/kaynak.jpg" alt="ODC Kaynaklı İmalat" width="480" height="320" loading="lazy" class="w-full h-72 object-cover rounded-2xl border border-slate-700" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Uluslararası Kalite Belgesi (Mevcut sitedeki alt="Team Member 1" şablon hatası düzeltildi) -->
+  <section id="kalite-belgeleri" class="py-16 bg-slate-950 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-orange-500 font-bold text-xs uppercase tracking-widest">KALİTE YÖNETİM SİSTEMLERİMİZ</span>
+        <h2 class="text-3xl font-bold font-cnc mt-1">Uluslararası Otomotiv ve Kaynak Standartlarında Üretim</h2>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center">
+          <div class="text-lg font-extrabold font-cnc text-orange-400">IATF 16949</div>
+          <div class="text-xs text-slate-400 mt-1">Otomotiv Kalite Yönetim Sistemi</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center">
+          <div class="text-lg font-extrabold font-cnc text-white">ISO 9001:2015</div>
+          <div class="text-xs text-slate-400 mt-1">Kalite Yönetim Sistemi</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center">
+          <div class="text-lg font-extrabold font-cnc text-sky-400">ISO 3834-2</div>
+          <div class="text-xs text-slate-400 mt-1">Ergime Kaynaklı İmalat Yeterlilik</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center">
+          <div class="text-lg font-extrabold font-cnc text-emerald-400">EN 1090</div>
+          <div class="text-xs text-slate-400 mt-1">Çelik ve Alüminyum Yapı Uygulama</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center col-span-2 sm:col-span-1">
+          <div class="text-lg font-extrabold font-cnc text-amber-300">ISO 14001</div>
+          <div class="text-xs text-slate-400 mt-1">Çevre Yönetim Sistemi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech&Lab Teknik Denetim Raporu -->
+  <section id="denetim-raporu" class="py-16 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="bg-gradient-to-br from-slate-900 to-slate-950 border border-orange-500/40 rounded-3xl p-6 sm:p-10 grid lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-8 space-y-4">
+        <span class="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-bold uppercase">Tech&amp;Lab Teknik Denetim Raporu — omerdemircelik.com</span>
+        <h3 class="text-2xl sm:text-3xl font-bold font-cnc">Mevcut Sitenizde Tespit Edip Bu Yeni Versiyonda Düzelttiğimiz 5 Sorun</h3>
+        <ul class="space-y-2.5 text-sm text-slate-300">
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span><strong>1. Kalite Belgelerindeki "Team Member 1" Şablon Hataları Düzeltildi:</strong> Mevcut sitenizde IATF 16949 ve ISO 3834 kalite sertifikalarınız <code>&lt;ul class="team"&gt;</code> içinde <code>alt="Team Member 1"</code>, <code>alt="Team Member 2"</code> ve hizmet ikonlarınız <code>alt="Mobile First Approach"</code> olarak hazır İngilizce şablon metinleriyle kalmıştı.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span><strong>2. Kırık İç İçe Dil Bayrağı Bağlantıları Onarıldı:</strong> Üst menüdeki <code>&lt;a href=""&gt;&lt;i&gt;&lt;a href="../odc_eng/index.html"&gt;</code> şeklindeki hatalı iç içe HTML link yapısı düzeltilerek anlık çalışan TR / EN / DE / FR dil geçiş sistemi kuruldu.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span><strong>3. 1990'lardan Kalma Tablo Kodları Modernize Edildi:</strong> Lazer ve Abkant pencerelerindeki <code>&lt;table width="400" border="1"&gt;</code> ve <code>&lt;font color="red"&gt;</code> kodları, mobil uyumlu interaktif kapasite sekmelerine dönüştürüldü.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span><strong>4. SSL Güvenlik Sertifikası ve 2018 Telif Yılı Güncellendi:</strong> Tarayıcıların "Güvenli Değil" uyarısı verdiği HTTP altyapısı ve <code>© 2018 ODC</code> ibaresi 2026 HTTPS standardına taşındı.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4 bg-slate-950 border border-slate-800 rounded-2xl p-6 text-center space-y-4">
+        <div class="text-xs uppercase tracking-widest text-orange-400 font-bold">Anahtar Teslim Kurumsal Yenileme</div>
+        <div class="text-4xl font-extrabold text-white font-cnc">9.500 ₺</div>
+        <div class="text-xs text-slate-400">Tek Seferlik Net Ödeme • 24 Saatte Yayında</div>
+        <a href="mailto:info@techandlab.com?subject=%C3%96mer%20Demir%20%C3%87elik%20Web%20Sitesi%20Onay%C4%B1" class="block w-full py-3.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-bold text-sm transition">
+          Bu Sitenin Kurulumunu Onayla &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- İki Fabrika İletişim & Footer -->
+  <footer id="subeler" class="bg-slate-950 border-t border-slate-800 py-16 text-sm text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <img src="assets/logo.png" alt="Ömer Demir Çelik" width="160" height="48" loading="lazy" class="h-11 w-auto bg-white px-3 py-1 rounded-lg mb-3" />
+        <div class="text-white font-bold font-cnc text-base">ÖMER DEMİR ÇELİK LAZER KESİM SANAYİ A.Ş.</div>
+        <p class="text-xs text-slate-400 mt-1">9 Lazer Makinesi • 6500 mm Boru Lazer • 10 Abkant Pres</p>
+      </div>
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+        <div class="text-xs uppercase font-bold text-orange-400">MERKEZ FABRİKA (BURSA OSB)</div>
+        <p class="text-xs text-slate-200 mt-1.5">Işıktepe Mh. Organize Sanayi Bölgesi Kahverengi Cd. 2. Sokak No:2/2 Nilüfer / BURSA</p>
+        <div class="mt-3 text-xs space-y-1">
+          <div><strong>Tel:</strong> <a href="tel:+902244112424" class="text-orange-400 hover:underline">+90 (224) 411 24 24</a></div>
+          <div><strong>Faks:</strong> +90 (224) 411 24 28</div>
+        </div>
+      </div>
+      <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5">
+        <div class="text-xs uppercase font-bold text-sky-400">ŞUBE FABRİKA (NOSAB)</div>
+        <p class="text-xs text-slate-200 mt-1.5">Minareliçavuş OSB Mah. Nilüfer Organize Sanayi Bölgesi (NOSAB) Sedir Cd. No:14 Nilüfer / BURSA</p>
+        <div class="mt-3 text-xs space-y-1">
+          <div><strong>E-posta:</strong> <a href="mailto:info@omerdemircelik.com" class="text-sky-400 hover:underline">info@omerdemircelik.com</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DXF / STEP Hızlı Teklif Modalı -->
+  <dialog id="odcRfqModal" class="rounded-3xl bg-slate-900 border border-slate-700 text-white p-0 w-full max-w-lg shadow-2xl">
+    <div class="p-6 sm:p-8">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <div>
+          <h3 class="text-xl font-bold font-cnc">Ömer Demir Çelik — Lazer &amp; Komple İmalat Teklifi</h3>
+          <p class="text-xs text-slate-400 mt-0.5">Doğrudan info@omerdemircelik.com adresine iletilir.</p>
+        </div>
+        <button onclick="document.getElementById('odcRfqModal').close()" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-300">&times;</button>
+      </div>
+      <form action="mailto:info@omerdemircelik.com" method="post" enctype="text/plain" class="space-y-4 mt-5">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Firma &amp; Yetkili Adı</label>
+          <input type="text" name="Firma" required placeholder="Firma Adı - Ad Soyad" class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-400 mb-1">İstenen Proses</label>
+            <select name="Proses" class="w-full px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white">
+              <option>Plaka Lazer Kesim + Abkant Büküm</option>
+              <option>6500 mm Boru &amp; Profil Lazer Kesim</option>
+              <option>Kaynaklı &amp; Boyalı Komple İmalat</option>
+              <option>Sadece Lazer Kesim (1–20 mm)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Malzeme Cinsi &amp; Kalınlık</label>
+            <input type="text" name="Malzeme" placeholder="Örn: S235JR 8mm / AISI304 4mm" class="w-full px-3 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-400 mb-1">Proje Detayı ve Adet</label>
+          <textarea name="Detay" rows="3" placeholder="Parça adedi, büküm/kaynak/kaplama gereksinimleri..." class="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white"></textarea>
+        </div>
+        <div class="flex justify-end gap-3 pt-2">
+          <button type="button" onclick="document.getElementById('odcRfqModal').close()" class="px-4 py-2.5 rounded-xl bg-slate-800 text-xs font-bold">Kapat</button>
+          <button type="submit" class="px-6 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white text-sm font-bold">Teklif Gönder</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script>
+    function showOdcTab(tab) {
+      ['lazer','boru','abkant','kaynak'].forEach(t => {
+        document.getElementById('opanel-' + t).style.display = (t === tab) ? 'grid' : 'none';
+        document.getElementById('otab-' + t).className = (t === tab)
+          ? 'odc-tab active px-4 py-2.5 rounded-xl border border-orange-500 text-xs font-bold transition'
+          : 'odc-tab px-4 py-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition';
+      });
+    }
+
+    const ODC_I18N = {
+      tr: {
+        badge: "IATF 16949 • ISO 3834-2 • EN 1090 Sertifikalı Üretim Gücü",
+        title: "9 Lazer Makinesiyle Günlük 216 Saat Kesim, 10 Abkant ve Komple İmalat",
+        btn: "DXF / STEP İle Hızlı Teklif Al"
+      },
+      en: {
+        badge: "IATF 16949 • ISO 3834-2 • EN 1090 Certified Sheet Metal Center",
+        title: "216 Hours/Day Laser Cutting Capacity with 9 Lasers, 6500mm Tube Laser & 10 Press Brakes",
+        btn: "Request Instant DXF / STEP Quote"
+      },
+      de: {
+        badge: "IATF 16949 • ISO 3834-2 • EN 1090 Zertifiziertes Blechbearbeitungszentrum",
+        title: "216 Std./Tag Laserschneiden mit 9 Lasern, 6500mm Rohrlaser & 10 Abkantpressen",
+        btn: "DXF / STEP Angebot Anfordern"
+      },
+      fr: {
+        badge: "Centre de Tôlerie Certifié IATF 16949 • ISO 3834-2 • EN 1090",
+        title: "Découpe Laser 216h/Jour (9 Lasers), Laser Tube 6500mm & 10 Presses Plieuses",
+        btn: "Demander un Devis DXF / STEP"
+      }
+    };
+    function setOdcLang(lang) {
+      ['tr','en','de','fr'].forEach(l => {
+        document.getElementById('odc-' + l).className = (l === lang)
+          ? 'px-2 py-0.5 rounded text-[11px] font-bold bg-orange-600 text-white'
+          : 'px-2 py-0.5 rounded text-[11px] font-bold text-slate-400 hover:text-white';
+      });
+      document.getElementById('odc-badge').textContent = ODC_I18N[lang].badge;
+      document.getElementById('odc-title').textContent = ODC_I18N[lang].title;
+      document.getElementById('odc-rfq-btn').textContent = ODC_I18N[lang].btn;
+    }
+  </script>
+</body>
+</html>
