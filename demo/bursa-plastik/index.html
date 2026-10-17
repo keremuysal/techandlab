@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bursa Plastik Sanayi ve Ticaret A.Ş. | Endüstriyel Plastik Enjeksiyon & Ambalaj</title>
-  <meta name="description" content="Bursa Plastik Sanayi ve Ticaret A.Ş.: 50 - 1500 ton modern robotlu enjeksiyon parkuru, otomotiv plastik parçaları, endüstriyel kasa ve palet sistemleri, IML ambalaj çözümleri.">
+  <title>Bursa Plastik Sanayi ve Ticaret A.Ş. | Battallar Kollektif Şirketi</title>
+  <meta name="description" content="Bursa Plastik San. ve Tic. A.Ş. & Battallar Koll. Şti.: Biyobozunur (Biodegradable) poşetler, hışır atlet torbalar, baskılı mağaza poşetleri, tekstil tambur torbaları ve naylon bobin imalatı. Kestel OSB Bursa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
@@ -13,10 +13,9 @@
       --bg: #090e1a;
       --card-bg: #111a2e;
       --card-border: rgba(255, 255, 255, 0.08);
+      --emerald: #059669;
+      --emerald-light: #34d399;
       --blue: #2563eb;
-      --blue-light: #60a5fa;
-      --blue-glow: rgba(37, 99, 235, 0.35);
-      --teal: #0d9488;
       --text: #f1f5f9;
       --text-muted: #94a3b8;
       --border: #1e293b;
@@ -27,16 +26,13 @@
       color: var(--text);
       font-family: 'Plus Jakarta Sans', sans-serif;
       line-height: 1.6;
-      overflow-x: hidden;
     }
-    h1, h2, h3, h4, .font-head {
-      font-family: 'Space Grotesk', sans-serif;
-    }
+    h1, h2, h3, h4, .font-head { font-family: 'Space Grotesk', sans-serif; }
 
-    /* Demo Header Bar */
+    /* Demo Bar */
     .demo-bar {
-      background: linear-gradient(90deg, #1e3a8a, #0f172a);
-      border-bottom: 1px solid rgba(96, 165, 250, 0.3);
+      background: linear-gradient(90deg, #064e3b, #0f172a);
+      border-bottom: 1px solid rgba(52, 211, 153, 0.3);
       padding: 10px 24px;
       display: flex;
       justify-content: space-between;
@@ -47,13 +43,12 @@
       font-size: 0.85rem;
     }
     .demo-badge {
-      background: #3b82f6;
-      color: #fff;
+      background: var(--emerald-light);
+      color: #064e3b;
       font-weight: 800;
       font-size: 0.7rem;
       padding: 3px 8px;
       border-radius: 4px;
-      letter-spacing: 0.5px;
       margin-right: 8px;
     }
     .demo-cta {
@@ -64,11 +59,9 @@
       border-radius: 6px;
       font-weight: 700;
       font-size: 0.8rem;
-      transition: all 0.2s;
     }
-    .demo-cta:hover { background: #059669; }
 
-    /* Top Info Bar */
+    /* Top Bar */
     .top-bar {
       background: rgba(0, 0, 0, 0.3);
       border-bottom: 1px solid var(--border);
@@ -79,13 +72,13 @@
       justify-content: space-between;
       align-items: center;
     }
-    .top-bar a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
-    .top-bar a:hover { color: var(--blue-light); }
+    .top-bar a { color: var(--text-muted); text-decoration: none; }
+    .top-bar a:hover { color: var(--emerald-light); }
 
     /* Nav */
     header {
-      background: rgba(9, 14, 26, 0.88);
-      backdrop-filter: blur(12px);
+      background: rgba(9, 14, 26, 0.9);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--card-border);
       position: sticky;
       top: 41px;
@@ -102,56 +95,52 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       text-decoration: none;
     }
     .brand img {
-      height: 44px;
+      height: 42px;
       width: auto;
       object-fit: contain;
       background: #fff;
-      padding: 4px 8px;
+      padding: 3px 6px;
       border-radius: 6px;
     }
     .brand-title {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: #fff;
-      letter-spacing: -0.5px;
     }
-    .brand-title span { color: var(--blue-light); }
+    .brand-title span { color: var(--emerald-light); }
     .nav-links {
       display: flex;
       list-style: none;
-      gap: 28px;
+      gap: 22px;
       align-items: center;
     }
     .nav-links a {
       color: #cbd5e1;
       text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
       font-weight: 600;
-      transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--blue-light); }
-    .btn-nav-rfq {
-      background: linear-gradient(135deg, var(--blue), #1d4ed8);
+    .nav-links a:hover { color: var(--emerald-light); }
+    .btn-contact {
+      background: var(--emerald);
       color: #fff !important;
       padding: 8px 18px;
       border-radius: 8px;
       font-weight: 700;
-      box-shadow: 0 4px 14px var(--blue-glow);
     }
 
     /* Hero */
     .hero {
-      position: relative;
-      padding: 110px 24px 90px;
-      background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.2) 0%, transparent 50%),
-                  radial-gradient(circle at 20% 80%, rgba(13, 148, 136, 0.1) 0%, transparent 60%);
+      padding: 90px 24px 80px;
+      background: radial-gradient(circle at 80% 20%, rgba(5, 150, 105, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 20% 80%, rgba(17, 26, 46, 0.8) 0%, transparent 60%);
       border-bottom: 1px solid var(--border);
     }
-    .hero-content {
+    .hero-inner {
       max-width: 1280px;
       margin: 0 auto;
       display: grid;
@@ -159,98 +148,52 @@
       gap: 50px;
       align-items: center;
     }
-    .hero-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+    .hero-badge {
+      display: inline-block;
       padding: 6px 14px;
-      background: rgba(96, 165, 250, 0.12);
-      border: 1px solid rgba(96, 165, 250, 0.3);
+      background: rgba(52, 211, 153, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.3);
       border-radius: 50px;
-      color: var(--blue-light);
+      color: var(--emerald-light);
       font-size: 0.85rem;
       font-weight: 700;
-      margin-bottom: 24px;
-    }
-    .hero h1 {
-      font-size: 3.2rem;
-      font-weight: 800;
-      line-height: 1.15;
       margin-bottom: 20px;
     }
-    .hero h1 span {
-      background: linear-gradient(90deg, #93c5fd, var(--blue-light));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .hero h1 {
+      font-size: 2.9rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
     }
+    .hero h1 span { color: var(--emerald-light); }
     .hero p {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       color: var(--text-muted);
-      margin-bottom: 34px;
+      margin-bottom: 30px;
       line-height: 1.7;
     }
-    .hero-btns {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 14px 28px;
+      padding: 13px 26px;
       border-radius: 10px;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 0.95rem;
       text-decoration: none;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      cursor: pointer;
+      transition: all 0.2s;
     }
-    .btn-main {
-      background: linear-gradient(135deg, var(--blue), #1d4ed8);
-      color: #fff;
-      box-shadow: 0 10px 25px var(--blue-glow);
-    }
-    .btn-main:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(37, 99, 235, 0.5); }
-    .btn-sub {
+    .btn-primary { background: var(--emerald); color: #fff; }
+    .btn-primary:hover { background: #047857; }
+    .btn-secondary {
       background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: #fff;
     }
-    .btn-sub:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-2px); }
 
-    /* Visual Metrics Card */
-    .hero-visual {
-      background: linear-gradient(145deg, #162238, #0f172a);
-      border: 1px solid var(--card-border);
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    }
-    .metric-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 20px;
-    }
-    .m-item {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 16px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    .m-item .val {
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: var(--blue-light);
-    }
-    .m-item .lbl {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* Sections */
-    section { padding: 90px 24px; }
+    /* Product Grid */
+    section { padding: 80px 24px; }
     .sec-inner { max-width: 1280px; margin: 0 auto; }
     .sec-head {
       text-align: center;
@@ -260,205 +203,125 @@
     .sec-tag {
       font-size: 0.85rem;
       font-weight: 800;
-      color: var(--blue-light);
+      color: var(--emerald-light);
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 10px;
       display: block;
     }
-    .sec-head h2 {
-      font-size: 2.4rem;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-    .sec-head p { color: var(--text-muted); font-size: 1.05rem; }
+    .sec-head h2 { font-size: 2.3rem; font-weight: 800; margin-bottom: 12px; }
+    .sec-head p { color: var(--text-muted); font-size: 1rem; }
 
-    /* Sector Solutions Grid */
-    .sector-grid {
+    .grid-3 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 26px;
     }
-    .sector-card {
+    .prod-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: transform 0.2s;
+    }
+    .prod-card:hover { transform: translateY(-4px); border-color: rgba(52, 211, 153, 0.3); }
+    .prod-icon { font-size: 2rem; margin-bottom: 14px; }
+    .prod-card h3 { font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .prod-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
+
+    /* RFQ Box */
+    .rfq-box {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: 18px;
-      padding: 32px;
-      transition: all 0.3s;
+      padding: 36px;
+      max-width: 800px;
+      margin: 0 auto;
     }
-    .sector-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(96, 165, 250, 0.4);
-      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.4);
-    }
-    .sector-icon {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-    .sector-card h3 {
-      font-size: 1.35rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: #fff;
-    }
-    .sector-card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 18px;
-    }
-
-    /* Machine Specs */
-    .specs-table-wrap {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 18px;
-      overflow: hidden;
-      margin-top: 30px;
-    }
-    table { width: 100%; border-collapse: collapse; text-align: left; }
-    th {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 16px 20px;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--blue-light);
-      font-weight: 700;
-      border-bottom: 1px solid var(--border);
-    }
-    td {
-      padding: 16px 20px;
-      font-size: 0.95rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-      color: #e5e7eb;
-    }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: rgba(255, 255, 255, 0.02); }
-
-    /* Interactive Injection Estimator */
-    .est-sec {
-      background: linear-gradient(180deg, var(--bg), #0f172a);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .est-card {
-      background: var(--card-bg);
-      border: 1px solid rgba(96, 165, 250, 0.3);
-      border-radius: 20px;
-      padding: 40px;
-    }
-    .est-grid {
+    .form-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      gap: 18px;
+      margin-bottom: 20px;
     }
-    .field-group { margin-bottom: 20px; }
-    .field-group label {
+    .form-group label {
       display: block;
       font-size: 0.85rem;
       font-weight: 700;
+      margin-bottom: 6px;
       color: #d1d5db;
-      margin-bottom: 8px;
     }
-    .field-group select, .field-group input {
+    .form-group input, .form-group select, .form-group textarea {
       width: 100%;
-      background: #0b1120;
-      border: 1px solid #334155;
-      padding: 12px 16px;
-      border-radius: 10px;
+      background: #090e17;
+      border: 1px solid #374151;
+      padding: 12px 14px;
+      border-radius: 8px;
       color: #fff;
       font-size: 0.95rem;
       outline: none;
-      transition: border-color 0.2s;
     }
-    .field-group select:focus, .field-group input:focus {
-      border-color: var(--blue-light);
-      box-shadow: 0 0 10px var(--blue-glow);
-    }
-    .est-summary {
-      background: rgba(0, 0, 0, 0.35);
-      border: 1px solid var(--card-border);
-      border-radius: 14px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    .full { grid-column: span 2; }
 
-    /* Contact */
+    /* Contact Details */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
-      align-items: center;
     }
-    .contact-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 18px;
-      padding: 34px;
-    }
-    .contact-item {
+    .c-item {
       display: flex;
-      align-items: flex-start;
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-    .ci-icon {
+    .c-icon {
       width: 44px;
       height: 44px;
-      background: rgba(96, 165, 250, 0.1);
-      border: 1px solid rgba(96, 165, 250, 0.3);
-      border-radius: 12px;
+      background: rgba(5, 150, 105, 0.15);
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.2rem;
       flex-shrink: 0;
     }
-    .contact-item h5 { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; text-transform: uppercase; }
-    .contact-item a { color: #fff; font-size: 1.05rem; font-weight: 700; text-decoration: none; }
-    .contact-item a:hover { color: var(--blue-light); }
 
     footer {
-      background: #050811;
+      background: #05080e;
       border-top: 1px solid var(--border);
-      padding: 40px 24px;
+      padding: 30px 24px;
       text-align: center;
       font-size: 0.85rem;
       color: var(--text-muted);
     }
-    footer a { color: var(--blue-light); text-decoration: none; }
 
-    @media (max-width: 900px) {
-      .hero-content { grid-template-columns: 1fr; text-align: center; }
-      .hero-btns { justify-content: center; }
+    @media (max-width: 800px) {
+      .hero-inner { grid-template-columns: 1fr; }
       .nav-links { display: none; }
-      .est-grid { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+      .full { grid-column: span 1; }
       .contact-grid { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2.4rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Tech&Lab Canlı Demo Barı -->
+  <!-- Demo Bildirim Barı -->
   <div class="demo-bar">
     <div>
       <span class="demo-badge">CANLI DEMO</span>
-      <strong>Bursa Plastik Sanayi ve Ticaret A.Ş.</strong> için Tech&Lab tarafından kodlanmış kurumsal prototiptir.
+      <strong>Bursa Plastik A.Ş. & Battallar Koll. Şti.</strong> için Tech&Lab tarafından tasarlanmış canlı önizleme prototipidir.
     </div>
     <div>
-      <a href="https://wa.me/905057053538?text=Merhaba%20Bursa%20Plastik%20demosu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" class="demo-cta">Hemen Devreye Alın (9.500 ₺)</a>
+      <a href="https://wa.me/905057053538?text=Merhaba%20Bursa%20Plastik%20demosu%20i%C3%A7in%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" class="demo-cta">Hemen Devreye Alın (9.500 ₺)</a>
     </div>
   </div>
 
-  <!-- Üst Bilgi Barı -->
+  <!-- Üst Bilgi Barı (Orijinal Siteden Birebir) -->
   <div class="top-bar">
-    <div>📍 Bursa Organize Sanayi Bölgesi (BOSB) / Nilüfer, BURSA</div>
+    <div>📍 Ahmet Vefik Paşa OSB Ankara Cd. No: 6, 16450 Kestel / BURSA</div>
     <div>
-      <span>📞 <a href="tel:902127075195">0212 707 51 95</a></span>
+      <span>📞 <a href="tel:902243317124">+90 (224) 331 71 24 (pbx)</a> &nbsp;|&nbsp; GSM: <a href="tel:905050196160">+90 (505) 019 61 60</a></span>
       <span style="margin: 0 10px;">|</span>
       <span>✉️ <a href="mailto:info@bursaplastik.com">info@bursaplastik.com</a></span>
     </div>
@@ -472,341 +335,233 @@
         <div class="brand-title">BURSA PLASTİK <span>A.Ş.</span></div>
       </a>
       <ul class="nav-links">
-        <li><a href="#cozumler">Sektörel Çözümler</a></li>
-        <li><a href="#makine">Makine Parkuru</a></li>
-        <li><a href="#hesaplayici">Enjeksiyon Analiz Aracı</a></li>
-        <li><a href="#kalite">Kalite & Standartlar</a></li>
+        <li><a href="#kurumsal">Kurumsal</a></li>
+        <li><a href="#urunler">Ürünlerimiz</a></li>
+        <li><a href="#cevre">Çevre & Bio-Çözünür</a></li>
+        <li><a href="#teklif">Toptan Teklif</a></li>
         <li><a href="#iletisim">İletişim</a></li>
-        <li><a href="#hesaplayici" class="btn-nav-rfq">⚡ RFQ Teklif İste</a></li>
+        <li><a href="#teklif" class="btn-contact">⚡ Teklif İste</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Orijinal Sitedeki Gerçek Faaliyetlere Dayalı) -->
   <section class="hero">
-    <div class="hero-content">
+    <div class="hero-inner">
       <div>
-        <div class="hero-pill">
-          🏭 50 TONDAN 1500 TONA ROBOTLU ENJEKSİYON HATTI
-        </div>
-        <h1>Endüstriyel Plastik İmalatında <span>Yüksek Kapasite</span> ve Hassasiyet.</h1>
+        <span class="hero-badge">BATTALLAR KOLLEKTİF ŞİRKETİ • KESTEL OSB TESİSLERİ</span>
+        <h1>Çevreye Duyarlı, <span>Hijyenik Ambalaj</span> ve Poşet Çözümleri.</h1>
         <p>
-          Otomotiv, lojistik, beyaz eşya ve gıda ambalajı sektörlerine anahtar teslim plastik enjeksiyon çözümleri. Kalıp tasarımından Moldflow analizlerine, IML etiketlemeden robotik montaja kadar uluslararası standartlarda üretim.
+          Bursa Plastik Sanayi ve Ticaret A.Ş.; biyobozunur (biodegradable) ambalajlar, hışır atlet poşetler, baskılı mağaza torbaları, sanayi & tekstil tambur torbaları ve naylon bobin üretiminde Bursa Kestel OSB'deki modern tesislerinde çevre ve insan sağlığına uygun üretim yapmaktadır.
         </p>
         <div class="hero-btns">
-          <a href="#hesaplayici" class="btn btn-main">📊 Kalıp & Parça Maliyet Analizi Yap</a>
-          <a href="https://wa.me/905057053538?text=Merhaba,%20Bursa%20Plastik%20enjeksiyon%20%C3%BCretimi%20ve%20teklif%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-sub">
-            💬 WhatsApp ile Şartname İletin
+          <a href="#teklif" class="btn btn-primary">📦 Toptan Sipariş & Teklif Alın</a>
+          <a href="https://wa.me/905050196160?text=Merhaba,%20po%C5%9Fet%20ve%20ambalaj%20fiyatlar%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-secondary">
+            💬 WhatsApp ile Ulaşın
           </a>
         </div>
       </div>
 
-      <!-- Hero Metrikleri -->
-      <div class="hero-visual">
-        <h3 class="font-head" style="font-size: 1.3rem; color: #fff; margin-bottom: 8px;">Entegre Fabrika Kapasitesi</h3>
-        <p style="font-size: 0.85rem; color: var(--text-muted);">Bursa OSB tesisimizde 7/24 vardiya sistemiyle yıllık 12.000 ton polimer işleme kapasitesi.</p>
-        
-        <div class="metric-grid">
-          <div class="m-item">
-            <div class="val">1.500 T</div>
-            <div class="lbl">Maks. Baskı Tonajı</div>
+      <div style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 18px; padding: 28px;">
+        <h3 class="font-head" style="font-size: 1.3rem; margin-bottom: 12px; color: #fff;">Sosyal ve Çevresel Politikamız</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+          "Üretimini yapmış olduğumuz ürünler çevre ve insan sağlığına uygundur ve zararlı maddeler içermeyen malzemelerden üretilmektedir. Yaşadığımız çevre ve içinde bulunduğumuz topluma karşı koruyucu ve destekleyici olmak temel ilkemizdir."
+        </p>
+        <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px; font-size: 0.9rem;">
+          <div style="color: var(--emerald-light); font-weight: 700;">Dönüştürülebilir & Biyobozunur Seçenekler</div>
+          <div style="color: var(--text-muted);">Hijyenik, kolay ve sorunsuz kullanım garantisi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Orijinal Sitedeki Gerçek Ürün Grupları -->
+  <section id="urunler">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <span class="sec-tag">ÜRÜN GAMIMIZ</span>
+        <h2>İmalatını Yaptığımız Ambalaj ve Torba Çeşitleri</h2>
+        <p>Toptan perakende, market, mağaza, gıda ve sanayi sektörlerine hijyenik polimer ambalaj çözümleri.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="prod-card">
+          <div class="prod-icon">🛍️</div>
+          <h3>2000 Adetli Hışır Atlet Torba</h3>
+          <p>Yüksek mukavemetli, ekonomik ve pratik kullanım sunan, market ve bakkal kullanımına uygun standart hışır atlet poşetler.</p>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-icon">✨</div>
+          <h3>Ekonomik Şeffaf & Renkli Hışır</h3>
+          <p>Şeffaf hışır atlet poşetler, renkli seçenekler ve manav/pazar için ideal ekonomik kasa hışır torbaları.</p>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-icon">🏷️</div>
+          <h3>Baskılı Atlet Poşetler</h3>
+          <p>Nazar baskılı, pastane baskılı, eczane ve marketlere özel hazır desenli veya firmanıza özel logolu baskılı poşetler.</p>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-icon">👜</div>
+          <h3>Takviyeli, El Geçme & Mini Blok Çantalar</h3>
+          <p>Giyim, butik, ayakkabı ve kırtasiye mağazaları için takviyeli taşıma saplı ve şık el geçme yumuşak torbalar.</p>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-icon">🏭</div>
+          <h3>Tekstil Tambur & Sanayi Torbaları</h3>
+          <p>Bursa tekstil ve konfeksiyon sektörüne özel geniş ebatlı tambur torbaları, ağır hizmet tipi sanayi torbaları ve çöp poşetleri.</p>
+        </div>
+
+        <div class="prod-card">
+          <div class="prod-icon">🌀</div>
+          <h3>Hışır & Naylon Bobin (Rulo Film)</h3>
+          <p>Otomatik paketleme hatları ve endüstriyel ambalaj makineleri için istenen en ve mikron kalınlığında naylon bobin ve rulo filmler.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Çevre & Biyobozunur Politikası -->
+  <section id="cevre" style="background: rgba(17, 26, 46, 0.4); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <span class="sec-tag">ÇEVRE BİLİNCİ</span>
+        <h2>Biyobozunur (Biodegradable) Ürün Teknolojimiz</h2>
+        <p>Plastik atık sorununa ideal ve dönüştürülebilir çevreci çözümler.</p>
+      </div>
+
+      <div style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 18px; padding: 36px; max-width: 900px; margin: 0 auto;">
+        <p style="font-size: 1.05rem; color: #cbd5e1; line-height: 1.8; margin-bottom: 20px;">
+          Bursa Plastik yenilikçi fikirler getirmek için çalışıyor. Ürünlerimizde çevreci <strong>Bio-çözünür</strong> çözümler de dahil olmak üzere çok farklı seçenekler var. Çevre bilinciyle geliştirdiğimiz <strong>Biodegradable</strong> ürünlerimiz ile doğada çözünebilen, çevre dostu ambalaj taleplerine tam uyum sağlıyoruz.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px;">
+          <div style="background: rgba(5, 150, 105, 0.1); border: 1px solid rgba(52, 211, 153, 0.2); padding: 16px; border-radius: 10px; text-align: center;">
+            <div style="font-weight: 700; color: var(--emerald-light);">Doğada Çözünürlük</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Toprakta biyolojik parçalanma</div>
           </div>
-          <div class="m-item">
-            <div class="val">15.000 m²</div>
-            <div class="lbl">Üretim & Depo Alanı</div>
+          <div style="background: rgba(5, 150, 105, 0.1); border: 1px solid rgba(52, 211, 153, 0.2); padding: 16px; border-radius: 10px; text-align: center;">
+            <div style="font-weight: 700; color: var(--emerald-light);">Geri Dönüştürülebilir</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Döngüsel ekonomi uyumu</div>
           </div>
-          <div class="m-item">
-            <div class="val">IATF 16949</div>
-            <div class="lbl">Otomotiv Kalite Belgesi</div>
-          </div>
-          <div class="m-item">
-            <div class="val">20+ Ülke</div>
-            <div class="lbl">Global İhracat Ağı</div>
+          <div style="background: rgba(5, 150, 105, 0.1); border: 1px solid rgba(52, 211, 153, 0.2); padding: 16px; border-radius: 10px; text-align: center;">
+            <div style="font-weight: 700; color: var(--emerald-light);">Zararlı Madde İçermez</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Gıda ile temasa uygun</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sektörel Çözümler -->
-  <section id="cozumler">
+  <!-- Teklif İsteme Formu -->
+  <section id="teklif">
     <div class="sec-inner">
       <div class="sec-head">
-        <span class="sec-tag">SEKTÖREL FAALİYET ALANLARI</span>
-        <h2>Endüstriye Değer Katan Plastik Çözümleri</h2>
-        <p>Gelişmiş hammadde mühendisliği ve yüksek tonajlı robot otomasyonu ile sıfır hata.</p>
+        <span class="sec-tag">TOPTAN TALEP</span>
+        <h2>Fiyat ve Sipariş Teklifi İsteyin</h2>
+        <p>İhtiyaç duyduğunuz torba ebadı, baskı tercihi ve koli/kg miktarını iletin, satış ekibimiz teklifinizi hazırlasın.</p>
       </div>
 
-      <div class="sector-grid">
-        <div class="sector-card">
-          <div class="sector-icon">🚗</div>
-          <h3>Otomotiv & Ticari Araç Komponentleri</h3>
-          <p>İç ve dış trim parçaları, havalandırma kanalları, motor alt muhafazaları, kablo kanalları ve teknik klipsler. %30 cam elyaf takviyeli PA66 ve POM işleme.</p>
-        </div>
-
-        <div class="sector-card">
-          <div class="sector-icon">📦</div>
-          <h3>Endüstriyel Kasa & Katlanır Konteyner</h3>
-          <p>Lojistik, tarım ve perakende zincirleri için darbe dayanımı yüksek, istiflenebilir, gıda onaylı orijinal ve geri dönüştürülmüş PP/HDPE taşıma kasaları.</p>
-        </div>
-
-        <div class="sector-card">
-          <div class="sector-icon">🏷️</div>
-          <h3>IML İnce Cidarlı Ambalaj Sistemleri</h3>
-          <p>Kalıp içi etiketleme (In-Mould Labelling) teknolojisiyle peynir, yoğurt, dondurma ve boya kovalarında hijyenik, hava almaz ve yüksek görsellikte ambalajlar.</p>
-        </div>
-
-        <div class="sector-card">
-          <div class="sector-icon">⚡</div>
-          <h3>Beyaz Eşya & Elektrik Parçaları</h3>
-          <p>Çamaşır, bulaşık makinesi ve fırın panelleri, alev iletmez (V0 yanmazlık sınıflı) polikarbonat ve ABS elektrik muhafazaları.</p>
-        </div>
-
-        <div class="sector-card">
-          <div class="sector-icon">💡</div>
-          <h3>Kalıphane, Moldflow & Ürün Tasarımı</h3>
-          <p>CAD modelleme, akış analizi, yolluk/soğutma kanalları optimizasyonu ve sıcak yolluklu yüksek gözlü kalıp imalatı ve bakımı.</p>
-        </div>
-
-        <div class="sector-card">
-          <div class="sector-icon">🔧</div>
-          <h3>Ultrasonik Kaynak & Montaj Hatları</h3>
-          <p>Baskı sonrası parçaların ultrasonik birleştirilmesi, EPDM conta montajı, sızdırmazlık testleri ve etiketleme ile montaj hattına hazır teslimat.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Makine Parkuru Tablosu -->
-  <section id="makine" style="background: rgba(17, 26, 46, 0.4); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-    <div class="sec-inner">
-      <div class="sec-head">
-        <span class="sec-tag">TEKNOLOJİK GÜÇ</span>
-        <h2>Enjeksiyon Makine Parkuru & Otomasyon</h2>
-        <p>Enerji tasarruflu servo motorlu ve 3 eksenli kartezyen robotlu modern enjeksiyon makineleri.</p>
-      </div>
-
-      <div class="specs-table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Makine Sınıfı</th>
-              <th>Kilitleme Kuvveti</th>
-              <th>Maks. Gramaj (PS)</th>
-              <th>Otomasyon</th>
-              <th>Uygulama Alanı</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Ağır Tonaj Enjeksiyon Grubu</strong></td>
-              <td>1.000 Ton - 1.500 Ton</td>
-              <td>7.500 gr</td>
-              <td>6 Eksen Robot Entegre</td>
-              <td>Palet, Büyük Kasa, Otomotiv Tampon</td>
-            </tr>
-            <tr>
-              <td><strong>Orta Tonaj Enjeksiyon Grubu</strong></td>
-              <td>400 Ton - 800 Ton</td>
-              <td>3.200 gr</td>
-              <td>Kartezyen Robot & Konveyör</td>
-              <td>Beyaz Eşya Gövdeleri, Katlanır Kasa</td>
-            </tr>
-            <tr>
-              <td><strong>Hassas Teknik Enjeksiyon</strong></td>
-              <td>150 Ton - 350 Ton</td>
-              <td>1.200 gr</td>
-              <td>Optik Kamera Kontrolü</td>
-              <td>Otomotiv İç Trim, Klips, Konnektör</td>
-            </tr>
-            <tr>
-              <td><strong>Yüksek Hızlı IML Grubu</strong></td>
-              <td>200 Ton - 450 Ton</td>
-              <td>500 gr (Hızlı Çevrim)</td>
-              <td>Yandan Girişli IML Robot</td>
-              <td>İnce Cidarlı Gıda Kapları & Kovalar</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- İnteraktif Enjeksiyon Tonaj & Maliyet Aracı -->
-  <section class="est-sec" id="hesaplayici">
-    <div class="sec-inner">
-      <div class="sec-head">
-        <span class="sec-tag">MÜHENDİSLİK HESAPLAYICI</span>
-        <h2>Plastik Enjeksiyon & Kalıp Analiz Aracı</h2>
-        <p>Hammadde, gramaj ve kalıp göz adedini seçin; önerilen makine tonajını ve üretim süresini hesaplayın.</p>
-      </div>
-
-      <div class="est-card">
-        <div class="est-grid">
-          <div>
-            <div class="field-group">
-              <label>Hammadde Türü</label>
-              <select id="pl-mat" onchange="runAnalysis()">
-                <option value="PP">PP - Polipropilen (0.90 g/cm³ - Kasa & Ambalaj)</option>
-                <option value="HDPE">HDPE - Yüksek Yoğunluklu Polietilen (0.95 g/cm³ - Palet)</option>
-                <option value="ABS">ABS - Akrilonitril Bütadien Stiren (1.05 g/cm³ - Otomotiv/Elektronik)</option>
-                <option value="PA66">PA66 %30 GF - Cam Elyaf Takviyeli Poliamid (1.35 g/cm³ - Motor Parçası)</option>
-                <option value="PC">PC - Polikarbonat (1.20 g/cm³ - Şeffaf/Yüksek Mukavemet)</option>
+      <div class="rfq-box">
+        <form onsubmit="event.preventDefault(); alert('Toptan poşet talebiniz Bursa Plastik satış departmanına iletildi. En kısa sürede geri dönüş yapılacaktır.');">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Firma / Yetkili Adı *</label>
+              <input type="text" placeholder="Firma veya Yetkili Adı" required>
+            </div>
+            <div class="form-group">
+              <label>Telefon Numaranız *</label>
+              <input type="tel" placeholder="05XX XXX XX XX" required>
+            </div>
+            <div class="form-group">
+              <label>E-Posta Adresiniz</label>
+              <input type="email" placeholder="ornek@firma.com">
+            </div>
+            <div class="form-group">
+              <label>Ürün Grubu</label>
+              <select>
+                <option value="1">Hışır Atlet Poşet (2000'li / Şeffaf / Renkli)</option>
+                <option value="2">Baskılı Atlet Poşet (Nazar / Pastane / Özel Baskı)</option>
+                <option value="3">Mağaza Takviyeli / El Geçme Çanta</option>
+                <option value="4">Tekstil Tambur Torbası / Sanayi Torbası</option>
+                <option value="5">Hışır & Naylon Bobin (Rulo Film)</option>
               </select>
             </div>
-
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-              <div class="field-group">
-                <label>Parça Net Gramajı (gr)</label>
-                <input type="number" id="pl-gram" value="180" min="5" max="8000" oninput="runAnalysis()">
-              </div>
-              <div class="field-group">
-                <label>Kalıp Göz Adedi (Cavity)</label>
-                <select id="pl-cavity" onchange="runAnalysis()">
-                  <option value="1">1 Gözlü Kalıp</option>
-                  <option value="2">2 Gözlü Kalıp</option>
-                  <option value="4" selected>4 Gözlü Kalıp</option>
-                  <option value="8">8 Gözlü Kalıp</option>
-                  <option value="16">16 Gözlü Kalıp</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="field-group">
-              <label>Yıllık Hedef Sipariş Adedi</label>
-              <input type="number" id="pl-annual" value="100000" step="10000" oninput="runAnalysis()">
+            <div class="form-group full">
+              <label>Talep Edilen Miktar (Koli / Kg), Ebat veya Notlar</label>
+              <textarea rows="3" placeholder="Örn: 50 koli orta boy şeffaf atlet poşet veya 500 kg tambur torbası..."></textarea>
             </div>
           </div>
-
-          <div class="est-summary">
-            <div>
-              <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 14px;">Mühendislik Ön Analizi</h4>
-              <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.95rem;">
-                <span style="color: var(--text-muted);">Önerilen Makine Tonajı:</span>
-                <span id="res-tonnage" style="font-weight: 700; color: var(--blue-light);">350 Ton Enjeksiyon</span>
-              </div>
-              <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.95rem;">
-                <span style="color: var(--text-muted);">Tahmini Çevrim Süresi:</span>
-                <span id="res-cycle" style="font-weight: 700;">~24 Saniye / Baskı</span>
-              </div>
-              <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.95rem;">
-                <span style="color: var(--text-muted);">Yıllık Hammadde İhtiyacı:</span>
-                <span id="res-raw" style="font-weight: 700;">18.00 Ton Polimer</span>
-              </div>
-            </div>
-
-            <form onsubmit="submitPlastikRfq(event)" style="margin-top: 20px;">
-              <div class="field-group">
-                <input type="text" id="rfq-corp" placeholder="Kurumsal Firma Adı & Yetkili *" required>
-              </div>
-              <div class="field-group">
-                <input type="tel" id="rfq-phone" placeholder="Telefon Numarası *" required>
-              </div>
-              <button type="submit" class="btn btn-main" style="width: 100%; justify-content: center;">
-                🚀 Şartname & Kalıp Teklifini Bursa Plastik'e İlet
-              </button>
-            </form>
-          </div>
-        </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1rem;">
+            🚀 Teklif Talebini Gönder
+          </button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- İletişim -->
-  <section id="iletisim">
+  <!-- İletişim (Orijinal Bilgiler) -->
+  <section id="iletisim" style="background: rgba(17, 26, 46, 0.4); border-top: 1px solid var(--border);">
     <div class="sec-inner">
       <div class="contact-grid">
         <div>
-          <span class="sec-tag">KURUMSAL İLETİŞİM</span>
-          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Tesis Ziyareti & Proje Değerlendirme</h2>
-          <p style="color: var(--text-muted); margin-bottom: 30px;">
-            Bursa Organize Sanayi Bölgesi'ndeki fabrikamızı ziyaret ederek kalıplarınızı test edebilir, satınalma ve mühendislik şartnamelerinizi teknik ekibimizle görüşebilirsiniz.
+          <span class="sec-tag">İLETİŞİM BİLGİLERİ</span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Bize Ulaşın</h2>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Kestel Organize Sanayi Bölgesi'ndeki fabrikamızı ziyaret edebilir veya satış ofisimizle iletişime geçebilirsiniz.
           </p>
 
-          <div class="contact-item">
-            <div class="ci-icon">📍</div>
+          <div class="c-item">
+            <div class="c-icon">📍</div>
             <div>
-              <h5>Fabrika & Genel Müdürlük</h5>
-              <div style="color: #fff; font-weight: 600;">Bursa Organize Sanayi Bölgesi (BOSB) / Nilüfer, BURSA</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Fabrika & Genel Merkez</div>
+              <div style="color: #fff; font-weight: 600;">Ahmet Vefik Paşa OSB Ankara Cd. No: 6, 16450 Kestel / BURSA</div>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="ci-icon">📞</div>
+          <div class="c-item">
+            <div class="c-icon">📞</div>
             <div>
-              <h5>Santral Telefon</h5>
-              <a href="tel:902127075195">0212 707 51 95</a>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Santral & GSM</div>
+              <a href="tel:902243317124" style="color: #fff; font-weight: 700; text-decoration: none;">+90 (224) 331 71 24 (pbx)</a> &nbsp;|&nbsp;
+              <a href="tel:905050196160" style="color: #fff; font-weight: 700; text-decoration: none;">+90 (505) 019 61 60</a>
+              <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Faks: +90 (224) 331 71 27</div>
             </div>
           </div>
 
-          <div class="contact-item">
-            <div class="ci-icon">✉️</div>
+          <div class="c-item">
+            <div class="c-icon">✉️</div>
             <div>
-              <h5>Kurumsal E-Posta</h5>
-              <a href="mailto:info@bursaplastik.com">info@bursaplastik.com</a>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">E-Posta</div>
+              <a href="mailto:info@bursaplastik.com" style="color: #fff; font-weight: 700; text-decoration: none;">info@bursaplastik.com</a>
             </div>
           </div>
         </div>
 
-        <div class="contact-card">
-          <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 12px;">RFQ & Teknik Çizim İletişimi</h3>
-          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px;">
-            STEP, IGES formatındaki 3D parçalarınızı ve teknik şartnamelerinizi iletmek için hızlı iletişim hattımızı kullanabilirsiniz.
+        <div style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; justify-content: center;">
+          <h3 class="font-head" style="font-size: 1.4rem; color: #fff; margin-bottom: 12px;">Hızlı Sipariş & Bilgi Hattı</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+            Toptan sipariş veya özel ebatlı torba talepleriniz için GSM hattımızdan doğrudan WhatsApp görüşmesi başlatabilirsiniz.
           </p>
-          <a href="mailto:info@bursaplastik.com?subject=Bursa%20Plastik%20RFQ%20Teknik%20Teklif%20Talebi" class="btn btn-main" style="width: 100%; justify-content: center; margin-bottom: 12px;">
-            ✉️ info@bursaplastik.com Adresine Yazın
+          <a href="https://wa.me/905050196160" target="_blank" class="btn btn-primary" style="justify-content: center; margin-bottom: 12px;">
+            💬 WhatsApp ile Mesaj Gönderin
           </a>
-          <a href="tel:902127075195" class="btn btn-sub" style="width: 100%; justify-content: center;">
-            📞 0212 707 51 95 Numaralı Santrali Ara
+          <a href="tel:902243317124" class="btn btn-secondary" style="justify-content: center;">
+            📞 +90 (224) 331 71 24 Santrali Ara
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <div style="max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-      <div>
-        © 2026 Bursa Plastik Sanayi ve Ticaret A.Ş. Tüm hakları saklıdır.
-      </div>
-      <div>
-        Bu interaktif kurumsal önizleme <a href="https://www.techandlab.com" target="_blank" style="color: #60a5fa; font-weight: 700;">Tech&Lab Stüdyosu</a> tarafından tasarlanmıştır.
-      </div>
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+      <div>© 2026 Bursa Plastik San. ve Tic. A.Ş. • Battallar Kollektif Şirketi. Tüm hakları saklıdır.</div>
+      <div>Önizleme konsepti <a href="https://www.techandlab.com" target="_blank" style="color: var(--emerald-light); text-decoration: none;">Tech&Lab Stüdyosu</a> tarafından hazırlanmıştır.</div>
     </div>
   </footer>
 
-  <script>
-    function runAnalysis() {
-      const gram = parseFloat(document.getElementById('pl-gram').value) || 0;
-      const cavity = parseInt(document.getElementById('pl-cavity').value) || 1;
-      const annual = parseInt(document.getElementById('pl-annual').value) || 0;
-
-      const totalShotGram = gram * cavity;
-      let tonnage = 80;
-
-      if (totalShotGram > 2500) tonnage = 1250;
-      else if (totalShotGram > 1200) tonnage = 750;
-      else if (totalShotGram > 500) tonnage = 450;
-      else if (totalShotGram > 200) tonnage = 280;
-      else if (totalShotGram > 80) tonnage = 160;
-
-      const cycleSec = Math.max(12, Math.round(Math.sqrt(gram) * 1.8));
-      const rawTons = (gram * annual) / 1000000;
-
-      document.getElementById('res-tonnage').innerText = `${tonnage} Ton Enjeksiyon Presi`;
-      document.getElementById('res-cycle').innerText = `~${cycleSec} Saniye / Baskı`;
-      document.getElementById('res-raw').innerText = `${rawTons.toFixed(2)} Ton Polimer`;
-    }
-
-    function submitPlastikRfq(e) {
-      e.preventDefault();
-      const corp = document.getElementById('rfq-corp').value;
-      const phone = document.getElementById('rfq-phone').value;
-      alert(`Sayın ${corp}, plastik enjeksiyon analiz talebiniz kaydedildi. Proje mühendisimiz ${phone} numaranız üzerinden teknik değerlendirmeyle geri dönecektir.`);
-    }
-
-    runAnalysis();
-  </script>
 </body>
 </html>
