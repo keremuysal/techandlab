@@ -1,591 +1,812 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bursa Plastik Sanayi ve Ticaret A.Ş. | Yüksek Teknolojili Plastik Enjeksiyon & Endüstriyel Çözümler</title>
-    <meta name="description" content="Otomotiv, beyaz eşya, gıda ambalajı ve lojistik sektörlerine özel yüksek tonajlı plastik enjeksiyon üretimi. Kalıp tasarımından montaj ve ambalajlamaya kadar anahtar teslim üretim.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --accent: #030712;
-            --bg-light: #f8fafc;
-            --text-dark: #0f172a;
-            --text-muted: #64748b;
-            --border: #e2e8f0;
-            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
-        body { background: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
-        
-        /* Demo Banner */
-        .demo-bar {
-            background: linear-gradient(90deg, #1e293b, #0f172a);
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 0.85rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-        }
-        .demo-bar-badge {
-            background: var(--primary);
-            color: #fff;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-weight: 700;
-            margin-right: 8px;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-        }
-        .demo-bar a.btn-cta {
-            background: #10b981;
-            color: #fff;
-            text-decoration: none;
-            padding: 6px 14px;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            transition: all 0.2s;
-        }
-        .demo-bar a.btn-cta:hover { background: #059669; transform: translateY(-1px); }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bursa Plastik Sanayi ve Ticaret A.Ş. | Endüstriyel Plastik Enjeksiyon & Ambalaj</title>
+  <meta name="description" content="Bursa Plastik Sanayi ve Ticaret A.Ş.: 50 - 1500 ton modern robotlu enjeksiyon parkuru, otomotiv plastik parçaları, endüstriyel kasa ve palet sistemleri, IML ambalaj çözümleri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090e1a;
+      --card-bg: #111a2e;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --blue: #2563eb;
+      --blue-light: #60a5fa;
+      --blue-glow: rgba(37, 99, 235, 0.35);
+      --teal: #0d9488;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border: #1e293b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-head {
+      font-family: 'Space Grotesk', sans-serif;
+    }
 
-        /* Navigation */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 42px;
-            z-index: 999;
-        }
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 20px;
-        }
-        .logo-wrap {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-            color: var(--text-dark);
-        }
-        .logo-wrap img {
-            height: 48px;
-            width: auto;
-            max-width: 180px;
-            object-fit: contain;
-        }
-        .logo-text {
-            font-size: 1.25rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: var(--accent);
-        }
-        .nav-menu { display: flex; gap: 24px; align-items: center; list-style: none; }
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.2s;
-        }
-        .nav-menu a:hover { color: var(--primary); }
-        .nav-contact-btn {
-            background: var(--primary);
-            color: white !important;
-            padding: 8px 18px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.2s;
-        }
-        .nav-contact-btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+    /* Demo Header Bar */
+    .demo-bar {
+      background: linear-gradient(90deg, #1e3a8a, #0f172a);
+      border-bottom: 1px solid rgba(96, 165, 250, 0.3);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-size: 0.85rem;
+    }
+    .demo-badge {
+      background: #3b82f6;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      margin-right: 8px;
+    }
+    .demo-cta {
+      background: #10b981;
+      color: white;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      transition: all 0.2s;
+    }
+    .demo-cta:hover { background: #059669; }
 
-        /* Hero Section */
-        .hero {
-            position: relative;
-            background: linear-gradient(135deg, rgba(11, 19, 43, 0.85) 0%, rgba(15, 23, 42, 0.92) 100%), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-            color: #fff;
-            padding: 100px 20px 80px;
-            text-align: center;
-        }
-        .hero-inner { max-width: 900px; margin: 0 auto; }
-        .hero-pill {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            margin-bottom: 24px;
-            color: #f8fafc;
-        }
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-        }
-        .hero p {
-            font-size: 1.15rem;
-            color: #cbd5e1;
-            margin-bottom: 36px;
-            line-height: 1.7;
-        }
-        .hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 14px 28px;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-        .btn-primary {
-            background: var(--primary);
-            color: #fff;
-            box-shadow: 0 10px 20px -5px rgba(255, 107, 0, 0.4);
-        }
-        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.15);
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-        }
-        .btn-secondary:hover { background: rgba(255, 255, 255, 0.25); transform: translateY(-2px); }
+    /* Top Info Bar */
+    .top-bar {
+      background: rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 24px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
+    .top-bar a:hover { color: var(--blue-light); }
 
-        /* Specs Bar */
-        .specs-bar {
-            background: #fff;
-            border-bottom: 1px solid var(--border);
-            padding: 30px 20px;
-        }
-        .specs-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-            text-align: center;
-        }
-        .spec-item .num {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: var(--primary);
-            line-height: 1;
-            margin-bottom: 6px;
-        }
-        .spec-item .label {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            font-weight: 600;
-        }
+    /* Nav */
+    header {
+      background: rgba(9, 14, 26, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+    }
+    .nav-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .brand img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+      background: #fff;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    .brand-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+    .brand-title span { color: var(--blue-light); }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--blue-light); }
+    .btn-nav-rfq {
+      background: linear-gradient(135deg, var(--blue), #1d4ed8);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      box-shadow: 0 4px 14px var(--blue-glow);
+    }
 
-        /* Services */
-        .services-sec {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .sec-head {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .sec-head h2 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            color: var(--accent);
-            margin-bottom: 12px;
-        }
-        .sec-head p {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            max-width: 650px;
-            margin: 0 auto;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 28px;
-        }
-        .service-card {
-            background: #fff;
-            border-radius: 14px;
-            padding: 32px;
-            border: 1px solid var(--border);
-            box-shadow: var(--card-shadow);
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .service-card:hover {
-            transform: translateY(-6px);
-            border-color: var(--primary);
-            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
-        }
-        .service-icon {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-        .service-card h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: var(--text-dark);
-        }
-        .service-card p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 110px 24px 90px;
+      background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.2) 0%, transparent 50%),
+                  radial-gradient(circle at 20% 80%, rgba(13, 148, 136, 0.1) 0%, transparent 60%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(96, 165, 250, 0.12);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 50px;
+      color: var(--blue-light);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero h1 span {
+      background: linear-gradient(90deg, #93c5fd, var(--blue-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 34px;
+      line-height: 1.7;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+    .btn-main {
+      background: linear-gradient(135deg, var(--blue), #1d4ed8);
+      color: #fff;
+      box-shadow: 0 10px 25px var(--blue-glow);
+    }
+    .btn-main:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(37, 99, 235, 0.5); }
+    .btn-sub {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+    .btn-sub:hover { background: rgba(255, 255, 255, 0.12); transform: translateY(-2px); }
 
-        /* Interactive Quote Calculator */
-        .quote-sec {
-            background: #f1f5f9;
-            padding: 70px 20px;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-        .quote-box {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--border);
-        }
-        .quote-box h3 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 8px;
-            text-align: center;
-        }
-        .quote-box p.sub {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 28px;
-            font-size: 0.95rem;
-        }
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-        .form-group { display: flex; flex-direction: column; gap: 6px; }
-        .form-group label { font-size: 0.85rem; font-weight: 700; color: var(--text-dark); }
-        .form-group input, .form-group select, .form-group textarea {
-            padding: 12px 14px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            font-size: 0.95rem;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-            border-color: var(--primary);
-        }
-        .full-width { grid-column: span 2; }
+    /* Visual Metrics Card */
+    .hero-visual {
+      background: linear-gradient(145deg, #162238, #0f172a);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .m-item {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .m-item .val {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--blue-light);
+    }
+    .m-item .lbl {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
 
-        /* Contact Bar */
-        .contact-sec {
-            padding: 70px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-        .contact-info h2 {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--accent);
-            margin-bottom: 16px;
-        }
-        .contact-info p {
-            color: var(--text-muted);
-            margin-bottom: 28px;
-            font-size: 1.05rem;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 18px;
-            font-size: 1rem;
-            color: var(--text-dark);
-        }
-        .contact-item .ci-icon {
-            width: 44px;
-            height: 44px;
-            background: #e2e8f0;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-        .contact-item a {
-            color: var(--text-dark);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .contact-item a:hover { color: var(--primary); }
+    /* Sections */
+    section { padding: 90px 24px; }
+    .sec-inner { max-width: 1280px; margin: 0 auto; }
+    .sec-head {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px;
+    }
+    .sec-tag {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--blue-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .sec-head h2 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .sec-head p { color: var(--text-muted); font-size: 1.05rem; }
 
-        /* Footer */
-        footer {
-            background: var(--accent);
-            color: #94a3b8;
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 0.9rem;
-            border-top: 1px solid #1e293b;
-        }
-        footer a { color: #cbd5e1; text-decoration: none; }
-        footer a:hover { color: #fff; }
+    /* Sector Solutions Grid */
+    .sector-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 28px;
+    }
+    .sector-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 32px;
+      transition: all 0.3s;
+    }
+    .sector-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(96, 165, 250, 0.4);
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.4);
+    }
+    .sector-icon {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    .sector-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .sector-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
 
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .nav-menu { display: none; }
-            .form-grid { grid-template-columns: 1fr; }
-            .full-width { grid-column: span 1; }
-            .contact-sec { grid-template-columns: 1fr; }
-        }
-    </style>
+    /* Machine Specs */
+    .specs-table-wrap {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      overflow: hidden;
+      margin-top: 30px;
+    }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 16px 20px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--blue-light);
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: #e5e7eb;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(255, 255, 255, 0.02); }
+
+    /* Interactive Injection Estimator */
+    .est-sec {
+      background: linear-gradient(180deg, var(--bg), #0f172a);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .est-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .est-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .field-group { margin-bottom: 20px; }
+    .field-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #d1d5db;
+      margin-bottom: 8px;
+    }
+    .field-group select, .field-group input {
+      width: 100%;
+      background: #0b1120;
+      border: 1px solid #334155;
+      padding: 12px 16px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .field-group select:focus, .field-group input:focus {
+      border-color: var(--blue-light);
+      box-shadow: 0 0 10px var(--blue-glow);
+    }
+    .est-summary {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .contact-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 34px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .ci-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(96, 165, 250, 0.1);
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-item h5 { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; text-transform: uppercase; }
+    .contact-item a { color: #fff; font-size: 1.05rem; font-weight: 700; text-decoration: none; }
+    .contact-item a:hover { color: var(--blue-light); }
+
+    footer {
+      background: #050811;
+      border-top: 1px solid var(--border);
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--blue-light); text-decoration: none; }
+
+    @media (max-width: 900px) {
+      .hero-content { grid-template-columns: 1fr; text-align: center; }
+      .hero-btns { justify-content: center; }
+      .nav-links { display: none; }
+      .est-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.4rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Demo Notification Bar -->
-    <div class="demo-bar">
-        <div>
-            <span class="demo-bar-badge">CANLI DEMO</span>
-            <strong>Bursa Plastik Sanayi ve Ticaret A.Ş.</strong> için Tech&Lab tarafından özel olarak tasarlanmıştır.
-        </div>
-        <div>
-            <a href="https://wa.me/905057053538?text=Merhaba%20bursa-plastik%20demo%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" class="btn-cta">Hemen Devreye Alın (9.500 ₺)</a>
-        </div>
+  <!-- Tech&Lab Canlı Demo Barı -->
+  <div class="demo-bar">
+    <div>
+      <span class="demo-badge">CANLI DEMO</span>
+      <strong>Bursa Plastik Sanayi ve Ticaret A.Ş.</strong> için Tech&Lab tarafından kodlanmış kurumsal prototiptir.
     </div>
+    <div>
+      <a href="https://wa.me/905057053538?text=Merhaba%20Bursa%20Plastik%20demosu%20hakk%C4%B1nda%20g%C3%B6r%C3%BC%C5%9Fmek%20istiyorum" target="_blank" class="demo-cta">Hemen Devreye Alın (9.500 ₺)</a>
+    </div>
+  </div>
 
-    <!-- Header -->
-    <header>
-        <div class="nav-container">
-            <a href="#" class="logo-wrap">
-                <img src="assets/logo.png" alt="Bursa Plastik Sanayi ve Ticaret A.Ş. Logo" onerror="this.style.display='none'">
-                <span class="logo-text">Bursa Plastik Sanayi ve Ticaret A.Ş.</span>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="#hizmetler">Hizmetlerimiz</a></li>
-                <li><a href="#hakkimizda">Hakkımızda</a></li>
-                <li><a href="#teklif">Teklif Al</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
-                <li><a href="tel:902127075195" class="nav-contact-btn">📞 0212 707 51 95</a></li>
-            </ul>
+  <!-- Üst Bilgi Barı -->
+  <div class="top-bar">
+    <div>📍 Bursa Organize Sanayi Bölgesi (BOSB) / Nilüfer, BURSA</div>
+    <div>
+      <span>📞 <a href="tel:902127075195">0212 707 51 95</a></span>
+      <span style="margin: 0 10px;">|</span>
+      <span>✉️ <a href="mailto:info@bursaplastik.com">info@bursaplastik.com</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-wrap">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="Bursa Plastik Logo" onerror="this.style.display='none'">
+        <div class="brand-title">BURSA PLASTİK <span>A.Ş.</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#cozumler">Sektörel Çözümler</a></li>
+        <li><a href="#makine">Makine Parkuru</a></li>
+        <li><a href="#hesaplayici">Enjeksiyon Analiz Aracı</a></li>
+        <li><a href="#kalite">Kalite & Standartlar</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="#hesaplayici" class="btn-nav-rfq">⚡ RFQ Teklif İste</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div>
+        <div class="hero-pill">
+          🏭 50 TONDAN 1500 TONA ROBOTLU ENJEKSİYON HATTI
         </div>
-    </header>
+        <h1>Endüstriyel Plastik İmalatında <span>Yüksek Kapasite</span> ve Hassasiyet.</h1>
+        <p>
+          Otomotiv, lojistik, beyaz eşya ve gıda ambalajı sektörlerine anahtar teslim plastik enjeksiyon çözümleri. Kalıp tasarımından Moldflow analizlerine, IML etiketlemeden robotik montaja kadar uluslararası standartlarda üretim.
+        </p>
+        <div class="hero-btns">
+          <a href="#hesaplayici" class="btn btn-main">📊 Kalıp & Parça Maliyet Analizi Yap</a>
+          <a href="https://wa.me/905057053538?text=Merhaba,%20Bursa%20Plastik%20enjeksiyon%20%C3%BCretimi%20ve%20teklif%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-sub">
+            💬 WhatsApp ile Şartname İletin
+          </a>
+        </div>
+      </div>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-inner">
-            <span class="hero-pill">BURSA SANAYİ VE İMALAT ÇÖZÜMLERİ</span>
-            <h1>Yüksek Teknolojili Plastik Enjeksiyon & Endüstriyel Çözümler</h1>
-            <p>Otomotiv, beyaz eşya, gıda ambalajı ve lojistik sektörlerine özel yüksek tonajlı plastik enjeksiyon üretimi. Kalıp tasarımından montaj ve ambalajlamaya kadar anahtar teslim üretim.</p>
-            <div class="hero-actions">
-                <a href="#teklif" class="btn btn-primary">⚡ Hemen Teklif İsteyin</a>
-                <a href="https://wa.me/902127075195" target="_blank" class="btn btn-secondary">💬 WhatsApp ile Görüşün</a>
+      <!-- Hero Metrikleri -->
+      <div class="hero-visual">
+        <h3 class="font-head" style="font-size: 1.3rem; color: #fff; margin-bottom: 8px;">Entegre Fabrika Kapasitesi</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Bursa OSB tesisimizde 7/24 vardiya sistemiyle yıllık 12.000 ton polimer işleme kapasitesi.</p>
+        
+        <div class="metric-grid">
+          <div class="m-item">
+            <div class="val">1.500 T</div>
+            <div class="lbl">Maks. Baskı Tonajı</div>
+          </div>
+          <div class="m-item">
+            <div class="val">15.000 m²</div>
+            <div class="lbl">Üretim & Depo Alanı</div>
+          </div>
+          <div class="m-item">
+            <div class="val">IATF 16949</div>
+            <div class="lbl">Otomotiv Kalite Belgesi</div>
+          </div>
+          <div class="m-item">
+            <div class="val">20+ Ülke</div>
+            <div class="lbl">Global İhracat Ağı</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sektörel Çözümler -->
+  <section id="cozumler">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <span class="sec-tag">SEKTÖREL FAALİYET ALANLARI</span>
+        <h2>Endüstriye Değer Katan Plastik Çözümleri</h2>
+        <p>Gelişmiş hammadde mühendisliği ve yüksek tonajlı robot otomasyonu ile sıfır hata.</p>
+      </div>
+
+      <div class="sector-grid">
+        <div class="sector-card">
+          <div class="sector-icon">🚗</div>
+          <h3>Otomotiv & Ticari Araç Komponentleri</h3>
+          <p>İç ve dış trim parçaları, havalandırma kanalları, motor alt muhafazaları, kablo kanalları ve teknik klipsler. %30 cam elyaf takviyeli PA66 ve POM işleme.</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">📦</div>
+          <h3>Endüstriyel Kasa & Katlanır Konteyner</h3>
+          <p>Lojistik, tarım ve perakende zincirleri için darbe dayanımı yüksek, istiflenebilir, gıda onaylı orijinal ve geri dönüştürülmüş PP/HDPE taşıma kasaları.</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">🏷️</div>
+          <h3>IML İnce Cidarlı Ambalaj Sistemleri</h3>
+          <p>Kalıp içi etiketleme (In-Mould Labelling) teknolojisiyle peynir, yoğurt, dondurma ve boya kovalarında hijyenik, hava almaz ve yüksek görsellikte ambalajlar.</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">⚡</div>
+          <h3>Beyaz Eşya & Elektrik Parçaları</h3>
+          <p>Çamaşır, bulaşık makinesi ve fırın panelleri, alev iletmez (V0 yanmazlık sınıflı) polikarbonat ve ABS elektrik muhafazaları.</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">💡</div>
+          <h3>Kalıphane, Moldflow & Ürün Tasarımı</h3>
+          <p>CAD modelleme, akış analizi, yolluk/soğutma kanalları optimizasyonu ve sıcak yolluklu yüksek gözlü kalıp imalatı ve bakımı.</p>
+        </div>
+
+        <div class="sector-card">
+          <div class="sector-icon">🔧</div>
+          <h3>Ultrasonik Kaynak & Montaj Hatları</h3>
+          <p>Baskı sonrası parçaların ultrasonik birleştirilmesi, EPDM conta montajı, sızdırmazlık testleri ve etiketleme ile montaj hattına hazır teslimat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Makine Parkuru Tablosu -->
+  <section id="makine" style="background: rgba(17, 26, 46, 0.4); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <span class="sec-tag">TEKNOLOJİK GÜÇ</span>
+        <h2>Enjeksiyon Makine Parkuru & Otomasyon</h2>
+        <p>Enerji tasarruflu servo motorlu ve 3 eksenli kartezyen robotlu modern enjeksiyon makineleri.</p>
+      </div>
+
+      <div class="specs-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Makine Sınıfı</th>
+              <th>Kilitleme Kuvveti</th>
+              <th>Maks. Gramaj (PS)</th>
+              <th>Otomasyon</th>
+              <th>Uygulama Alanı</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ağır Tonaj Enjeksiyon Grubu</strong></td>
+              <td>1.000 Ton - 1.500 Ton</td>
+              <td>7.500 gr</td>
+              <td>6 Eksen Robot Entegre</td>
+              <td>Palet, Büyük Kasa, Otomotiv Tampon</td>
+            </tr>
+            <tr>
+              <td><strong>Orta Tonaj Enjeksiyon Grubu</strong></td>
+              <td>400 Ton - 800 Ton</td>
+              <td>3.200 gr</td>
+              <td>Kartezyen Robot & Konveyör</td>
+              <td>Beyaz Eşya Gövdeleri, Katlanır Kasa</td>
+            </tr>
+            <tr>
+              <td><strong>Hassas Teknik Enjeksiyon</strong></td>
+              <td>150 Ton - 350 Ton</td>
+              <td>1.200 gr</td>
+              <td>Optik Kamera Kontrolü</td>
+              <td>Otomotiv İç Trim, Klips, Konnektör</td>
+            </tr>
+            <tr>
+              <td><strong>Yüksek Hızlı IML Grubu</strong></td>
+              <td>200 Ton - 450 Ton</td>
+              <td>500 gr (Hızlı Çevrim)</td>
+              <td>Yandan Girişli IML Robot</td>
+              <td>İnce Cidarlı Gıda Kapları & Kovalar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- İnteraktif Enjeksiyon Tonaj & Maliyet Aracı -->
+  <section class="est-sec" id="hesaplayici">
+    <div class="sec-inner">
+      <div class="sec-head">
+        <span class="sec-tag">MÜHENDİSLİK HESAPLAYICI</span>
+        <h2>Plastik Enjeksiyon & Kalıp Analiz Aracı</h2>
+        <p>Hammadde, gramaj ve kalıp göz adedini seçin; önerilen makine tonajını ve üretim süresini hesaplayın.</p>
+      </div>
+
+      <div class="est-card">
+        <div class="est-grid">
+          <div>
+            <div class="field-group">
+              <label>Hammadde Türü</label>
+              <select id="pl-mat" onchange="runAnalysis()">
+                <option value="PP">PP - Polipropilen (0.90 g/cm³ - Kasa & Ambalaj)</option>
+                <option value="HDPE">HDPE - Yüksek Yoğunluklu Polietilen (0.95 g/cm³ - Palet)</option>
+                <option value="ABS">ABS - Akrilonitril Bütadien Stiren (1.05 g/cm³ - Otomotiv/Elektronik)</option>
+                <option value="PA66">PA66 %30 GF - Cam Elyaf Takviyeli Poliamid (1.35 g/cm³ - Motor Parçası)</option>
+                <option value="PC">PC - Polikarbonat (1.20 g/cm³ - Şeffaf/Yüksek Mukavemet)</option>
+              </select>
             </div>
-        </div>
-    </section>
 
-    <!-- Specs Bar -->
-    <section class="specs-bar">
-        <div class="specs-grid">
-            
-        <div class="spec-item">
-            <div class="num">50 - 1500 T</div>
-            <div class="label">Enjeksiyon Makine Parkı</div>
-        </div>
-    
-        <div class="spec-item">
-            <div class="num">15.000 m²</div>
-            <div class="label">Entegre Üretim Alanı</div>
-        </div>
-    
-        <div class="spec-item">
-            <div class="num">ISO 9001</div>
-            <div class="label">Uluslararası Kalite Belgesi</div>
-        </div>
-    
-        <div class="spec-item">
-            <div class="num">7/24</div>
-            <div class="label">Kesintisiz Seri İmalat</div>
-        </div>
-    
-        </div>
-    </section>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+              <div class="field-group">
+                <label>Parça Net Gramajı (gr)</label>
+                <input type="number" id="pl-gram" value="180" min="5" max="8000" oninput="runAnalysis()">
+              </div>
+              <div class="field-group">
+                <label>Kalıp Göz Adedi (Cavity)</label>
+                <select id="pl-cavity" onchange="runAnalysis()">
+                  <option value="1">1 Gözlü Kalıp</option>
+                  <option value="2">2 Gözlü Kalıp</option>
+                  <option value="4" selected>4 Gözlü Kalıp</option>
+                  <option value="8">8 Gözlü Kalıp</option>
+                  <option value="16">16 Gözlü Kalıp</option>
+                </select>
+              </div>
+            </div>
 
-    <!-- Services -->
-    <section class="services-sec" id="hizmetler">
-        <div class="sec-head">
-            <h2>Üretim Yetkinliklerimiz & Hizmetler</h2>
-            <p>Yüksek kalite standartlarında, sıfır hata prensibi ve hızlı teslimat güvencesiyle endüstriyel çözümler.</p>
-        </div>
-        <div class="services-grid">
-            
-        <div class="service-card">
-            <div class="service-icon">🏭</div>
-            <h3>Plastik Enjeksiyon İmalatı</h3>
-            <p>50 tondan 1500 tona kadar robot otomasyonlu modern enjeksiyon makineleriyle PP, PE, ABS, PA, POM hammaddeleriyle seri üretim.</p>
-        </div>
-    
-        <div class="service-card">
-            <div class="service-icon">📦</div>
-            <h3>Endüstriyel Kasa & Palet</h3>
-            <p>Lojistik ve depolama için darbelere dayanıklı, istiflenebilir, gıdaya uygun sertifikalı plastik kasa ve palet sistemleri.</p>
-        </div>
-    
-        <div class="service-card">
-            <div class="service-icon">🚗</div>
-            <h3>Otomotiv & Teknik Parçalar</h3>
-            <p>IATF standartlarına uygun tolerans kontrolü, iç ve dış trim parçaları, klipsler ve motor alt muhafazaları.</p>
-        </div>
-    
-        <div class="service-card">
-            <div class="service-icon">🏷️</div>
-            <h3>IML İnce Cidarlı Ambalaj</h3>
-            <p>Kalıp içi etiketleme (In-Mould Labelling) teknolojisiyle yüksek görsellik ve hijyen standartlarında gıda kapları.</p>
-        </div>
-    
-        <div class="service-card">
-            <div class="service-icon">💡</div>
-            <h3>Kalıphane & Prototip Üretim</h3>
-            <p>CAD/CAM modelleme, kalıp akış analizleri (Moldflow) ve 3D hızlı prototipleme ile sıfırdan ürün geliştirme desteği.</p>
-        </div>
-    
-        <div class="service-card">
-            <div class="service-icon">🔧</div>
-            <h3>Ultrasonik Kaynak & Montaj</h3>
-            <p>Plastik parçaların ultrasonik birleştirilmesi, conta montajı ve kalite kontrol testleriyle montaja hazır teslimat.</p>
-        </div>
-    
-        </div>
-    </section>
+            <div class="field-group">
+              <label>Yıllık Hedef Sipariş Adedi</label>
+              <input type="number" id="pl-annual" value="100000" step="10000" oninput="runAnalysis()">
+            </div>
+          </div>
 
-    <!-- Interactive RFQ Quote Section -->
-    <section class="quote-sec" id="teklif">
-        <div class="quote-box">
-            <h3>Hızlı Fiyat & İmalat Teklifi Alın</h3>
-            <p class="sub">Teknik çiziminizi (DXF, DWG, PDF, STEP) veya proje detaylarınızı iletin, aynı gün içinde fiyatlandıralım.</p>
-            <form onsubmit="event.preventDefault(); alert('Teklif talebiniz başarıyla alındı! Mühendislik ekibimiz en kısa sürede sizinle iletişime geçecektir.');">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label>Firma / Yetkili Adı *</label>
-                        <input type="text" placeholder="Örn: Ahmet Yılmaz" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Telefon Numarası *</label>
-                        <input type="tel" placeholder="05XX XXX XX XX" required>
-                    </div>
-                    <div class="form-group">
-                        <label>E-Posta Adresi</label>
-                        <input type="email" placeholder="ad@firma.com">
-                    </div>
-                    <div class="form-group">
-                        <label>Talep Edilen İşlem *</label>
-                        <select required>
-                            <option value="">Seçiniz...</option>
-                            <option value="1">Lazer / Hassas Kesim</option>
-                            <option value="2">CNC Büküm / Şekillendirme</option>
-                            <option value="3">Seri Kalıp & Takım İmalatı</option>
-                            <option value="4">Komple Parça / Montajlı İmalat</option>
-                        </select>
-                    </div>
-                    <div class="form-group full-width">
-                        <label>Proje Detayları, Malzeme Cinsi, Adet</label>
-                        <textarea rows="3" placeholder="Örn: 3mm DKP Sac 500 Adet lazer kesim ve 2 büküm..."></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.05rem;">
-                    🚀 Teklif Talebini Gönder
-                </button>
+          <div class="est-summary">
+            <div>
+              <h4 style="font-size: 1.2rem; color: #fff; margin-bottom: 14px;">Mühendislik Ön Analizi</h4>
+              <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.95rem;">
+                <span style="color: var(--text-muted);">Önerilen Makine Tonajı:</span>
+                <span id="res-tonnage" style="font-weight: 700; color: var(--blue-light);">350 Ton Enjeksiyon</span>
+              </div>
+              <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.95rem;">
+                <span style="color: var(--text-muted);">Tahmini Çevrim Süresi:</span>
+                <span id="res-cycle" style="font-weight: 700;">~24 Saniye / Baskı</span>
+              </div>
+              <div style="padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; font-size: 0.95rem;">
+                <span style="color: var(--text-muted);">Yıllık Hammadde İhtiyacı:</span>
+                <span id="res-raw" style="font-weight: 700;">18.00 Ton Polimer</span>
+              </div>
+            </div>
+
+            <form onsubmit="submitPlastikRfq(event)" style="margin-top: 20px;">
+              <div class="field-group">
+                <input type="text" id="rfq-corp" placeholder="Kurumsal Firma Adı & Yetkili *" required>
+              </div>
+              <div class="field-group">
+                <input type="tel" id="rfq-phone" placeholder="Telefon Numarası *" required>
+              </div>
+              <button type="submit" class="btn btn-main" style="width: 100%; justify-content: center;">
+                🚀 Şartname & Kalıp Teklifini Bursa Plastik'e İlet
+              </button>
             </form>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact & Location -->
-    <section class="contact-sec" id="iletisim">
-        <div class="contact-info">
-            <h2>İletişim & Fabrika Adresi</h2>
-            <p>Projelerinizi görüşmek, teknik çizimlerinizi değerlendirmek veya tesisimizi ziyaret etmek için dilediğiniz zaman ulaşabilirsiniz.</p>
-            
-            <div class="contact-item">
-                <div class="ci-icon">📍</div>
-                <div>
-                    <strong>Fabrika / Adres:</strong><br>
-                    Bursa Organize Sanayi Bölgesi (BOSB) / Nilüfer, BURSA
-                </div>
+  <!-- İletişim -->
+  <section id="iletisim">
+    <div class="sec-inner">
+      <div class="contact-grid">
+        <div>
+          <span class="sec-tag">KURUMSAL İLETİŞİM</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Tesis Ziyareti & Proje Değerlendirme</h2>
+          <p style="color: var(--text-muted); margin-bottom: 30px;">
+            Bursa Organize Sanayi Bölgesi'ndeki fabrikamızı ziyaret ederek kalıplarınızı test edebilir, satınalma ve mühendislik şartnamelerinizi teknik ekibimizle görüşebilirsiniz.
+          </p>
+
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <h5>Fabrika & Genel Müdürlük</h5>
+              <div style="color: #fff; font-weight: 600;">Bursa Organize Sanayi Bölgesi (BOSB) / Nilüfer, BURSA</div>
             </div>
-            <div class="contact-item">
-                <div class="ci-icon">📞</div>
-                <div>
-                    <strong>Telefon:</strong><br>
-                    <a href="tel:902127075195">0212 707 51 95</a>
-                </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <h5>Santral Telefon</h5>
+              <a href="tel:902127075195">0212 707 51 95</a>
             </div>
-            <div class="contact-item">
-                <div class="ci-icon">✉️</div>
-                <div>
-                    <strong>E-Posta:</strong><br>
-                    <a href="mailto:info@bursaplastik.com">info@bursaplastik.com</a>
-                </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <h5>Kurumsal E-Posta</h5>
+              <a href="mailto:info@bursaplastik.com">info@bursaplastik.com</a>
             </div>
-            <div class="contact-item">
-                <div class="ci-icon">💬</div>
-                <div>
-                    <strong>Doğrudan WhatsApp Hattı:</strong><br>
-                    <a href="https://wa.me/902127075195" target="_blank">WhatsApp İletişimini Başlat</a>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <div style="background: #fff; border-radius: 14px; padding: 24px; border: 1px solid var(--border); box-shadow: var(--card-shadow);">
-            <h3 style="font-size: 1.3rem; margin-bottom: 12px; color: var(--accent);">Bursa İçi Aynı Gün Sevkiyat</h3>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
-                Bursa Organize Sanayi Bölgesi (BOSB), DOSAB, NOSAB, Kayapa ve Çalı sanayi bölgelerine kendi araçlarımızla düzenli ve hızlı sevkiyat sağlıyoruz.
-            </p>
-            <div style="border-radius: 10px; overflow: hidden; height: 220px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: 600;">
-                🗺️ Harita ve Sevkiyat Lokasyonu (Bursa Sanayi Hattı)
-            </div>
+        <div class="contact-card">
+          <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 12px;">RFQ & Teknik Çizim İletişimi</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px;">
+            STEP, IGES formatındaki 3D parçalarınızı ve teknik şartnamelerinizi iletmek için hızlı iletişim hattımızı kullanabilirsiniz.
+          </p>
+          <a href="mailto:info@bursaplastik.com?subject=Bursa%20Plastik%20RFQ%20Teknik%20Teklif%20Talebi" class="btn btn-main" style="width: 100%; justify-content: center; margin-bottom: 12px;">
+            ✉️ info@bursaplastik.com Adresine Yazın
+          </a>
+          <a href="tel:902127075195" class="btn btn-sub" style="width: 100%; justify-content: center;">
+            📞 0212 707 51 95 Numaralı Santrali Ara
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Bursa Plastik Sanayi ve Ticaret A.Ş.. Tüm hakları saklıdır. Bu interaktif konsept sayfa <a href="https://www.techandlab.com" target="_blank" style="color: #60a5fa; font-weight: 600;">Tech&Lab Dijital Dönüşüm Stüdyosu</a> tarafından tasarlanmıştır.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div>
+        © 2026 Bursa Plastik Sanayi ve Ticaret A.Ş. Tüm hakları saklıdır.
+      </div>
+      <div>
+        Bu interaktif kurumsal önizleme <a href="https://www.techandlab.com" target="_blank" style="color: #60a5fa; font-weight: 700;">Tech&Lab Stüdyosu</a> tarafından tasarlanmıştır.
+      </div>
+    </div>
+  </footer>
 
+  <script>
+    function runAnalysis() {
+      const gram = parseFloat(document.getElementById('pl-gram').value) || 0;
+      const cavity = parseInt(document.getElementById('pl-cavity').value) || 1;
+      const annual = parseInt(document.getElementById('pl-annual').value) || 0;
+
+      const totalShotGram = gram * cavity;
+      let tonnage = 80;
+
+      if (totalShotGram > 2500) tonnage = 1250;
+      else if (totalShotGram > 1200) tonnage = 750;
+      else if (totalShotGram > 500) tonnage = 450;
+      else if (totalShotGram > 200) tonnage = 280;
+      else if (totalShotGram > 80) tonnage = 160;
+
+      const cycleSec = Math.max(12, Math.round(Math.sqrt(gram) * 1.8));
+      const rawTons = (gram * annual) / 1000000;
+
+      document.getElementById('res-tonnage').innerText = `${tonnage} Ton Enjeksiyon Presi`;
+      document.getElementById('res-cycle').innerText = `~${cycleSec} Saniye / Baskı`;
+      document.getElementById('res-raw').innerText = `${rawTons.toFixed(2)} Ton Polimer`;
+    }
+
+    function submitPlastikRfq(e) {
+      e.preventDefault();
+      const corp = document.getElementById('rfq-corp').value;
+      const phone = document.getElementById('rfq-phone').value;
+      alert(`Sayın ${corp}, plastik enjeksiyon analiz talebiniz kaydedildi. Proje mühendisimiz ${phone} numaranız üzerinden teknik değerlendirmeyle geri dönecektir.`);
+    }
+
+    runAnalysis();
+  </script>
 </body>
 </html>
