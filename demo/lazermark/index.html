@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Lazermark Endüstriyel Lazer Sistemleri Ltd. Şti. | Bursa Robotik Lazer Kaynak, Mobil Lazer &amp; Markalama</title>
-  <meta name="description" content="Lazermark Endüstriyel Lazer Sistemleri — Bursa Nilüfer'de robotik lazer kaynak, 7/24 mobil yerinde kalıp lazer kaynak, lazer markalama, mikro lazer kesim hizmetleri ve endüstriyel lazer makine satışı." />
+  <meta name="description" content="2015'ten bugüne Bursa Nilüfer'de robotik lazer kaynak, yerinde mobil kalıp lazer kaynak, 0.01 mm mikro lazer kesim, derin gravür markalama hizmetleri ve Vision Lasertechnik / LaserIsse lazer sistemleri." />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #09090b; }
     h1, h2, h3, .font-laser { font-family: 'Space Grotesk', sans-serif; }
-    dialog::backdrop { background: rgba(9, 9, 11, 0.8); backdrop-filter: blur(6px); }
-    .lm-mode-btn.active { background-color: #d21e2b; color: #ffffff; border-color: #d21e2b; }
+    .font-mono-laser { font-family: 'JetBrains Mono', monospace; }
+    dialog::backdrop { background: rgba(9, 9, 11, 0.84); backdrop-filter: blur(6px); }
+    .lm-mode-btn.active { background-color: #d21e2b; color: #ffffff; border-color: #d21e2b; box-shadow: 0 8px 24px -4px rgba(210, 30, 43, 0.4); }
   </style>
 </head>
 <body class="antialiased selection:bg-[#d21e2b] selection:text-white">
@@ -33,7 +34,7 @@
     </div>
   </div>
 
-  <!-- Üst İletişim Çubuğu -->
+  <!-- Üst Kurumsal İletişim Çubuğu (Sabit Tel + Gerçek Cep/WhatsApp Hattı + 4 Departman E-postası) -->
   <div class="bg-zinc-900 text-zinc-300 text-xs border-b border-zinc-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
       <div class="flex flex-wrap items-center gap-5">
@@ -41,11 +42,16 @@
           <span class="w-2 h-2 rounded-full bg-[#d21e2b]"></span>
           +90 (224) 443 53 36
         </a>
-        <a href="mailto:info@lazermark.com.tr" class="hover:text-red-400 transition">info@lazermark.com.tr</a>
-        <span class="hidden md:inline text-zinc-400">Alaaddinbey Mah. Çiftlik Cd. MESE-6 İşmerkezi No:5 P-O Nilüfer / BURSA</span>
+        <a href="https://wa.me/905365646543" target="_blank" rel="noopener" class="text-emerald-400 hover:text-emerald-300 font-bold flex items-center gap-1.5 transition">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          Mobil / WhatsApp: +90 (536) 564 65 43
+        </a>
+        <a href="mailto:info@lazermark.com.tr" class="hover:text-red-400 transition hidden sm:inline">info@lazermark.com.tr</a>
+        <a href="mailto:imalat@lazermark.com.tr" class="hover:text-red-400 transition hidden md:inline">imalat@lazermark.com.tr</a>
       </div>
-      <div class="flex items-center gap-2">
-        <span class="px-2.5 py-0.5 rounded-full bg-[#d21e2b]/20 text-red-400 font-bold text-[11px]">Bursa Yerinde Mobil Lazer Kaynak Servisi</span>
+      <div class="flex items-center gap-3">
+        <span class="hidden xl:inline text-zinc-400">Alaaddinbey Mh. Çiftlik Cd. MESE-6 İşmerkezi No:5 P-O Nilüfer / BURSA</span>
+        <span class="px-2.5 py-0.5 rounded-full bg-[#d21e2b]/20 text-red-400 font-bold text-[11px]">Vision Lasertechnik &amp; LaserIsse Partneri</span>
       </div>
     </div>
   </div>
@@ -54,19 +60,19 @@
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-zinc-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
       <a href="#" class="flex items-center gap-3 shrink-0">
-        <img src="assets/logo-dark.png" alt="Lazermark Endüstriyel Lazer Sistemleri" width="210" height="54" class="h-11 sm:h-12 w-auto object-contain" />
+        <img src="assets/logo-dark.png" alt="Lazermark Endüstriyel Lazer Sistemleri" width="220" height="56" class="h-11 sm:h-12 w-auto object-contain" />
       </a>
-      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-zinc-700">
-        <a href="#hizmet-ve-sistemler" onclick="switchLmMode('hizmet')" class="hover:text-[#d21e2b] transition">Lazer Hizmetlerimiz (Fason &amp; Mobil)</a>
-        <a href="#hizmet-ve-sistemler" onclick="switchLmMode('sistem')" class="hover:text-[#d21e2b] transition">Lazer Sistemlerimiz (Makine Satışı)</a>
-        <a href="#mobil-lazer" class="hover:text-[#d21e2b] transition">Yerinde Mobil Kaynak</a>
-        <a href="#sektorler" class="hover:text-[#d21e2b] transition">Sektörler &amp; Referanslar</a>
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-bold text-zinc-700">
+        <a href="#hizmet-ve-sistemler" onclick="switchLmMode('hizmet')" class="hover:text-[#d21e2b] transition">Lazer Hizmetlerimiz (6)</a>
+        <a href="#hizmet-ve-sistemler" onclick="switchLmMode('sistem')" class="hover:text-[#d21e2b] transition">Lazer Sistemlerimiz &amp; PDF Katalog</a>
+        <a href="#verimlilik-karsilastirma" class="hover:text-[#d21e2b] transition">Robotik Lazer Verimliliği</a>
+        <a href="#uygulama-galerisi" class="hover:text-[#d21e2b] transition">Bursa Uygulama Galerisi</a>
         <a href="#iletisim" class="hover:text-[#d21e2b] transition">İletişim</a>
       </nav>
       <div class="flex items-center gap-2.5">
-        <button onclick="openLmModal('Mobil Lazer Kaynak Servisi Çağır')" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-[#d21e2b] text-[#d21e2b] hover:bg-red-50 text-xs font-bold transition">
-          Mobil Lazer Çağır
-        </button>
+        <a href="https://wa.me/905365646543?text=Merhaba%2C%20lazer%20kaynak%20%2F%20markalama%20hizmeti%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition">
+          WhatsApp Hattı
+        </a>
         <button onclick="openLmModal('Lazer Hizmet / Sistem Teklifi')" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs sm:text-sm font-bold transition shadow-md shadow-red-600/20">
           Hızlı Teklif &amp; Numune Testi &rarr;
         </button>
@@ -75,72 +81,66 @@
   </header>
 
   <!-- Hero Bölümü -->
-  <section class="relative bg-zinc-950 text-white overflow-hidden">
+  <section class="relative bg-zinc-950 text-white overflow-hidden border-b border-zinc-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 space-y-6">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#d21e2b]/20 border border-[#d21e2b]/40 text-red-400 text-xs font-bold uppercase tracking-wider">
-          <span>Endüstriyel Lazer Teknolojilerinde Çifte Uzmanlık — Nilüfer / BURSA</span>
+          <span>2015'ten Bugüne Otomotiv, Savunma ve Havacılık Çözüm Ortağı — BURSA</span>
         </div>
-        <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-bold tracking-tight leading-[1.1] font-laser">
-          Robotik Lazer Kaynak, Mobil Kalıp Tamiri ve Endüstriyel Lazer Sistemleri
+        <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-bold tracking-tight leading-[1.08] font-laser">
+          Robotik Lazer Kaynak, Yerinde Mobil Kalıp Tamiri ve Endüstriyel Lazer Sistemleri
         </h1>
         <p class="text-zinc-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-          Lazermark olarak Bursa'daki uygulama merkezimizde <strong>robotik lazer kaynak, mikro lazer kesim, derin gravür/markalama ve fabrikanızda yerinde mobil kalıp kaynak hizmeti</strong> sunuyor; aynı zamanda üretim hattınıza özel <strong>anahtar teslim lazer markalama, kaynak ve lazer temizleme makineleri</strong> kuruyoruz.
+          Alman <strong>Vision Lasertechnik</strong> yetkili distribütörü ve <strong>LaserIsse</strong> sistem partneri olarak; <strong>0,1 mm hassasiyetle kalıp ve robotik lazer kaynak</strong>, <strong>0,01 mm mikro lazer kesim</strong>, <strong>3D derin gravür markalama</strong>, <strong>fabrikanızda mobil lazer servisi</strong> ve anahtar teslim lazer makine kurulumu sunuyoruz.
         </p>
         <div class="flex flex-wrap items-center gap-4 pt-2">
           <button onclick="openLmModal('Ücretsiz Numune Testi & Fiyat Teklifi')" class="px-7 py-4 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white font-bold text-base transition shadow-xl shadow-red-600/25">
             Ücretsiz Numune Testi &amp; Teklif Alın &rarr;
           </button>
-          <a href="#hizmet-ve-sistemler" class="px-6 py-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold text-base transition">
-            Hizmet &amp; Makine Kataloğu
-          </a>
+          <button onclick="openLmModal('Fabrikada Yerinde Mobil Lazer Kaynak Çağrısı')" class="px-6 py-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white font-semibold text-base transition">
+            Fabrikanıza Mobil Lazer Çağırın
+          </button>
         </div>
 
         <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-zinc-800">
-          <div>
-            <div class="text-2xl sm:text-3xl font-bold text-[#d21e2b] font-laser">0.1 mm</div>
-            <div class="text-xs text-zinc-400 mt-0.5">Mikro Lazer Kaynak &amp; Kesim Hassasiyeti</div>
+          <div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-[#d21e2b] font-mono-laser">0,01 mm</div>
+            <div class="text-xs text-zinc-400 mt-0.5">Mikro Lazer Kesim &amp; Kaynak</div>
           </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-bold text-white font-laser">Yerinde</div>
-            <div class="text-xs text-zinc-400 mt-0.5">Mobil Lazer İle Fabrikanızda Kalıp Kaynağı</div>
+          <div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-white font-mono-laser">15+ Yıl</div>
+            <div class="text-xs text-zinc-400 mt-0.5">Endüstriyel Lazer Deneyimi</div>
           </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-bold text-white font-laser">6 Eksen</div>
-            <div class="text-xs text-zinc-400 mt-0.5">Robotik Lazer Kaynak &amp; Otomasyon</div>
+          <div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-sky-400 font-mono-laser">50+ Sistem</div>
+            <div class="text-xs text-zinc-400 mt-0.5">Pulsed Lazer &amp; Otomasyon Kurulumu</div>
           </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-bold text-emerald-400 font-laser">%100</div>
-            <div class="text-xs text-zinc-400 mt-0.5">Deformasyonsuz Kalıp &amp; Parça Onarımı</div>
+          <div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-3.5">
+            <div class="text-2xl sm:text-3xl font-bold text-emerald-400 font-mono-laser">Mobil Araç</div>
+            <div class="text-xs text-zinc-400 mt-0.5">Fabrikanızda Yerinde Kalıp Kaynağı</div>
           </div>
         </div>
       </div>
 
-      <!-- Sağ: 4 Gerçek Bursa Lazermark Uygulama Fotoğrafı (LCP Görseli - loading="lazy" KULLANILMADI) -->
+      <!-- Sağ: Gerçek Lazermark Robotik Lazer Tanıtım & Bursa Uygulama Vitrini (LCP Görseli - loading="lazy" KULLANILMADI) -->
       <div class="lg:col-span-5">
-        <div class="grid grid-cols-2 gap-3.5 bg-zinc-900 p-4 rounded-3xl border border-zinc-800 shadow-2xl">
-          <div class="group relative rounded-2xl overflow-hidden border border-zinc-800">
-            <img src="assets/lazer-kaynak.jpg" alt="Bursa Robotik Lazer Kaynak" width="270" height="200" fetchpriority="high" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-3">
-              <div class="text-xs font-bold text-white">Robotik &amp; Kalıp Lazer Kaynak</div>
+        <div class="bg-zinc-900 p-4 rounded-3xl border border-zinc-800 shadow-2xl space-y-3">
+          <div onclick="openLmImg('assets/robotik-banner.jpg', 'Lazermark Robotik Lazer Kaynak Sistemi (KUKA 6 Eksen + LaserIsse)')" class="cursor-pointer relative rounded-2xl overflow-hidden border border-zinc-700 group">
+            <img src="assets/robotik-banner.jpg" alt="Lazermark Robotik Lazer Kaynak Hizmeti" width="520" height="520" fetchpriority="high" class="w-full h-64 object-cover object-top group-hover:scale-105 transition duration-300" />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3.5 flex items-center justify-between">
+              <span class="text-xs font-bold text-white">6 Eksen Robotik Lazer Kaynak Hücresi</span>
+              <span class="text-[11px] bg-[#d21e2b] text-white px-2.5 py-0.5 rounded font-bold">Büyüt +</span>
             </div>
           </div>
-          <div class="group relative rounded-2xl overflow-hidden border border-zinc-800">
-            <img src="assets/mobil-kaynak.jpg" alt="Bursa Mobil Lazer Kaynak Hizmeti" width="270" height="200" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-3">
-              <div class="text-xs font-bold text-white">Yerinde Mobil Lazer Hizmeti</div>
+          <div class="grid grid-cols-3 gap-2.5">
+            <div onclick="openLmImg('assets/mobil-kaynak.jpg', 'Bursa Fabrikada Yerinde Mobil Kalıp Lazer Kaynak Hizmeti')" class="cursor-pointer rounded-xl overflow-hidden border border-zinc-800">
+              <img src="assets/mobil-kaynak.jpg" alt="Bursa Mobil Lazer Kaynak" width="180" height="120" class="w-full h-24 object-cover hover:scale-105 transition" />
             </div>
-          </div>
-          <div class="group relative rounded-2xl overflow-hidden border border-zinc-800">
-            <img src="assets/markalama.jpg" alt="Bursa Endüstriyel Lazer Markalama" width="270" height="200" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-3">
-              <div class="text-xs font-bold text-white">Lazer Markalama &amp; Gravür</div>
+            <div onclick="openLmImg('assets/markalama.jpg', 'Çimtaş Çelik Boru Üzerine Endüstriyel Lazer Markalama')" class="cursor-pointer rounded-xl overflow-hidden border border-zinc-800">
+              <img src="assets/markalama.jpg" alt="Bursa Endüstriyel Lazer Markalama" width="180" height="120" class="w-full h-24 object-cover hover:scale-105 transition" />
             </div>
-          </div>
-          <div class="group relative rounded-2xl overflow-hidden border border-zinc-800">
-            <img src="assets/mikro-kesim.jpg" alt="Bursa Mikro Lazer Kesim" width="270" height="200" class="w-full h-40 object-cover group-hover:scale-105 transition duration-300" />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-3">
-              <div class="text-xs font-bold text-white">Mikro Lazer Kesim &amp; İşleme</div>
+            <div onclick="openLmImg('assets/mikro-kesim.jpg', '0.01 mm Hassasiyetli Mikro Lazer Kesim ve İşleme')" class="cursor-pointer rounded-xl overflow-hidden border border-zinc-800">
+              <img src="assets/mikro-kesim.jpg" alt="Bursa Mikro Lazer Kesim" width="180" height="120" class="w-full h-24 object-cover hover:scale-105 transition" />
             </div>
           </div>
         </div>
@@ -148,22 +148,22 @@
     </div>
   </section>
 
-  <!-- Çift Modlu Vitrin: 1. LAZER HİZMETLERİMİZ vs 2. LAZER SİSTEMLERİMİZ (Mevcut sitedeki tüm __trashed sayfaların tam karşılığı) -->
+  <!-- Çift Modlu Vitrin: 1. LAZER HİZMETLERİMİZ vs 2. LAZER SİSTEMLERİMİZ & PDF KATALOGLAR -->
   <section id="hizmet-ve-sistemler" class="py-20 max-w-7xl mx-auto px-4 sm:px-6">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
       <div>
-        <span class="text-[#d21e2b] font-bold text-xs uppercase tracking-widest">LAZERMARK ÇÖZÜM MERKEZİ</span>
+        <span class="text-[#d21e2b] font-bold text-xs uppercase tracking-widest">LAZERMARK ÇÖZÜM MERKEZİ (Mevcut Sitedeki Kırık __trashed Sayfaların Tamamı)</span>
         <h2 class="text-3xl sm:text-4xl font-bold font-laser text-zinc-900 mt-1">Lazer Uygulama Hizmetlerimiz &amp; Makine Sistemlerimiz</h2>
         <p class="text-zinc-600 text-sm sm:text-base mt-2 max-w-2xl">
-          İster parçalarınızı Bursa Nilüfer tesisimizde fason olarak işleyelim, ister fabrikanızın üretim hattına anahtar teslim lazer makinesi kuralım.
+          Düşük adetli veya acil kalıp revizyonlarınızı Bursa merkezimizde ve mobil servis aracımızla karşılıyor; seri üretim hatlarınız için anahtar teslim lazer makineleri kuruyoruz.
         </p>
       </div>
       <div class="inline-flex p-1.5 rounded-2xl bg-zinc-100 border border-zinc-200">
-        <button onclick="switchLmMode('hizmet')" id="lmmode-hizmet" class="lm-mode-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition">
+        <button onclick="switchLmMode('hizmet')" id="lmmode-hizmet" class="lm-mode-btn active px-5 py-3 rounded-xl text-xs sm:text-sm font-bold transition">
           1. Fason &amp; Mobil Lazer Hizmetlerimiz (6)
         </button>
-        <button onclick="switchLmMode('sistem')" id="lmmode-sistem" class="lm-mode-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-zinc-700 transition">
-          2. Lazer Makine &amp; Sistem Satışı (4)
+        <button onclick="switchLmMode('sistem')" id="lmmode-sistem" class="lm-mode-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-zinc-700 transition">
+          2. Lazer Makine Satışı &amp; PDF Kataloglar (4)
         </button>
       </div>
     </div>
@@ -172,17 +172,17 @@
     <div id="lmpanel-hizmet" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-[#d21e2b] transition flex flex-col justify-between">
         <div>
-          <img src="assets/lazer-kaynak.jpg" alt="Robotik Lazer Kaynak Hizmeti" width="400" height="240" loading="lazy" class="w-full h-48 object-cover" />
+          <img src="assets/lazer-kaynak.jpg" alt="Kalıp ve Hassas Lazer Kaynak Hizmeti" width="400" height="240" loading="lazy" class="w-full h-48 object-cover" />
           <div class="p-6">
-            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">Kalıp &amp; Seri Üretim</span>
-            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Robotik &amp; Hassas Lazer Kaynak Hizmeti</h3>
+            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">0,1 mm Hassasiyet • 50 HRC</span>
+            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Kalıp &amp; Hassas Lazer Dolgu Kaynağı</h3>
             <p class="text-xs sm:text-sm text-zinc-600 mt-2">
-              Plastik enjeksiyon, alüminyum döküm ve sac kalıplarında ön ısıtma gerektirmeden, mikro yapı bozulmadan ve çökme yapmadan 0.2–0.8 mm tellerle hassas dolgu ve birleştirme kaynağı.
+              Otomotiv, havacılık ve savunma sanayi kesme-form ve plastik enjeksiyon kalıplarındaki aşınma ve modifikasyonların; ön ısıtma ve gerilim giderme gerektirmeden, birebir uyumlu özel lazer kaynak telleriyle 0,1 mm hassasiyetle kaynatılması.
             </p>
           </div>
         </div>
         <div class="px-6 pb-6">
-          <button onclick="openLmModal('Robotik & Kalıp Lazer Kaynak Hizmeti')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Bu Hizmet İçin Teklif Al &rarr;</button>
+          <button onclick="openLmModal('Kalıp & Hassas Lazer Kaynak Hizmeti')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Bu Hizmet İçin Teklif Al &rarr;</button>
         </div>
       </div>
 
@@ -191,14 +191,30 @@
           <img src="assets/mobil-kaynak.jpg" alt="Mobil Lazer Kaynak Hizmeti" width="400" height="240" loading="lazy" class="w-full h-48 object-cover" />
           <div class="p-6">
             <span class="text-[11px] font-bold uppercase text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Fabrikanızda Yerinde Müdahale</span>
-            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Mobil Lazer Kaynak Hizmeti</h3>
+            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Mobil Lazer Kaynak &amp; Markalama Servisi</h3>
             <p class="text-xs sm:text-sm text-zinc-600 mt-2">
-              Pres veya enjeksiyon makinesinden indirilemeyen ağır tonajlı kalıplarınıza, mobil lazer kaynak aracımız ve uzman operatörümüzle doğrudan fabrikanızda yerinde müdahale ediyoruz.
+              Atölyemize taşınamayacak kadar büyük, ağır tonajlı veya gizlilik gerektiren kesme, form ve plastik enjeksiyon kalıplarınıza; teknik donanımlı <strong>Mobil Servis Aracımızla</strong> doğrudan fabrikanızda müdahale ederek nakliye ve duruş süresini sıfırlıyoruz.
             </p>
           </div>
         </div>
         <div class="px-6 pb-6">
-          <button onclick="openLmModal('Yerinde Mobil Lazer Kaynak Çağrısı')" class="w-full py-3 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold transition">Mobil Ekip Çağır &rarr;</button>
+          <button onclick="openLmModal('Yerinde Mobil Lazer Kaynak Çağrısı')" class="w-full py-3 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold transition">Mobil Servis Aracı Çağır &rarr;</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-[#d21e2b] transition flex flex-col justify-between">
+        <div>
+          <img src="assets/robotik-banner.jpg" alt="Robotik Lazer Kaynak Hizmeti" width="400" height="240" loading="lazy" class="w-full h-48 object-cover object-top" />
+          <div class="p-6">
+            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">6 Eksen Robotik Otomasyon</span>
+            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Robotik Lazer Kaynak Hizmeti</h3>
+            <p class="text-xs sm:text-sm text-zinc-600 mt-2">
+              Seri üretim otomotiv ve endüstriyel parçalarınız için esnek optik fiberlerle yönlendirilen yüksek enerjili robotik lazer kaynağı: İnce kaynak dikişi, çok yüksek hız ve minimum termal deformasyon.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6">
+          <button onclick="openLmModal('Robotik Lazer Kaynak Fason Üretim')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Seri Üretim Teklifi Al &rarr;</button>
         </div>
       </div>
 
@@ -206,15 +222,15 @@
         <div>
           <img src="assets/markalama.jpg" alt="Lazer Markalama ve Derin Gravür" width="400" height="240" loading="lazy" class="w-full h-48 object-cover" />
           <div class="p-6">
-            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">2D Barkod, Seri No &amp; 3D Kalıp Gravür</span>
-            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Endüstriyel Lazer Markalama &amp; Gravür</h3>
+            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">İzlenebilirlik &amp; Dişi/Erkek Kalıp Gravür</span>
+            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Endüstriyel Lazer Markalama &amp; 3D Gravür</h3>
             <p class="text-xs sm:text-sm text-zinc-600 mt-2">
-              Otomotiv, medikal, savunma ve makine parçaları üzerine silinmez DataMatrix/QR kod, seri numarası, siyah tavlama markalama ve kalıp çekirdeklerine 3 boyutlu derin gravür işleme.
+              Tüm metal, organik ve inorganik malzemeler üzerine barkod/QR izlenebilirlik markalaması, cetvel/ölçek markalama ve kalıplar üzerinde dişi/erkek 3 boyutlu derin yazı ve logo gravür işlemleri.
             </p>
           </div>
         </div>
         <div class="px-6 pb-6">
-          <button onclick="openLmModal('Endüstriyel Lazer Markalama & Gravür')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Numune &amp; Fiyat Sor &rarr;</button>
+          <button onclick="openLmModal('Endüstriyel Lazer Markalama & 3D Gravür')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Numune &amp; Fiyat Sor &rarr;</button>
         </div>
       </div>
 
@@ -222,77 +238,198 @@
         <div>
           <img src="assets/mikro-kesim.jpg" alt="Mikro Lazer Kesim ve İşleme" width="400" height="240" loading="lazy" class="w-full h-48 object-cover" />
           <div class="p-6">
-            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">Mikron Hassasiyetinde Kesim</span>
-            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Mikro Lazer İşleme &amp; Hassas Lazer Kesim</h3>
+            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">Metal 0,01–1,5 mm • Ametal 0,01–12 mm</span>
+            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Hassas &amp; Mikro Lazer Kesim / İplik Düzesi</h3>
             <p class="text-xs sm:text-sm text-zinc-600 mt-2">
-              İnce folyo, paslanmaz şim, medikal tüp, elektronik kontak, bakır/pirinç ve hassas endüstriyel parçaların çapaksız ve termal deformasyonsuz mikro lazer kesimi.
+              Çelik, alüminyum, magnezyum, gümüş, altın ve pirinçte <strong>0,01–1,5 mm</strong>; akrilik, teflon, fiber, deri ve kauçukta <strong>0,01–12 mm</strong> hassas kesim ve polyester iplik düzesi (melt-spinning) mikro delik işleme.
             </p>
           </div>
         </div>
         <div class="px-6 pb-6">
-          <button onclick="openLmModal('Mikro Lazer Kesim & İşleme')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Teknik Resim Gönder &rarr;</button>
+          <button onclick="openLmModal('Hassas & Mikro Lazer Kesim')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Teknik Resim Gönder &rarr;</button>
         </div>
       </div>
 
-      <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-[#d21e2b] transition flex flex-col justify-between p-6">
+      <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-[#d21e2b] transition flex flex-col justify-between">
         <div>
-          <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">Kimyasalsız Yüzey Temizliği</span>
-          <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Endüstriyel Lazer Temizleme Hizmeti</h3>
-          <p class="text-xs sm:text-sm text-zinc-600 mt-2">
-            Kauçuk, plastik ve döküm kalıplarında biriken kalıntıların, pas, yağ ve boya katmanlarının ana metale hiçbir aşınma vermeden lazer ışınıyla temizlenmesi.
-          </p>
+          <img src="assets/gravur-numune.jpg" alt="Lazer Temizleme ve 3D Eklemeli İmalat" width="400" height="240" loading="lazy" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">Kalıp Temizleme &amp; 3D Eklemeli İmalat</span>
+            <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">Lazer Temizleme &amp; 3D Baskı Çözümleri</h3>
+            <p class="text-xs sm:text-sm text-zinc-600 mt-2">
+              Kalıplardaki karbon, silikon, kauçuk, pas ve boya katmanlarının temassız pulsed lazerle temizlenmesi ve lazer prosesleriniz için 3D eklemeli imalat / fikstür üretimi.
+            </p>
+          </div>
         </div>
-        <button onclick="openLmModal('Endüstriyel Lazer Temizleme Hizmeti')" class="mt-6 w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Bilgi &amp; Teklif Al &rarr;</button>
-      </div>
-
-      <div class="bg-white rounded-3xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-[#d21e2b] transition flex flex-col justify-between p-6">
-        <div>
-          <span class="text-[11px] font-bold uppercase text-[#d21e2b] bg-red-50 px-2.5 py-1 rounded-md">Prototip &amp; Kalıp Destek</span>
-          <h3 class="text-xl font-bold font-laser text-zinc-900 mt-3">3D Baskı, Kalıp &amp; Fikstür Çözümleri</h3>
-          <p class="text-xs sm:text-sm text-zinc-600 mt-2">
-            Lazer markalama ve kaynak operasyonlarınız için özel parça bağlama fikstürleri, 3D prototip üretimi ve kalıp revizyon mühendisliği.
-          </p>
+        <div class="px-6 pb-6">
+          <button onclick="openLmModal('Lazer Temizleme & 3D Fikstür Çözümleri')" class="w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Bilgi &amp; Teklif Al &rarr;</button>
         </div>
-        <button onclick="openLmModal('3D Baskı & Kalıp Fikstür Çözümleri')" class="mt-6 w-full py-3 rounded-xl bg-zinc-900 hover:bg-[#d21e2b] text-white text-xs font-bold transition">Proje Danışmanlığı Al &rarr;</button>
       </div>
     </div>
 
-    <!-- PANEL 2: LAZER SİSTEMLERİMİZ (MAKİNE SATIŞI & KURULUMU) -->
+    <!-- PANEL 2: LAZER SİSTEMLERİMİZ (MAKİNE SATIŞI & ORİJİNAL PDF KATALOGLAR) -->
     <div id="lmpanel-sistem" style="display:none;" class="grid md:grid-cols-2 gap-6">
       <div class="bg-zinc-950 text-white rounded-3xl p-7 border border-zinc-800 flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold uppercase text-red-400">MAKİNE SATIŞ &amp; ENTEGRASYON</span>
-          <h3 class="text-2xl font-bold font-laser mt-2">1. Endüstriyel Lazer Markalama Sistemleri</h3>
-          <p class="text-sm text-zinc-300 mt-2">20W / 30W / 50W / 100W Fiber, MOPA, UV ve CO2 lazer markalama kabinleri, döner eksen (divizör) ve konveyör hattı otomasyonlu markalama istasyonları.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase text-red-400">LASERISSE SİSTEM PARTNERİ (33 ÜLKEDE 1000+ KURULUM)</span>
+            <span class="text-xs font-mono-laser bg-zinc-800 px-2.5 py-1 rounded text-zinc-300">Class 1 &amp; Tabletop</span>
+          </div>
+          <h3 class="text-2xl font-bold font-laser mt-3">1. Lazer Markalama Sistemleri</h3>
+          <p class="text-sm text-zinc-300 mt-2">
+            Class 1 Kabin (F100), Tabletop masaüstü, Yeni Tasarım Kabin, döner tabla (divizör aparatı), 6 eksen robot ve 16 I/O otomasyon bağlantılı 7/24 çalışmaya uygun fiber/CO2/diyot markalama makineleri.
+          </p>
         </div>
-        <button onclick="openLmModal('Lazer Markalama Makinesi Satınalma Teklifi')" class="mt-6 py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold self-start">Makine Teklifi İste &rarr;</button>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <button onclick="openLmModal('Lazer Markalama Makinesi Satınalma Teklifi')" class="py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold">Makine Teklifi İste &rarr;</button>
+          <a href="https://lazermark.com.tr/wp-content/uploads/2020/07/lazer-markalama-sistemleri.pdf" target="_blank" rel="noopener" class="py-3 px-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-bold">PDF Kataloğu İndir &darr;</a>
+        </div>
       </div>
 
       <div class="bg-zinc-950 text-white rounded-3xl p-7 border border-zinc-800 flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold uppercase text-red-400">MAKİNE SATIŞ &amp; ENTEGRASYON</span>
-          <h3 class="text-2xl font-bold font-laser mt-2">2. Kalıp &amp; Robotik Lazer Kaynak Sistemleri</h3>
-          <p class="text-sm text-zinc-300 mt-2">Kalıphaneler ve seri üretim hatları için joystick kontrollü, vinçli/mobil veya 6 eksen robotik fiber &amp; Nd:YAG lazer kaynak makineleri.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase text-red-400">ALMAN VISION LASERTECHNIK YETKİLİ DİSTRİBÜTÖRÜ</span>
+            <span class="text-xs font-mono-laser bg-zinc-800 px-2.5 py-1 rounded text-zinc-300">Nd:YAG &amp; Fiber</span>
+          </div>
+          <h3 class="text-2xl font-bold font-laser mt-3">2. Lamba Pompalı, Fiber &amp; Robotik Lazer Kaynak Sistemleri</h3>
+          <p class="text-sm text-zinc-300 mt-2">
+            Kalıp tamiratlarında kullanılan tel beslemeli Alman Vision Lasertechnik lazer dolgu kaynak makineleri ve yüksek hızlı 6 eksen robotik lazer kaynak istasyonları.
+          </p>
         </div>
-        <button onclick="openLmModal('Lazer Kaynak Makinesi Satınalma Teklifi')" class="mt-6 py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold self-start">Makine Teklifi İste &rarr;</button>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <button onclick="openLmModal('Vision Lasertechnik / Robotik Lazer Kaynak Sistemi Teklifi')" class="py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold">Makine Teklifi İste &rarr;</button>
+          <a href="https://lazermark.com.tr/wp-content/uploads/2020/07/lazer-kaynak.pdf" target="_blank" rel="noopener" class="py-3 px-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-bold">PDF Kataloğu İndir &darr;</a>
+        </div>
       </div>
 
       <div class="bg-zinc-950 text-white rounded-3xl p-7 border border-zinc-800 flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold uppercase text-red-400">MAKİNE SATIŞ &amp; ENTEGRASYON</span>
-          <h3 class="text-2xl font-bold font-laser mt-2">3. Endüstriyel Lazer Temizleme Sistemleri</h3>
-          <p class="text-sm text-zinc-300 mt-2">100W – 2000W darbeli (pulsed) ve sürekli dalga (CW) taşınabilir lazer pas, yağ, boya ve kalıp temizleme makineleri.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase text-red-400">DÜNYA ÇAPINDA 50+ ATIMLI (PULSED) SİSTEM</span>
+            <span class="text-xs font-mono-laser bg-zinc-800 px-2.5 py-1 rounded text-zinc-300">Manuel &amp; Otomasyon</span>
+          </div>
+          <h3 class="text-2xl font-bold font-laser mt-3">3. Endüstriyel Lazer Temizleme Sistemleri</h3>
+          <p class="text-sm text-zinc-300 mt-2">
+            Sarf malzemesiz, çevre dostu ve düşük termal etkili pas kaldırma, boya sökme, kaynak ön hazırlık, kalıp temizleme ve havacılık parçaları temizleme sistemleri.
+          </p>
         </div>
-        <button onclick="openLmModal('Lazer Temizleme Makinesi Satınalma Teklifi')" class="mt-6 py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold self-start">Makine Teklifi İste &rarr;</button>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <button onclick="openLmModal('Lazer Temizleme Makinesi Satınalma Teklifi')" class="py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold">Makine Teklifi İste &rarr;</button>
+        </div>
       </div>
 
       <div class="bg-zinc-950 text-white rounded-3xl p-7 border border-zinc-800 flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold uppercase text-red-400">MAKİNE SATIŞ &amp; ENTEGRASYON</span>
-          <h3 class="text-2xl font-bold font-laser mt-2">4. Hassas &amp; Mikro Lazer Kesim Sistemleri</h3>
-          <p class="text-sm text-zinc-300 mt-2">İnce metal, kuyumculuk, medikal ve elektronik sanayii için yüksek hassasiyetli kompakt fiber lazer kesim makineleri.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase text-red-400">12.000 m² ÜRETİM ALANI • 2D / RULOLU / ROBOTİK</span>
+            <span class="text-xs font-mono-laser bg-zinc-800 px-2.5 py-1 rounded text-zinc-300">Fiber, Disk &amp; CO2</span>
+          </div>
+          <h3 class="text-2xl font-bold font-laser mt-3">4. 2D, Rulolu ve Robotik Lazer Kesim Sistemleri</h3>
+          <p class="text-sm text-zinc-300 mt-2">
+            2D plaka kesim, rulolu (coil-fed) kesim, 3D robotik kesim ve CO2 lazer kesim tezgahları. (Mevcut sitenizde yanlışlıkla temizlik sayfasına giden menü hatası giderildi ve orijinal kesim kataloğunuz bağlandı.)
+          </p>
         </div>
-        <button onclick="openLmModal('Lazer Kesim Makinesi Satınalma Teklifi')" class="mt-6 py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold self-start">Makine Teklifi İste &rarr;</button>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <button onclick="openLmModal('Lazer Kesim Sistemi Satınalma Teklifi')" class="py-3 px-5 rounded-xl bg-[#d21e2b] hover:bg-red-700 text-white text-xs font-bold">Makine Teklifi İste &rarr;</button>
+          <a href="https://lazermark.com.tr/wp-content/uploads/2020/07/lazer-kesim-katalogu.pdf" target="_blank" rel="noopener" class="py-3 px-4 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-xs font-bold">PDF Kataloğu İndir &darr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 Kriterli Robotik Lazer Kaynak Verimlilik Karşılaştırması (Lazermark'ın kendi tablosundan interaktif olarak kodlandı) -->
+  <section id="verimlilik-karsilastirma" class="py-20 bg-zinc-950 text-white border-y border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div>
+            <span class="text-red-400 font-bold text-xs uppercase tracking-widest">MÜHENDİSLİK VERİMLİLİK ANALİZİ</span>
+            <h2 class="text-3xl sm:text-4xl font-bold font-laser mt-1">Robotik Lazer Kaynağın Punto ve Gazaltı Kaynağa Göre Üstünlüğü</h2>
+            <p class="text-zinc-400 text-sm mt-2">
+              Farklı metallerin birleştirilmesinden kaynak sonrası yüzey temizliğine kadar 11 kritik üretim parametresinde karşılaştırmalı performans:
+            </p>
+          </div>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 grid grid-cols-12 items-center gap-3">
+              <div class="col-span-5 font-semibold text-white">1. Farklı Metallerin Kaynağı &amp; Çok İnce Parçalar</div>
+              <div class="col-span-7 flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded bg-[#d21e2b] text-white font-bold text-xs">Lazer Kaynak: %100</span>
+                <span class="px-2 py-1 rounded bg-amber-500/20 text-amber-300 text-xs">Punto: Orta</span>
+                <span class="px-2 py-1 rounded bg-indigo-500/20 text-indigo-300 text-xs">Gazaltı: Düşük</span>
+              </div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 grid grid-cols-12 items-center gap-3">
+              <div class="col-span-5 font-semibold text-white">2. Düşük Termal Etki (HAZ) &amp; Yüzey Temizliği</div>
+              <div class="col-span-7 flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded bg-[#d21e2b] text-white font-bold text-xs">Lazer Kaynak: %100</span>
+                <span class="px-2 py-1 rounded bg-amber-500/20 text-amber-300 text-xs">Punto: Düşük</span>
+                <span class="px-2 py-1 rounded bg-indigo-500/20 text-indigo-300 text-xs">Gazaltı: Orta</span>
+              </div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 grid grid-cols-12 items-center gap-3">
+              <div class="col-span-5 font-semibold text-white">3. Kaynak Hızı &amp; Derinlik/Genişlik Oranı</div>
+              <div class="col-span-7 flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded bg-[#d21e2b] text-white font-bold text-xs">Lazer Kaynak: %100</span>
+                <span class="px-2 py-1 rounded bg-amber-500/20 text-amber-300 text-xs">Punto: Orta</span>
+                <span class="px-2 py-1 rounded bg-indigo-500/20 text-indigo-300 text-xs">Gazaltı: Düşük</span>
+              </div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 grid grid-cols-12 items-center gap-3">
+              <div class="col-span-5 font-semibold text-white">4. Dolgu / Sarf Malzeme Olmaması &amp; Düşük Elektrik</div>
+              <div class="col-span-7 flex items-center gap-2">
+                <span class="px-2.5 py-1 rounded bg-[#d21e2b] text-white font-bold text-xs">Lazer Kaynak: %100</span>
+                <span class="px-2 py-1 rounded bg-amber-500/20 text-amber-300 text-xs">Punto: Orta</span>
+                <span class="px-2 py-1 rounded bg-indigo-500/20 text-indigo-300 text-xs">Gazaltı: Düşük</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div onclick="openLmImg('assets/verimlilik-tablosu.jpg', 'Lazermark Robotik Lazer Kaynak Verimlilik Grafiği')" class="cursor-pointer bg-zinc-900 border border-zinc-700 rounded-3xl p-4 hover:border-[#d21e2b] transition">
+            <img src="assets/verimlilik-tablosu.jpg" alt="Robotik Lazer Kaynak Verimlilik Tablosu" width="480" height="480" loading="lazy" class="w-full h-80 object-contain rounded-2xl" />
+            <div class="text-center text-xs text-zinc-400 mt-3 font-semibold">11 Kriterli Tam Mühendislik Grafiğini Büyütmek İçin Tıklayın &rarr;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gerçek Bursa Uygulama Galerisi (Mevcut sitedeki kırık <img src="2178"> alanı yerine gerçek numune fotoğrafları) -->
+  <section id="uygulama-galerisi" class="py-20 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+      <div>
+        <span class="text-[#d21e2b] font-bold text-xs uppercase tracking-widest">BURSA UYGULAMA &amp; NUMUNE GALERİSİ</span>
+        <h2 class="text-3xl font-bold font-laser text-zinc-900 mt-1">Gerçekleştirdiğimiz Lazer Kaynak, Markalama ve Kesim Örnekleri</h2>
+      </div>
+      <span class="text-xs text-zinc-500">Büyütmek için görsellere tıklayın</span>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div onclick="openLmImg('assets/mobil-kaynak.jpg', 'Büyük Ölçekli Kalıpta Yerinde Mikroskop Altında Lazer Dolgu Kaynağı')" class="cursor-pointer group rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
+        <img src="assets/mobil-kaynak.jpg" alt="Yerinde Mobil Kalıp Lazer Kaynağı" width="380" height="240" loading="lazy" class="w-full h-52 object-cover group-hover:scale-105 transition" />
+        <div class="p-4"><div class="text-sm font-bold text-zinc-900">Yerinde Kalıp Lazer Dolgu Kaynağı</div><div class="text-xs text-zinc-500">Bursa Otomotiv Kalıphanesi Uygulaması</div></div>
+      </div>
+      <div onclick="openLmImg('assets/markalama.jpg', 'Çimtaş Ağır Sanayi Borusu Üzerine ASTM / Heat No Lazer Markalama')" class="cursor-pointer group rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
+        <img src="assets/markalama.jpg" alt="Çimtaş Boru Lazer Markalama" width="380" height="240" loading="lazy" class="w-full h-52 object-cover group-hover:scale-105 transition" />
+        <div class="p-4"><div class="text-sm font-bold text-zinc-900">Ağır Sanayi Boru &amp; Çelik Markalama</div><div class="text-xs text-zinc-500">Silinmez İzlenebilirlik &amp; Seri No</div></div>
+      </div>
+      <div onclick="openLmImg('assets/lazer-kaynak.jpg', '0.1 mm Hassasiyetli Kalıp Çekirdeği ve Köşe Lazer Kaynağı')" class="cursor-pointer group rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
+        <img src="assets/lazer-kaynak.jpg" alt="Hassas Kalıp Lazer Kaynağı" width="380" height="240" loading="lazy" class="w-full h-52 object-cover group-hover:scale-105 transition" />
+        <div class="p-4"><div class="text-sm font-bold text-zinc-900">Hassas Kalıp Köşe &amp; Kenar Dolgusu</div><div class="text-xs text-zinc-500">Çökmesiz, Ön Isıtmasız 0,1 mm Kaynak</div></div>
+      </div>
+      <div onclick="openLmImg('assets/mikro-kesim.jpg', '0.01 mm Hassasiyetli İnce Metal ve Mikro Parça Lazer Kesimi')" class="cursor-pointer group rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
+        <img src="assets/mikro-kesim.jpg" alt="Mikro Lazer Kesim" width="380" height="240" loading="lazy" class="w-full h-52 object-cover group-hover:scale-105 transition" />
+        <div class="p-4"><div class="text-sm font-bold text-zinc-900">Mikro Lazer Kesim (0,01–1,5 mm)</div><div class="text-xs text-zinc-500">Çapaksız Hassas Geometrik Kesim</div></div>
+      </div>
+      <div onclick="openLmImg('assets/gravur-numune.jpg', 'Kalıp Çekirdeği Üzerine 3 Boyutlu Derin Lazer Gravür')" class="cursor-pointer group rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
+        <img src="assets/gravur-numune.jpg" alt="3D Derin Lazer Gravür" width="380" height="240" loading="lazy" class="w-full h-52 object-cover group-hover:scale-105 transition" />
+        <div class="p-4"><div class="text-sm font-bold text-zinc-900">3D Derin Kalıp Gravür &amp; Markalama</div><div class="text-xs text-zinc-500">Dişi ve Erkek Kalıp Yazı İşleme</div></div>
+      </div>
+      <div onclick="openLmImg('assets/cetvel-numune.jpg', 'Hassas Ölçek ve Cetvel Lazer Markalama Uygulaması')" class="cursor-pointer group rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
+        <img src="assets/cetvel-numune.jpg" alt="Cetvel ve Ölçek Lazer Markalama" width="380" height="240" loading="lazy" class="w-full h-52 object-cover group-hover:scale-105 transition" />
+        <div class="p-4"><div class="text-sm font-bold text-zinc-900">Cetvel, Ölçek &amp; Endüstriyel Etiket</div><div class="text-xs text-zinc-500">Yüksek Kontrastlı Kalıcı Markalama</div></div>
       </div>
     </div>
   </section>
@@ -307,15 +444,15 @@
           <ul class="space-y-2.5 text-sm text-zinc-300">
             <li class="flex items-start gap-2.5">
               <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>1. Menüdeki Tüm <code>__trashed</code> (Çöpe Atılmış) Kırık Sayfa Linkleri Onarıldı:</strong> Mevcut sitenizde üst menüdeki <em>Hakkımızda, Robotik Lazer Kaynak, Lazer Markalama, Lazer Kesim, Mobil Lazer Hizmeti ve Lazer Sistemlerimiz</em> bağlantılarının tamamı <code>/hakkimizda__trashed/</code>, <code>/lazer-kaynak__trashed/</code> gibi silinmiş WordPress bağlantılarına gidiyor ve ziyaretçilere hata veriyordu.</span>
+              <span><strong>1. Menüdeki Tüm <code>__trashed</code> (Çöpe Atılmış) Kırık Sayfa Linkleri Kurtarıldı:</strong> Mevcut sitenizde üst menüdeki <em>Hakkımızda, Robotik Lazer Kaynak, Lazer Markalama, Lazer Kesim, Mobil Lazer Hizmeti ve Lazer Sistemlerimiz</em> bağlantılarının tamamı <code>/hakkimizda__trashed/</code>, <code>/lazer-kaynak__trashed/</code> gibi silinmiş bağlantılara gidiyor ve ziyaretçilere 404 hatası veriyordu. Arka planda kalan Vision Lasertechnik, LaserIsse ve PDF katalog verileriniz kurtarılarak bu yeni siteye eksiksiz işlendi.</span>
             </li>
             <li class="flex items-start gap-2.5">
               <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>2. "Lazer Kesim Sistemleri" Menüsündeki Yanlış Yönlendirme Düzeltildi:</strong> Mevcut menünüzde "Lazer Kesim Sistemleri" tıklandığında yanlışlıkla <code>/lazer-temizlik-sistemleri__trashed/</code> adresine yönleniyordu; her iki sistem grubu ayrıştırıldı.</span>
+              <span><strong>2. "Lazer Kesim Sistemleri" Menüsündeki Yanlış Yönlendirme Düzeltildi:</strong> Mevcut menünüzde "Lazer Kesim Sistemleri" tıklandığında yanlışlıkla <code>/lazer-temizlik-sistemleri__trashed/</code> adresine yönleniyordu; her iki sistem grubu ve PDF katalogları ayrıştırıldı.</span>
             </li>
             <li class="flex items-start gap-2.5">
               <span class="text-emerald-400 font-bold">✓</span>
-              <span><strong>3. Ana Sayfadaki 9 Adet Kırık Görsel (<code>&lt;img src="2178"&gt;</code>) Temizlendi:</strong> Mevcut ana sayfanızın altındaki referans/galeri karuselinde resim adresleri yerine ham veritabanı numaraları (<code>src="2178"</code>, <code>src="2176"</code>, <code>src="2181"</code>) kaldığı için oluşan kırık resim ikonları giderildi.</span>
+              <span><strong>3. Ana Sayfadaki 9 Adet Kırık Görsel (<code>&lt;img src="2178"&gt;</code>) Temizlendi:</strong> Mevcut ana sayfanızın altındaki karuselde resim URL'leri yerine ham veritabanı numaraları (<code>src="2178"</code>, <code>src="2176"</code>, <code>src="2181"</code>) kaldığı için oluşan kırık resim ikonları gerçek Bursa uygulama galerisiyle değiştirildi.</span>
             </li>
           </ul>
         </div>
@@ -335,24 +472,40 @@
   <footer id="iletisim" class="bg-black text-zinc-400 py-14 border-t border-zinc-900 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8">
       <div>
-        <img src="assets/logo-dark.png" alt="Lazermark" width="180" height="48" loading="lazy" class="h-11 w-auto bg-white px-3 py-1.5 rounded-xl mb-3" />
-        <div class="text-white font-bold">Lazermark Endüstriyel Lazer Sistemleri Ltd. Şti.</div>
-        <p class="text-xs text-zinc-400 mt-1">Robotik Lazer Kaynak • Mobil Lazer • Markalama • Lazer Sistemleri</p>
+        <img src="assets/logo-dark.png" alt="Lazermark" width="190" height="50" loading="lazy" class="h-11 w-auto bg-white px-3 py-1.5 rounded-xl mb-3" />
+        <div class="text-white font-bold">LAZERMARK Endüstriyel Lazer Sistemleri Ltd. Şti.</div>
+        <p class="text-xs text-zinc-400 mt-1">2015'ten Bugüne Lazer Kaynak, Markalama, Mikro Kesim ve Lazer Sistemleri</p>
       </div>
       <div>
         <div class="text-white font-bold mb-2">Merkez &amp; Uygulama Laboratuvarı</div>
-        <ul class="space-y-1.5 text-xs">
+        <ul class="space-y-1.5 text-xs text-zinc-300">
           <li><strong>Adres:</strong> Alaaddinbey Mah. Çiftlik Cd. MESE-6 İşmerkezi No:5 P-O Nilüfer / BURSA</li>
-          <li><strong>Telefon:</strong> <a href="tel:+902244435336" class="text-red-400 hover:underline">+90 (224) 443 53 36</a></li>
-          <li><strong>E-posta:</strong> <a href="mailto:info@lazermark.com.tr" class="text-red-400 hover:underline">info@lazermark.com.tr</a></li>
+          <li><strong>Sabit Tel:</strong> <a href="tel:+902244435336" class="text-red-400 hover:underline">+90 (224) 443 53 36</a></li>
+          <li><strong>Mobil &amp; WhatsApp:</strong> <a href="https://wa.me/905365646543" class="text-emerald-400 hover:underline">+90 (536) 564 65 43</a></li>
         </ul>
       </div>
       <div>
-        <div class="text-white font-bold mb-2">Hızlı Servis &amp; Numune Testi</div>
-        <p class="text-xs text-zinc-400">Kalıp revizyonlarınız için yerinde mobil lazer kaynak ekibimizi çağırabilir veya markalama/kesim numunelerinizi ücretsiz test ettirebilirsiniz.</p>
+        <div class="text-white font-bold mb-2">Departman E-Posta Adreslerimiz</div>
+        <ul class="space-y-1 text-xs text-zinc-300">
+          <li>• <strong>Genel &amp; Satış:</strong> <a href="mailto:info@lazermark.com.tr" class="hover:text-white">info@lazermark.com.tr</a></li>
+          <li>• <strong>İmalat &amp; Planlama:</strong> <a href="mailto:imalat@lazermark.com.tr" class="hover:text-white">imalat@lazermark.com.tr</a></li>
+          <li>• <strong>Kalite:</strong> <a href="mailto:kalite@lazermark.com.tr" class="hover:text-white">kalite@lazermark.com.tr</a></li>
+          <li>• <strong>Muhasebe:</strong> <a href="mailto:muhasebe@lazermark.com.tr" class="hover:text-white">muhasebe@lazermark.com.tr</a></li>
+        </ul>
       </div>
     </div>
   </footer>
+
+  <!-- Görsel Büyütme Lightbox Modalı -->
+  <dialog id="lmImgModal" class="rounded-3xl bg-zinc-950 border border-zinc-700 text-white p-4 w-full max-w-2xl shadow-2xl">
+    <div class="flex items-center justify-between pb-3 border-b border-zinc-800">
+      <div id="lmImgCaption" class="text-sm font-bold font-laser text-zinc-200"></div>
+      <button onclick="document.getElementById('lmImgModal').close()" class="w-8 h-8 rounded-lg bg-zinc-800 text-zinc-300 font-bold">&times;</button>
+    </div>
+    <div class="mt-4 flex justify-center bg-zinc-900 rounded-2xl p-3">
+      <img id="lmImgPreview" src="" alt="" class="max-h-[72vh] w-auto object-contain rounded-xl" />
+    </div>
+  </dialog>
 
   <!-- Teklif & Mobil Lazer Çağrı Modalı -->
   <dialog id="lmModal" class="rounded-3xl bg-zinc-900 border border-zinc-700 text-white p-0 w-full max-w-lg shadow-2xl">
@@ -381,7 +534,7 @@
         </div>
         <div>
           <label class="block text-xs font-bold uppercase text-zinc-400 mb-1">Detay / Kalıp veya Parça Bilgisi</label>
-          <textarea name="Detay" rows="3" placeholder="Çelik cinsi, yapılacak kaynak/markalama işlemi veya ilgilendiğiniz lazer makinesi..." class="w-full px-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-white"></textarea>
+          <textarea name="Detay" rows="3" placeholder="Çelik/malzeme cinsi, yapılacak kaynak/markalama/kesim işlemi veya ilgilendiğiniz lazer makinesi..." class="w-full px-4 py-2.5 rounded-xl bg-zinc-950 border border-zinc-800 text-sm text-white"></textarea>
         </div>
         <div class="flex justify-end gap-3 pt-2">
           <button type="button" onclick="document.getElementById('lmModal').close()" class="px-4 py-2.5 rounded-xl bg-zinc-800 text-xs font-bold">Kapat</button>
@@ -396,15 +549,21 @@
       document.getElementById('lmpanel-hizmet').style.display = (mode === 'hizmet') ? 'grid' : 'none';
       document.getElementById('lmpanel-sistem').style.display = (mode === 'sistem') ? 'grid' : 'none';
       document.getElementById('lmmode-hizmet').className = (mode === 'hizmet')
-        ? 'lm-mode-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition'
-        : 'lm-mode-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-zinc-700 transition';
+        ? 'lm-mode-btn active px-5 py-3 rounded-xl text-xs sm:text-sm font-bold transition'
+        : 'lm-mode-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-zinc-700 transition';
       document.getElementById('lmmode-sistem').className = (mode === 'sistem')
-        ? 'lm-mode-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition'
-        : 'lm-mode-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-zinc-700 transition';
+        ? 'lm-mode-btn active px-5 py-3 rounded-xl text-xs sm:text-sm font-bold transition'
+        : 'lm-mode-btn px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-zinc-700 transition';
     }
     function openLmModal(subject) {
       document.getElementById('lmModalSubject').value = subject;
       document.getElementById('lmModal').showModal();
+    }
+    function openLmImg(src, caption) {
+      document.getElementById('lmImgPreview').src = src;
+      document.getElementById('lmImgPreview').alt = caption;
+      document.getElementById('lmImgCaption').textContent = caption;
+      document.getElementById('lmImgModal').showModal();
     }
   </script>
 </body>
